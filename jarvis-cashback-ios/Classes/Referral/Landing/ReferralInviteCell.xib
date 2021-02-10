@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ReferralInviteCell" rowHeight="221" id="yKW-R3-2jT" customClass="ReferralInviteCell" customModule="jarvis_cashback_ios" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="376"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yKW-R3-2jT" id="TLl-7H-1P5">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="376"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="8Ff-Br-Jgp">
+                        <rect key="frame" x="24" y="0.0" width="327" height="177.5"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2QA-c1-VNp">
+                                <rect key="frame" x="0.0" y="0.0" width="279" height="130"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="CrG-N9-lLg">
+                                        <rect key="frame" x="0.0" y="0.0" width="279" height="83.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Mobile Recharge" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NgM-DN-LGv">
+                                                <rect key="frame" x="0.0" y="0.0" width="279" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" red="0.31372549019607843" green="0.42745098039215684" blue="0.52156862745098043" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Refer friends to Mobile Recharge" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="viK-C2-VDp">
+                                                <rect key="frame" x="0.0" y="26" width="279" height="57.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Win up to ₹50 cashback on their first mobile recharge" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MQ1-Dn-8Jg">
+                                        <rect key="frame" x="0.0" y="91.5" width="279" height="38.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Share your invite" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PcK-OQ-syp">
+                                <rect key="frame" x="0.0" y="158" width="121" height="19.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.1137254902" green="0.1450980392" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dfH-bD-McA">
+                        <rect key="frame" x="24" y="197.5" width="327" height="52"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ujQ-Ca-5QH">
+                                <rect key="frame" x="16" y="15" width="295" height="19"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="http://paytm/vijay" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E6e-do-D7f">
+                                        <rect key="frame" x="0.0" y="0.0" width="271" height="19"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                        <color key="textColor" red="0.1137254902" green="0.1450980392" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yJJ-Xz-u4f">
+                                        <rect key="frame" x="276" y="0.0" width="19" height="19"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="19" id="DFC-PM-Law"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="copyCode"/>
+                                        <connections>
+                                            <action selector="tapToCopy:" destination="yKW-R3-2jT" eventType="touchUpInside" id="TMw-FI-cgB"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="19" id="khW-LY-n1f"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.54509803921568623" green="0.65098039215686276" blue="0.75686274509803919" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ujQ-Ca-5QH" secondAttribute="trailing" constant="16" id="QdO-U5-sEV"/>
+                            <constraint firstAttribute="bottom" secondItem="ujQ-Ca-5QH" secondAttribute="bottom" constant="18" id="TBp-gj-Aka"/>
+                            <constraint firstItem="ujQ-Ca-5QH" firstAttribute="leading" secondItem="dfH-bD-McA" secondAttribute="leading" constant="16" id="eba-og-3Q1"/>
+                            <constraint firstAttribute="height" constant="52" id="gPa-Rv-nq1"/>
+                            <constraint firstItem="ujQ-Ca-5QH" firstAttribute="top" secondItem="dfH-bD-McA" secondAttribute="top" constant="15" id="t7u-ka-a93"/>
+                        </constraints>
+                    </view>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="PwR-gL-42Y">
+                        <rect key="frame" x="24" y="278.5" width="327" height="58"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="58" id="jcz-QC-gKN"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Ob3-Er-Dby">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells/>
+                        <connections>
+                            <outlet property="dataSource" destination="yKW-R3-2jT" id="AAJ-Ji-36A"/>
+                            <outlet property="delegate" destination="yKW-R3-2jT" id="b3j-CH-XA0"/>
+                        </connections>
+                    </collectionView>
+                </subviews>
+                <color key="backgroundColor" red="0.0" green="0.67450980390000004" blue="0.92941176469999998" alpha="0.059999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="8Ff-Br-Jgp" secondAttribute="trailing" constant="24" id="9Ew-JG-aq7"/>
+                    <constraint firstItem="dfH-bD-McA" firstAttribute="top" secondItem="8Ff-Br-Jgp" secondAttribute="bottom" constant="20" id="9jL-Kp-Q7V"/>
+                    <constraint firstItem="PwR-gL-42Y" firstAttribute="leading" secondItem="TLl-7H-1P5" secondAttribute="leading" constant="24" id="CfJ-0M-Faz"/>
+                    <constraint firstItem="8Ff-Br-Jgp" firstAttribute="top" secondItem="TLl-7H-1P5" secondAttribute="top" id="HpE-RC-Hyt"/>
+                    <constraint firstItem="8Ff-Br-Jgp" firstAttribute="leading" secondItem="TLl-7H-1P5" secondAttribute="leading" constant="24" id="L3Z-Yr-RPG"/>
+                    <constraint firstItem="dfH-bD-McA" firstAttribute="leading" secondItem="TLl-7H-1P5" secondAttribute="leading" constant="24" id="Vh8-Yb-DBB"/>
+                    <constraint firstAttribute="trailing" secondItem="PwR-gL-42Y" secondAttribute="trailing" constant="24" id="e1k-kN-Lg8"/>
+                    <constraint firstAttribute="trailing" secondItem="dfH-bD-McA" secondAttribute="trailing" constant="24" id="e7k-XC-aGe"/>
+                    <constraint firstItem="PwR-gL-42Y" firstAttribute="top" secondItem="dfH-bD-McA" secondAttribute="bottom" constant="29" id="p2e-Ty-wub"/>
+                    <constraint firstAttribute="bottom" secondItem="PwR-gL-42Y" secondAttribute="bottom" constant="39.5" id="zhP-Gd-4h1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="collectionView" destination="PwR-gL-42Y" id="aPM-Er-FVX"/>
+                <outlet property="containerView" destination="dfH-bD-McA" id="TDt-fT-O56"/>
+                <outlet property="headerLabel" destination="NgM-DN-LGv" id="2UC-Hr-cvh"/>
+                <outlet property="heightConstraint" destination="gPa-Rv-nq1" id="pqO-4y-geg"/>
+                <outlet property="inviteTitle" destination="PcK-OQ-syp" id="cP6-ej-R5H"/>
+                <outlet property="leading1" destination="L3Z-Yr-RPG" id="o2l-pd-rhM"/>
+                <outlet property="leading2" destination="Vh8-Yb-DBB" id="QTA-DP-Lfd"/>
+                <outlet property="leading3" destination="CfJ-0M-Faz" id="PVa-oY-5ed"/>
+                <outlet property="shareLinkLabel" destination="E6e-do-D7f" id="R2C-Uc-vOr"/>
+                <outlet property="space" destination="9jL-Kp-Q7V" id="x26-Xq-lcx"/>
+                <outlet property="subtitleLabel" destination="MQ1-Dn-8Jg" id="CBz-DY-P7U"/>
+                <outlet property="titleLabel" destination="viK-C2-VDp" id="sgc-yp-2iW"/>
+            </connections>
+            <point key="canvasLocation" x="-50.000000000000007" y="-10.714285714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="copyCode" width="24" height="24"/>
+    </resources>
+</document>

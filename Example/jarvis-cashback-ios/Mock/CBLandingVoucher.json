@@ -1,0 +1,17 @@
+{
+    "status": 1,
+    "error": "null",
+    "data": {
+        "title": "",
+        "summary": [
+            {
+                "categoryType": "CASHBACK",
+                "categoryMessage": "Hotel, Bus, Zomato, Swiggy, movietickets & more",
+                "categoryLabel": "label",
+                "amount": "35 Vouchers & Deals",
+                "icon": "https://i.ibb.co/ZGrStCn/voucher.png",
+                "deeplink": ""
+            }
+        ]
+    }
+}

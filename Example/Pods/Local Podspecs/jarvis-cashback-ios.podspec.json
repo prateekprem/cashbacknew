@@ -1,0 +1,50 @@
+{
+  "name": "jarvis-cashback-ios",
+  "version": "9.0.0.0",
+  "summary": "Cashback library will helpful to implement cashback feature in jarvis",
+  "platforms": {
+    "ios": "11.0"
+  },
+  "swift_versions": "5.0",
+  "description": "Cashback library will helpful to implement cashback feature in jarvis. Developer can install the pod and access cashback feature with its manager classes",
+  "homepage": "https://bitbucket.org/paytmteam/jarvis-cashback-ios",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Nasib Ali": "nasib.ali@paytm.com"
+  },
+  "source": {
+    "git": "git@bitbucket.org:paytmteam/jarvis-cashback-ios.git",
+    "tag": "9.0.0.0"
+  },
+  "exclude_files": "jarvis-cashback-ios/**/*.plist",
+  "source_files": "jarvis-cashback-ios/Classes/**/*.{Swift,h,m}",
+  "resources": [
+    "jarvis-cashback-ios/Classes/**/*.storyboard",
+    "jarvis-cashback-ios/Classes/**/*.xib",
+    "jarvis-cashback-ios/Classes/**/*.json",
+    "jarvis-cashback-ios/Classes/**/*.strings",
+    "jarvis-cashback-ios/Classes/**/*.xcassets"
+  ],
+  "public_header_files": "jarvis-cashback-ios/Classes/**/*.h",
+  "dependencies": {
+    "jarvis-utility-ios": [
+
+    ],
+    "jarvis-network-ios": [
+
+    ],
+    "jarvis-locale-ios": [
+
+    ],
+    "lottie-ios": [
+      "2.5.0"
+    ],
+    "jarvis-storefront-ios": [
+
+    ]
+  },
+  "swift_version": "5.0"
+}

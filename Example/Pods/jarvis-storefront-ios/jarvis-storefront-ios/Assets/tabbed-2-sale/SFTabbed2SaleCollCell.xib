@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="0zE-I6-BJf" customClass="SFTabbed2SaleCollCell" customModule="jarvis_storefront_ios" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="105" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="105" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RzV-py-KdS">
+                        <rect key="frame" x="0.0" y="0.0" width="105" height="80"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Zv-64-dk0">
+                                <rect key="frame" x="15" y="18" width="90" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sale Ends in" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="okR-xB-yuS">
+                                        <rect key="frame" x="5" y="13" width="80" height="14"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00 : 04 : 55" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0bO-bC-pxZ">
+                                        <rect key="frame" x="8" y="30" width="74" height="12"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="okR-xB-yuS" secondAttribute="trailing" constant="5" id="5eU-Ul-XCq"/>
+                                    <constraint firstAttribute="trailing" secondItem="0bO-bC-pxZ" secondAttribute="trailing" constant="8" id="IrF-pl-OSX"/>
+                                    <constraint firstAttribute="bottom" secondItem="0bO-bC-pxZ" secondAttribute="bottom" constant="8" id="IwJ-hm-yIt"/>
+                                    <constraint firstAttribute="height" constant="50" id="Kyw-5s-5bb"/>
+                                    <constraint firstItem="okR-xB-yuS" firstAttribute="top" secondItem="3Zv-64-dk0" secondAttribute="top" constant="13" id="g9K-B4-vni"/>
+                                    <constraint firstItem="okR-xB-yuS" firstAttribute="leading" secondItem="3Zv-64-dk0" secondAttribute="leading" constant="5" id="lra-wx-3lE"/>
+                                    <constraint firstAttribute="width" constant="90" id="sJU-3T-5vZ"/>
+                                    <constraint firstItem="0bO-bC-pxZ" firstAttribute="leading" secondItem="3Zv-64-dk0" secondAttribute="leading" constant="8" id="zCj-y8-ez0"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashIcon" translatesAutoresizingMaskIntoConstraints="NO" id="X9H-AE-IoF">
+                                <rect key="frame" x="47.5" y="7" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="38I-EP-JH4"/>
+                                    <constraint firstAttribute="height" constant="25" id="Iti-qE-Swc"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3Zv-64-dk0" firstAttribute="leading" secondItem="RzV-py-KdS" secondAttribute="leading" constant="15" id="AhN-ZM-BMf"/>
+                            <constraint firstItem="X9H-AE-IoF" firstAttribute="centerX" secondItem="3Zv-64-dk0" secondAttribute="centerX" id="DRE-wG-HYz"/>
+                            <constraint firstAttribute="bottom" secondItem="3Zv-64-dk0" secondAttribute="bottom" constant="12" id="Nq7-ve-iK6"/>
+                            <constraint firstAttribute="trailing" secondItem="3Zv-64-dk0" secondAttribute="trailing" id="j8Q-2C-hcg"/>
+                            <constraint firstItem="3Zv-64-dk0" firstAttribute="top" secondItem="X9H-AE-IoF" secondAttribute="bottom" constant="-14" id="lkS-sc-lmA"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="RzV-py-KdS" firstAttribute="leading" secondItem="0zE-I6-BJf" secondAttribute="leading" id="Nzp-bd-SFb"/>
+                <constraint firstAttribute="bottom" secondItem="RzV-py-KdS" secondAttribute="bottom" id="TOe-88-r2m"/>
+                <constraint firstItem="RzV-py-KdS" firstAttribute="top" secondItem="0zE-I6-BJf" secondAttribute="top" id="fgw-7P-6So"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="y6Y-UI-J5b"/>
+            <size key="customSize" width="98" height="94"/>
+            <connections>
+                <outlet property="bgView" destination="3Zv-64-dk0" id="hnj-mB-rW8"/>
+                <outlet property="timerLabel" destination="0bO-bC-pxZ" id="eCd-Si-uiy"/>
+                <outlet property="titleLabel" destination="okR-xB-yuS" id="vBg-VH-COr"/>
+                <outlet property="topImageView" destination="X9H-AE-IoF" id="fhq-ep-4tV"/>
+            </connections>
+            <point key="canvasLocation" x="-100.8" y="239.28035982008998"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="flashIcon" width="28" height="28"/>
+    </resources>
+</document>

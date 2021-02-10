@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "B5D36C1D-A4CC-41DF-BEE8-41A95578F288"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "62DAB2BA-C2FA-43BE-942D-1DF68CBCA6BB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../jarvis-cashback-ios/Classes/NewFlow/Global/Deeplink/JRCBDeepLinkVM.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
+            landmarkName = "getMerchantCampaignDetailWith(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "06F8C3F5-4038-4B77-8E1D-14C31E8BE4C6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../jarvis-cashback-ios/Classes/NewFlow/Modules/GameProgress/JRCBGameProgressView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "201"
+            endingLineNumber = "201"
+            landmarkName = "init(with:maxWidth:shouldShowIcon:firstItemWidth:isFromPostTransaction:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D08D2701-15DF-4CE5-957E-11DF023DF28A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../jarvis-cashback-ios/Classes/Referral/Landing/ReferralInviteCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "152"
+            endingLineNumber = "152"
+            landmarkName = "fetchLinkinformation(isRetry:handler:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D08D2701-15DF-4CE5-957E-11DF023DF28A - 8bc0a6d350996073"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 (Swift.Optional&lt;Swift.String&gt;) -&gt; () in jarvis_cashback_ios.ReferralCellViewModel.fetchLinkinformation(isRetry: Swift.Bool, handler: Swift.Optional&lt;(Swift.Optional&lt;Swift.String&gt;) -&gt; ()&gt;) -&gt; ()"
+                  moduleName = "jarvis_cashback_ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/prateekprem/Project/cashback/jarvis-cashback-ios/Classes/Referral/Landing/ReferralInviteCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "152"
+                  endingLineNumber = "152"
+                  offsetFromSymbolStart = "341">
+               </Location>
+               <Location
+                  uuid = "D08D2701-15DF-4CE5-957E-11DF023DF28A - e0289a52491417fa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.String&gt;) -&gt; () in closure #1 () -&gt; () in closure #1 (Swift.Optional&lt;Swift.String&gt;) -&gt; () in jarvis_cashback_ios.ReferralCellViewModel.fetchLinkinformation(isRetry: Swift.Bool, handler: Swift.Optional&lt;(Swift.Optional&lt;Swift.String&gt;) -&gt; ()&gt;) -&gt; ()"
+                  moduleName = "jarvis_cashback_ios"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/prateekprem/Project/cashback/jarvis-cashback-ios/Classes/Referral/Landing/ReferralInviteCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "153"
+                  endingLineNumber = "153"
+                  offsetFromSymbolStart = "19">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

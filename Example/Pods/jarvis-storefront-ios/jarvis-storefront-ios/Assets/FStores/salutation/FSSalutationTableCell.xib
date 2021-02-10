@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FSSalutationTableCell" rowHeight="93" id="Tt0-Ab-QtM" customClass="FSSalutationTableCell" customModule="jarvis_storefront_ios" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="336" height="93"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Tt0-Ab-QtM" id="WKE-pQ-aXf">
+                <rect key="frame" x="0.0" y="0.0" width="336" height="92.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Good Morning! How about a coffee?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5bv-1w-jaz">
+                        <rect key="frame" x="15" y="10" width="281" height="62.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="23"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="5bv-1w-jaz" firstAttribute="top" secondItem="WKE-pQ-aXf" secondAttribute="top" constant="10" id="FW1-2e-8GP"/>
+                    <constraint firstItem="5bv-1w-jaz" firstAttribute="leading" secondItem="WKE-pQ-aXf" secondAttribute="leading" constant="15" id="JEC-v8-eHn"/>
+                    <constraint firstAttribute="trailing" secondItem="5bv-1w-jaz" secondAttribute="trailing" constant="40" id="b2l-gl-R9X"/>
+                    <constraint firstAttribute="bottom" secondItem="5bv-1w-jaz" secondAttribute="bottom" constant="20" id="nLe-ZQ-8o0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="dAn-Wk-Dhw"/>
+            <connections>
+                <outlet property="greetingLabel" destination="5bv-1w-jaz" id="XDt-JV-NQt"/>
+            </connections>
+            <point key="canvasLocation" x="33.600000000000001" y="-92.203898050974516"/>
+        </tableViewCell>
+    </objects>
+</document>

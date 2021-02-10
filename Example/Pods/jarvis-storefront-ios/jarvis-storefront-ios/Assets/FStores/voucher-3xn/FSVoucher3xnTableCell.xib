@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FSVoucher3xnTableCell" rowHeight="182" id="yR4-sO-YEk" customClass="FSVoucher3xnTableCell" customModule="jarvis_storefront_ios" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="534" height="185"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yR4-sO-YEk" id="VV4-cs-MFv">
+                <rect key="frame" x="0.0" y="0.0" width="534" height="184.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="qL5-S9-1m2">
+                        <rect key="frame" x="15" y="69.5" width="504" height="100"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="YUn-PD-nEY"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="2gN-mV-2fu">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <connections>
+                            <outlet property="dataSource" destination="yR4-sO-YEk" id="91x-VF-OfX"/>
+                            <outlet property="delegate" destination="yR4-sO-YEk" id="NCs-EQ-Mhv"/>
+                        </connections>
+                    </collectionView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Popular Vouchers" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAN-0U-BWG">
+                        <rect key="frame" x="15" y="25.5" width="504" height="24"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="qL5-S9-1m2" firstAttribute="leading" secondItem="VV4-cs-MFv" secondAttribute="leading" constant="15" id="FXy-tu-mtN"/>
+                    <constraint firstItem="hAN-0U-BWG" firstAttribute="leading" secondItem="VV4-cs-MFv" secondAttribute="leading" constant="15" id="GQZ-rC-nV6"/>
+                    <constraint firstItem="hAN-0U-BWG" firstAttribute="top" secondItem="VV4-cs-MFv" secondAttribute="top" constant="25.5" id="Giq-fb-H3Y"/>
+                    <constraint firstAttribute="bottom" secondItem="qL5-S9-1m2" secondAttribute="bottom" priority="999" constant="15" id="Per-cR-Jsz"/>
+                    <constraint firstAttribute="trailing" secondItem="qL5-S9-1m2" secondAttribute="trailing" constant="15" id="qWf-6F-hMb"/>
+                    <constraint firstAttribute="trailing" secondItem="hAN-0U-BWG" secondAttribute="trailing" constant="15" id="qoM-uD-myo"/>
+                    <constraint firstItem="qL5-S9-1m2" firstAttribute="top" secondItem="hAN-0U-BWG" secondAttribute="bottom" constant="20" id="rEC-0X-021"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="collectV" destination="qL5-S9-1m2" id="GOR-iO-Xz7"/>
+                <outlet property="collectionViewHeightConstraint" destination="YUn-PD-nEY" id="ppv-3k-exR"/>
+                <outlet property="layoutTtlLbl" destination="hAN-0U-BWG" id="xF1-RC-8IQ"/>
+            </connections>
+            <point key="canvasLocation" x="-24" y="0.0"/>
+        </tableViewCell>
+    </objects>
+</document>

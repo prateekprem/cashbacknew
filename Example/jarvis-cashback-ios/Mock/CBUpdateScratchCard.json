@@ -1,0 +1,43 @@
+{
+    "status": 1,
+    "code": 200,
+    "data": {
+        "id": 45282206629,
+        "status": "SCRATCHED",
+        "redemptionMetaData": {
+            "amount": 0,
+            "redemptionType": "COLLECTIBLE",
+            "redemptionIconUrl": "http://icon/icn1a2",
+            "redeemedTime": null,
+            "redemptionDelay": [
+                
+                { "delayUnit": "HOURS", "delay": 48 }
+            ],
+            "groupId": 1,
+            "collectibleId": 3,
+            "collectibleName": "SACHIN",
+            "deeplink": "paytmmp://mini-app?aId=c16ff022b4bd1378ca02214ec26e41250ed5b542&data=eyJzcGFyYW1zIjp7InNob3dUaXRsZUJhciI6ZmFsc2V9fQ=="
+        },
+        "sourceMetaData":
+        
+        { "type": "Supercash", "deeplink": "paytmmp://cash_wallet?featuretype=vip&screen=offerdetails&gameid=1231835564&stage=0", "offerId": "1231835564", "stage": 0, "offerName": "Money Transfer - Upto ₹2 cashback Collectibe testing", "offerIconUrl": "https://s3-ap-southeast-1.amazonaws.com/assets.paytm.com/promotion/Rituraj/PNG+images/UPI+Offer.png", "offerDescription": "Transfer money 3 times using Paytm of ₹6 within 20 minutes", "actionIdentifier": 0 }
+        ,
+        "redemptionType": "COLLECTIBLE",
+        "subRedemptionType": null,
+        "assured": false,
+        "noneRedemption": false,
+        "expiryText": "Valid till 07 Mar 2020 14:33:33",
+        "redemptionText": "SACHIN will be credited within 48 hours",
+        "winningTitle": "Congratulations!",
+        "winningText": "You won",
+        "earnedText": "SACHIN",
+        "frontendRedemptionType": "SACHIN",
+        "initializationText": null,
+        "unlockText": null,
+        "extraInfo": null,
+        "statusText": "",
+        "iconUrl": "https://paytm.s3-ap-southeast-1.amazonaws.com/promo_seller_panel_uploads/production/scratchcardicon2.png",
+        "backgroundImage": "https://assetscdn1.paytm.com/images/promo-engine/prod/sc_theme2.png",
+        "displayType": "scratch_card"
+    }
+}

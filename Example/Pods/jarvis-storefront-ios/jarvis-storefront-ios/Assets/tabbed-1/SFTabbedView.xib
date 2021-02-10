@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="vCc-vk-Kqh" customClass="SFTabbedView" customModule="jarvis_storefront_ios" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DsE-hb-oht">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                    <subviews>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="zhT-Gh-MVM">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="EFL-uN-Hkc">
+                                <size key="itemSize" width="50" height="50"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                            <connections>
+                                <outlet property="dataSource" destination="vCc-vk-Kqh" id="jiU-mV-kIZ"/>
+                                <outlet property="delegate" destination="vCc-vk-Kqh" id="Fsn-pU-bdT"/>
+                            </connections>
+                        </collectionView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="zhT-Gh-MVM" secondAttribute="trailing" id="4B6-bQ-FwO"/>
+                        <constraint firstItem="zhT-Gh-MVM" firstAttribute="leading" secondItem="DsE-hb-oht" secondAttribute="leading" id="GOa-v3-kum"/>
+                        <constraint firstAttribute="height" constant="50" id="IBm-zk-pFi"/>
+                        <constraint firstItem="zhT-Gh-MVM" firstAttribute="top" secondItem="DsE-hb-oht" secondAttribute="top" id="h4D-JM-5YA"/>
+                        <constraint firstAttribute="bottom" secondItem="zhT-Gh-MVM" secondAttribute="bottom" id="yDz-CN-IUS"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cae-ED-dZc" customClass="SFFilterTabView" customModule="jarvis_storefront_ios" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="50" width="414" height="50"/>
+                    <subviews>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Pcb-dv-1FK">
+                            <rect key="frame" x="0.0" y="8" width="414" height="34"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="CBf-TB-d2e">
+                                <size key="itemSize" width="50" height="50"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                            <connections>
+                                <outlet property="dataSource" destination="cae-ED-dZc" id="wkz-eU-v60"/>
+                                <outlet property="delegate" destination="cae-ED-dZc" id="hhq-Bn-FGW"/>
+                            </connections>
+                        </collectionView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.96078431372549022" green="0.97254901960784312" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="MyN-bL-X9y"/>
+                        <constraint firstItem="Pcb-dv-1FK" firstAttribute="top" secondItem="cae-ED-dZc" secondAttribute="top" constant="8" id="U55-na-S7w"/>
+                        <constraint firstAttribute="trailing" secondItem="Pcb-dv-1FK" secondAttribute="trailing" id="WWO-ek-0Gc"/>
+                        <constraint firstAttribute="bottom" secondItem="Pcb-dv-1FK" secondAttribute="bottom" constant="8" id="Wjz-u5-447"/>
+                        <constraint firstItem="Pcb-dv-1FK" firstAttribute="leading" secondItem="cae-ED-dZc" secondAttribute="leading" id="zh1-rb-db0"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="collectionView" destination="Pcb-dv-1FK" id="f3e-rK-V52"/>
+                    </connections>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="cae-ED-dZc" firstAttribute="top" secondItem="DsE-hb-oht" secondAttribute="bottom" id="Htp-Qz-8d8"/>
+                <constraint firstItem="cae-ED-dZc" firstAttribute="trailing" secondItem="whJ-iQ-9Xd" secondAttribute="trailing" id="RzH-B1-6Bl"/>
+                <constraint firstItem="DsE-hb-oht" firstAttribute="trailing" secondItem="whJ-iQ-9Xd" secondAttribute="trailing" id="XZf-cl-Xgh"/>
+                <constraint firstItem="DsE-hb-oht" firstAttribute="leading" secondItem="whJ-iQ-9Xd" secondAttribute="leading" id="r46-u5-1ip"/>
+                <constraint firstItem="DsE-hb-oht" firstAttribute="top" secondItem="whJ-iQ-9Xd" secondAttribute="top" id="ure-Oa-DBw"/>
+                <constraint firstItem="cae-ED-dZc" firstAttribute="leading" secondItem="whJ-iQ-9Xd" secondAttribute="leading" id="wD8-h9-85b"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="whJ-iQ-9Xd"/>
+            <connections>
+                <outlet property="collectionView" destination="zhT-Gh-MVM" id="7oY-Kq-E4W"/>
+                <outlet property="filterTabView" destination="cae-ED-dZc" id="3sW-Zi-dc2"/>
+                <outlet property="filterTabViewHeightConstraint" destination="MyN-bL-X9y" id="aHD-xr-isK"/>
+                <outlet property="tabbedViewHeightConstraint" destination="IBm-zk-pFi" id="ZZI-Uu-RGs"/>
+            </connections>
+            <point key="canvasLocation" x="166.66666666666669" y="-350.55803571428572"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.31"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JRLoadingIndicatorView" customModule="jarvis_auth_ios" customModuleProvider="target">
+            <connections>
+                <outlet property="progressView" destination="sgc-tG-mBk" id="HKx-mc-Rpw"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view tag="1" contentMode="scaleToFill" id="WYI-Fz-0rM">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view hidden="YES" tag="6" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sgc-tG-mBk" userLabel="ProgressBar" customClass="JRChatOnboardingSpinnerView" customModule="jarvis_auth_ios" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="19" width="375" height="12"/>
+                    <subviews>
+                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XAG-IC-RuE" userLabel="FirstCircle">
+                            <rect key="frame" x="156.5" y="3" width="6" height="6"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="6" id="LTo-DO-bnk"/>
+                                <constraint firstAttribute="width" constant="6" id="Waz-sR-hTk"/>
+                            </constraints>
+                        </view>
+                        <view clipsSubviews="YES" tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zQP-gV-nRK" userLabel="SecondCircle">
+                            <rect key="frame" x="167.5" y="1.5" width="9" height="9"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="9" id="9qa-dt-YfA"/>
+                                <constraint firstAttribute="width" constant="9" id="Mkv-5M-6vI"/>
+                            </constraints>
+                        </view>
+                        <view clipsSubviews="YES" tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CEw-sH-UF8" userLabel="ThirdCircle">
+                            <rect key="frame" x="181.5" y="0.0" width="12" height="12"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="12" id="0TS-Zj-95c"/>
+                                <constraint firstAttribute="height" constant="12" id="3sd-8n-gAk"/>
+                            </constraints>
+                        </view>
+                        <view clipsSubviews="YES" tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qM6-Mc-VA2" userLabel="FourthCircle">
+                            <rect key="frame" x="198.5" y="1.5" width="9" height="9"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="9" id="LwQ-Kq-FxY"/>
+                                <constraint firstAttribute="height" constant="9" id="cqx-SG-Jxp"/>
+                            </constraints>
+                        </view>
+                        <view clipsSubviews="YES" tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kGI-qE-CBg" userLabel="FifthCircle">
+                            <rect key="frame" x="212.5" y="3" width="6" height="6"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="6" id="Mjg-0J-Yvz"/>
+                                <constraint firstAttribute="height" constant="6" id="mdE-dg-gCw"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="zQP-gV-nRK" secondAttribute="bottom" constant="1.5" id="Bik-mW-hpO"/>
+                        <constraint firstItem="qM6-Mc-VA2" firstAttribute="leading" secondItem="CEw-sH-UF8" secondAttribute="trailing" constant="5" id="GLN-pe-cwp"/>
+                        <constraint firstItem="zQP-gV-nRK" firstAttribute="top" secondItem="sgc-tG-mBk" secondAttribute="top" constant="1.5" id="HF2-lA-VQB"/>
+                        <constraint firstAttribute="bottom" secondItem="qM6-Mc-VA2" secondAttribute="bottom" constant="1.5" id="JvN-9D-jmk"/>
+                        <constraint firstItem="CEw-sH-UF8" firstAttribute="leading" secondItem="zQP-gV-nRK" secondAttribute="trailing" constant="5" id="L6N-nu-ejd"/>
+                        <constraint firstAttribute="bottom" secondItem="kGI-qE-CBg" secondAttribute="bottom" constant="3" id="OI8-Sc-P2K"/>
+                        <constraint firstItem="zQP-gV-nRK" firstAttribute="leading" secondItem="XAG-IC-RuE" secondAttribute="trailing" constant="5" id="PkF-ZV-pc7"/>
+                        <constraint firstItem="kGI-qE-CBg" firstAttribute="leading" secondItem="qM6-Mc-VA2" secondAttribute="trailing" constant="5" id="Pky-nQ-kNz"/>
+                        <constraint firstItem="CEw-sH-UF8" firstAttribute="centerY" secondItem="sgc-tG-mBk" secondAttribute="centerY" id="Tch-yd-bg0"/>
+                        <constraint firstItem="qM6-Mc-VA2" firstAttribute="top" secondItem="sgc-tG-mBk" secondAttribute="top" constant="1.5" id="W5Y-Wj-d0o"/>
+                        <constraint firstAttribute="height" constant="12" id="lBZ-JJ-Q6K"/>
+                        <constraint firstAttribute="bottom" secondItem="XAG-IC-RuE" secondAttribute="bottom" constant="3" id="mXf-LU-W8e"/>
+                        <constraint firstItem="kGI-qE-CBg" firstAttribute="top" secondItem="sgc-tG-mBk" secondAttribute="top" constant="3" id="mY2-50-DJM"/>
+                        <constraint firstItem="XAG-IC-RuE" firstAttribute="top" secondItem="sgc-tG-mBk" secondAttribute="top" constant="3" id="y7K-KP-Rdo"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="CEw-sH-UF8" firstAttribute="centerX" secondItem="WYI-Fz-0rM" secondAttribute="centerX" id="ELO-bG-zFM"/>
+                <constraint firstItem="sgc-tG-mBk" firstAttribute="leading" secondItem="WYI-Fz-0rM" secondAttribute="leading" id="G7J-o9-wjy"/>
+                <constraint firstItem="sgc-tG-mBk" firstAttribute="centerX" secondItem="WYI-Fz-0rM" secondAttribute="centerX" id="hUb-e0-81B"/>
+                <constraint firstAttribute="trailing" secondItem="sgc-tG-mBk" secondAttribute="trailing" id="pnR-UU-xMq"/>
+                <constraint firstItem="sgc-tG-mBk" firstAttribute="centerY" secondItem="WYI-Fz-0rM" secondAttribute="centerY" id="rvH-4l-CR3"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-23" y="-520"/>
+        </view>
+    </objects>
+</document>

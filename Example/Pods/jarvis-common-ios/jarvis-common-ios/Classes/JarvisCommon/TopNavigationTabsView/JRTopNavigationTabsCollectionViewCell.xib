@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="JRTopNavigationTabsCollectionViewCell" id="hOb-E0-0C0" customClass="JRTopNavigationTabsCollectionViewCell" customModule="Mall" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="75" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="75" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jmI-VR-yuh">
+                        <rect key="frame" x="53.5" y="10" width="10" height="10"/>
+                        <color key="backgroundColor" red="0.0" green="0.72941176470000002" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.0" green="0.72941176470000002" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="10" id="eWm-Pk-sdV"/>
+                            <constraint firstAttribute="height" constant="10" id="far-wC-ldN"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vhm-vR-hTY">
+                        <rect key="frame" x="19.5" y="0.0" width="36" height="50"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <accessibility key="accessibilityConfiguration" identifier="dealCategoryLabel"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                        <color key="textColor" red="0.28627450980000002" green="0.28627450980000002" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GE9-uV-PMX">
+                        <rect key="frame" x="19.5" y="38" width="36" height="2"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="IbO-bB-nDz"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Vhm-vR-hTY" secondAttribute="bottom" id="7lb-tT-uRd"/>
+                <constraint firstAttribute="trailing" secondItem="GE9-uV-PMX" secondAttribute="trailing" priority="250" id="ADe-GM-j10"/>
+                <constraint firstItem="Vhm-vR-hTY" firstAttribute="centerX" secondItem="hOb-E0-0C0" secondAttribute="centerX" id="D6x-mz-rKF"/>
+                <constraint firstItem="Vhm-vR-hTY" firstAttribute="width" secondItem="GE9-uV-PMX" secondAttribute="width" priority="750" id="LHI-5T-TnX"/>
+                <constraint firstItem="jmI-VR-yuh" firstAttribute="leading" secondItem="Vhm-vR-hTY" secondAttribute="trailing" constant="-2" id="OC1-Fu-4B8"/>
+                <constraint firstItem="jmI-VR-yuh" firstAttribute="top" secondItem="hOb-E0-0C0" secondAttribute="top" constant="10" id="PoN-j6-pAR"/>
+                <constraint firstItem="Vhm-vR-hTY" firstAttribute="top" secondItem="hOb-E0-0C0" secondAttribute="top" id="Rh8-0s-W8J"/>
+                <constraint firstItem="GE9-uV-PMX" firstAttribute="leading" secondItem="hOb-E0-0C0" secondAttribute="leading" priority="250" id="oPS-eR-gea"/>
+                <constraint firstItem="GE9-uV-PMX" firstAttribute="centerX" secondItem="hOb-E0-0C0" secondAttribute="centerX" id="rMH-Jm-243"/>
+                <constraint firstAttribute="bottom" secondItem="GE9-uV-PMX" secondAttribute="bottom" constant="10" id="u5U-4I-G6J"/>
+            </constraints>
+            <size key="customSize" width="75" height="50"/>
+            <connections>
+                <outlet property="bottomDividerConst" destination="u5U-4I-G6J" id="TTR-BP-0bI"/>
+                <outlet property="dividerView" destination="GE9-uV-PMX" id="e9d-7d-z3y"/>
+                <outlet property="leadingDividerConstarint" destination="oPS-eR-gea" id="8SF-5w-kd9"/>
+                <outlet property="titleLabel" destination="Vhm-vR-hTY" id="3ZY-t2-8gX"/>
+                <outlet property="trailingDividerConstraint" destination="ADe-GM-j10" id="eSV-wW-YAn"/>
+                <outlet property="unreadMsgCountSymbol" destination="jmI-VR-yuh" id="TpJ-x1-o1a"/>
+                <outlet property="widthEqualsTitleWidthConst" destination="LHI-5T-TnX" id="qdM-Gq-2aI"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>

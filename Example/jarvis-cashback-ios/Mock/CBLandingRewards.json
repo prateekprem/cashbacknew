@@ -1,0 +1,25 @@
+{
+    "status": 1,
+    "error": "null",
+    "data": {
+        "title": "Rewards & Offers",
+        "summary": [
+            {
+                "categoryType": "CASHBACK",
+                "categoryMessage": "Cashback won",
+                "categoryLabel": "label",
+                "amount": "100",
+                "icon": "https://i.ibb.co/MRXvQh6/rupee.png",
+                "deeplink": ""
+            },
+            {
+                "categoryType": "PAYTM_FIRST_COIN",
+                "categoryMessage": "Coin won",
+                "categoryLabel": "label",
+                "amount": "100",
+                "icon": "https://i.ibb.co/T4sCwd3/star.png",
+                "deeplink": ""
+            }
+        ]
+    }
+}

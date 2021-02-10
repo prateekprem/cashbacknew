@@ -1,0 +1,795 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.1 effective-4.2 (swiftlang-1100.0.270.13 clang-1100.0.33.7)
+// swift-module-flags: -target i386-apple-ios8.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 4.2 -enforce-exclusivity=checked -Onone -module-name MapmyIndiaAPIKit
+import CommonCrypto
+import Contacts
+import CoreLocation
+import Foundation
+@_exported import MapmyIndiaAPIKit
+import Security
+import Swift
+import UIKit
+@objc(MapmyIndiaUtility) public class MapmyIndiaUtility : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc(durationSecondsToFormattedString:) open func durationSecondsToFormattedString(seconds: Foundation.NSNumber) -> Swift.String?
+  @objc public class func getUniqueDeviceIdentifierAsString() -> Swift.String
+  @objc public class func getOSName() -> Swift.String
+  @objc public class func getOSVersion() -> Swift.String
+  @objc deinit
+}
+extension PKCS7 {
+  public class ReceiptInfo {
+    @objc deinit
+  }
+  public func receipt() -> MapmyIndiaAPIKit.PKCS7.ReceiptInfo?
+}
+@objc(MapmyIndiaDrivingDistance) open class MapmyIndiaDrivingDistance : ObjectiveC.NSObject, Swift.Codable {
+  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  @objc override dynamic open var hash: Swift.Int {
+    @objc get
+  }
+  @objc open var duration: Foundation.NSNumber?
+  @objc open var length: Foundation.NSNumber?
+  @objc open var status: Foundation.NSNumber?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc(MapmyIndiaDrivingDistancePlacemark) open class MapmyIndiaDrivingDistancePlacemark : MapmyIndiaAPIKit.MapmyIndiaDrivingDistance {
+  required public init(from decoder: Swift.Decoder) throws
+  @objc deinit
+}
+public typealias DistanceVehicleType = MapmyIndiaAPIKit.MMIDistanceVehicleType
+@objc(MapmyIndiaRectangularRegion) open class MapmyIndiaRectangularRegion : CoreLocation.CLRegion {
+  @objc open var bottomRight: CoreLocation.CLLocationCoordinate2D
+  @objc open var topLeft: CoreLocation.CLLocationCoordinate2D
+  @objc public init(topLeft: CoreLocation.CLLocationCoordinate2D, bottomRight: CoreLocation.CLLocationCoordinate2D)
+  @objc required dynamic public init?(coder decoder: Foundation.NSCoder)
+  @objc override dynamic open func encode(with coder: Foundation.NSCoder)
+  @objc override dynamic open var hash: Swift.Int {
+    @objc get
+  }
+  @objc override dynamic open func isEqual(_ object: Any?) -> Swift.Bool
+  @objc override dynamic open var description: Swift.String {
+    @objc get
+  }
+  @objc open func containsLocationCoordinate2D(_ coordinate: CoreLocation.CLLocationCoordinate2D) -> Swift.Bool
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc(MapmyIndiaPlacemark) open class MapmyIndiaPlacemark : ObjectiveC.NSObject, Swift.Codable {
+  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  @objc override dynamic open var hash: Swift.Int {
+    @objc get
+  }
+  @objc open var houseNumber: Swift.String?
+  @objc open var houseName: Swift.String?
+  @objc open var poi: Swift.String?
+  @objc open var poiDist: Swift.String?
+  @objc open var street: Swift.String?
+  @objc open var streetDist: Swift.String?
+  @objc open var subSubLocality: Swift.String?
+  @objc open var subLocality: Swift.String?
+  @objc open var locality: Swift.String?
+  @objc open var village: Swift.String?
+  @objc open var district: Swift.String?
+  @objc open var subDistrict: Swift.String?
+  @objc open var city: Swift.String?
+  @objc open var state: Swift.String?
+  @objc open var pincode: Swift.String?
+  @objc open var latitude: Swift.String? {
+    @objc get
+  }
+  @objc open var longitude: Swift.String? {
+    @objc get
+  }
+  @objc open var formattedAddress: Swift.String?
+  @objc open var area: Swift.String?
+  @objc open var placeId: Swift.String?
+  @objc open var type: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc(MapmyIndiaGeocodedPlacemark) open class MapmyIndiaGeocodedPlacemark : MapmyIndiaAPIKit.MapmyIndiaPlacemark {
+  required public init(from decoder: Swift.Decoder) throws
+  @objc deinit
+}
+@objc(AtlasOAuth) public class AtlasOAuth : ObjectiveC.NSObject, Swift.Codable {
+  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  @objc override dynamic open var hash: Swift.Int {
+    @objc get
+  }
+  @objc open var authorizationFormattedValue: Swift.String {
+    @objc get
+  }
+  @objc open var scope: Swift.String?
+  @objc open var tokenType: Swift.String?
+  @objc open var accessToken: Swift.String?
+  @objc open var expiresIn: Foundation.NSNumber?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc(MapmyIndiaGeocodeOptions) open class MapmyIndiaGeocodeOptions : ObjectiveC.NSObject {
+  @objc open var allowedISOCountryCodes: [Swift.String]?
+  @objc open var focalLocation: CoreLocation.CLLocation?
+  @objc public var maximumResultCount: Swift.UInt
+  @objc open var locale: Foundation.Locale?
+  @objc deinit
+}
+@objc(MapmyIndiaForwardGeocodeOptions) open class MapmyIndiaForwardGeocodeOptions : MapmyIndiaAPIKit.MapmyIndiaGeocodeOptions {
+  @objc open var pincode: Swift.String?
+  open var autocompletesQuery: Swift.Bool
+  @objc convenience public init(query: Swift.String, withRegion: MapmyIndiaAPIKit.MMIRegionTypeIdentifier = MapmyIndiaAccountManager.defaultRegion())
+  @objc deinit
+}
+@objc(MapmyIndiaReverseGeocodeOptions) open class MapmyIndiaReverseGeocodeOptions : MapmyIndiaAPIKit.MapmyIndiaGeocodeOptions {
+  open var coordinates: [CoreLocation.CLLocationCoordinate2D]
+  @objc convenience public init(coordinate: CoreLocation.CLLocationCoordinate2D, withRegion: MapmyIndiaAPIKit.MMIRegionTypeIdentifier = MapmyIndiaAccountManager.defaultRegion())
+  @objc convenience public init(location: CoreLocation.CLLocation, withRegion: MapmyIndiaAPIKit.MMIRegionTypeIdentifier = MapmyIndiaAccountManager.defaultRegion())
+  @objc deinit
+}
+@objc(MapmyIndiaPlaceDetailGeocodeOptions) open class MapmyIndiaPlaceDetailGeocodeOptions : MapmyIndiaAPIKit.MapmyIndiaGeocodeOptions {
+  @objc convenience public init(placeId: Swift.String, withRegion: MapmyIndiaAPIKit.MMIRegionTypeIdentifier = MapmyIndiaAccountManager.defaultRegion())
+  @objc deinit
+}
+@objc(MapmyIndiaDrivingDistanceOptions) open class MapmyIndiaDrivingDistanceOptions : MapmyIndiaAPIKit.MapmyIndiaGeocodeOptions {
+  @objc open var center: CoreLocation.CLLocation?
+  @objc open var points: [CoreLocation.CLLocation]?
+  @objc open var routeType: MapmyIndiaAPIKit.DistanceRouteType
+  @objc open var vehicleType: MapmyIndiaAPIKit.DistanceVehicleType
+  @objc open var avoids: MapmyIndiaAPIKit.DistanceAvoidsType
+  @objc open var withTraffic: Swift.Bool
+  @objc convenience public init(center: CoreLocation.CLLocation, points: [CoreLocation.CLLocation])
+  @objc deinit
+}
+@objc(MapmyIndiaDrivingDistanceMatrixOptions) open class MapmyIndiaDrivingDistanceMatrixOptions : MapmyIndiaAPIKit.MapmyIndiaGeocodeOptions {
+  @objc open var center: CoreLocation.CLLocation?
+  @objc open var points: [CoreLocation.CLLocation]?
+  @objc open var routeType: MapmyIndiaAPIKit.DistanceRouteType
+  @objc open var withTraffic: Swift.Bool
+  @objc convenience public init(center: CoreLocation.CLLocation, points: [CoreLocation.CLLocation], withRegion: MapmyIndiaAPIKit.MMIRegionTypeIdentifier = MapmyIndiaAccountManager.defaultRegion())
+  @objc deinit
+}
+@objc(MapmyIndiaRouteTripOptions) open class MapmyIndiaRouteTripOptions : MapmyIndiaAPIKit.MapmyIndiaGeocodeOptions {
+  @objc open var startLocation: CoreLocation.CLLocation?
+  @objc open var destinationLocation: CoreLocation.CLLocation?
+  @objc open var viaPoints: [CoreLocation.CLLocation]?
+  @objc open var routeType: MapmyIndiaAPIKit.DistanceRouteType
+  @objc open var vehicleType: MapmyIndiaAPIKit.DistanceVehicleType
+  @objc open var avoids: MapmyIndiaAPIKit.DistanceAvoidsType
+  @objc open var withAlternatives: Swift.Bool
+  @objc open var withAdvices: Swift.Bool
+  @objc convenience public init(startLocation: CoreLocation.CLLocation, destinationLocation: CoreLocation.CLLocation)
+  @objc deinit
+}
+@objc(MapmyIndiaDrivingDistanceMatrixManager) open class MapmyIndiaDrivingDistanceMatrixManager : ObjectiveC.NSObject {
+  public typealias CompletionHandler = (MapmyIndiaAPIKit.MapmyIndiaDrivingDistanceMatrixResponse?, Foundation.NSError?) -> Swift.Void
+  @objc(sharedManager) public static let shared: MapmyIndiaAPIKit.MapmyIndiaDrivingDistanceMatrixManager
+  @objc public init(restKey: Swift.String?, host: Swift.String?)
+  @objc convenience public init(restKey: Swift.String?)
+  @discardableResult
+  @objc(getResultWithOptions:completionHandler:) open func getResult(_ options: MapmyIndiaAPIKit.MapmyIndiaDrivingDistanceMatrixOptions, completionHandler: @escaping MapmyIndiaAPIKit.MapmyIndiaDrivingDistanceMatrixManager.CompletionHandler) -> Foundation.URLSessionDataTask
+  @objc open func urlForDistanceMatrix(_ options: MapmyIndiaAPIKit.MapmyIndiaDrivingDistanceMatrixOptions) -> Foundation.URL
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc(MapmyIndiaOAuthManager) public class MapmyIndiaOAuthManager : ObjectiveC.NSObject {
+  public typealias CompletionHandlerOAuth = (MapmyIndiaAPIKit.AtlasOAuth?, Foundation.NSError?) -> Swift.Void
+  @objc(sharedOAuthManager) public static let shared: MapmyIndiaAPIKit.MapmyIndiaOAuthManager
+  @objc public init(clientId: Swift.String?, clientSecret: Swift.String?, grantType: Swift.String?)
+  @objc convenience override dynamic public init()
+  @discardableResult
+  @objc(getOAuthTokenWithOptions:completionHandler:) public func getOAuthToken(_ options: MapmyIndiaAPIKit.MapmyIndiaOAuthAtlasOptions, completionHandler: @escaping MapmyIndiaAPIKit.MapmyIndiaOAuthManager.CompletionHandlerOAuth) -> Foundation.URLSessionDataTask
+  @objc open func urlForGeocoding(_ options: MapmyIndiaAPIKit.MapmyIndiaOAuthAtlasOptions) -> Foundation.URL
+  @objc deinit
+}
+@objc(MapmyIndiaRouteTripManager) open class MapmyIndiaRouteTripManager : ObjectiveC.NSObject {
+  public typealias CompletionHandler = (MapmyIndiaAPIKit.MapmyIndiaTripResult?, Swift.String?, Foundation.NSError?) -> Swift.Void
+  @objc(sharedManager) public static let shared: MapmyIndiaAPIKit.MapmyIndiaRouteTripManager
+  @objc public init(restKey: Swift.String?, host: Swift.String?)
+  @objc convenience public init(restKey: Swift.String?)
+  @discardableResult
+  @objc(getResultWithOptions:completionHandler:) open func getResult(_ options: MapmyIndiaAPIKit.MapmyIndiaRouteTripOptions, completionHandler: @escaping MapmyIndiaAPIKit.MapmyIndiaRouteTripManager.CompletionHandler) -> Foundation.URLSessionDataTask
+  @objc open func urlForGeocoding(_ options: MapmyIndiaAPIKit.MapmyIndiaRouteTripOptions) -> Foundation.URL
+  @objc override dynamic public init()
+  @objc deinit
+}
+public class MapmyIndiaKeychainManager {
+  open var lastResultCode: Darwin.OSStatus
+  open var accessGroup: Swift.String?
+  open var synchronizable: Swift.Bool
+  public init()
+  public init(keyPrefix: Swift.String)
+  @discardableResult
+  open func set(_ value: Swift.String, forKey key: Swift.String, withAccess access: MapmyIndiaAPIKit.KeychainManagerAccessOptions? = nil) -> Swift.Bool
+  @discardableResult
+  open func set(_ value: Foundation.Data, forKey key: Swift.String, withAccess access: MapmyIndiaAPIKit.KeychainManagerAccessOptions? = nil) -> Swift.Bool
+  @discardableResult
+  open func set(_ value: Swift.Bool, forKey key: Swift.String, withAccess access: MapmyIndiaAPIKit.KeychainManagerAccessOptions? = nil) -> Swift.Bool
+  open func get(_ key: Swift.String) -> Swift.String?
+  open func getData(_ key: Swift.String) -> Foundation.Data?
+  open func getBool(_ key: Swift.String) -> Swift.Bool?
+  @discardableResult
+  open func delete(_ key: Swift.String) -> Swift.Bool
+  @discardableResult
+  open func clear() -> Swift.Bool
+  @objc deinit
+}
+public struct KeychainManagerConstants {
+  public static var accessGroup: Swift.String {
+    get
+  }
+  public static var accessible: Swift.String {
+    get
+  }
+  public static var attrAccount: Swift.String {
+    get
+  }
+  public static var attrSynchronizable: Swift.String {
+    get
+  }
+  public static var klass: Swift.String {
+    get
+  }
+  public static var matchLimit: Swift.String {
+    get
+  }
+  public static var returnData: Swift.String {
+    get
+  }
+  public static var valueData: Swift.String {
+    get
+  }
+}
+public enum KeychainManagerAccessOptions {
+  case accessibleWhenUnlocked
+  case accessibleWhenUnlockedThisDeviceOnly
+  case accessibleAfterFirstUnlock
+  case accessibleAfterFirstUnlockThisDeviceOnly
+  case accessibleAlways
+  case accessibleWhenPasscodeSetThisDeviceOnly
+  case accessibleAlwaysThisDeviceOnly
+  public static func == (a: MapmyIndiaAPIKit.KeychainManagerAccessOptions, b: MapmyIndiaAPIKit.KeychainManagerAccessOptions) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
+extension Locale {
+  public static var preferredLocalLanguageCountryCode: Swift.String {
+    get
+  }
+  public static var nationalizedCurrent: Foundation.Locale
+  public static var usesMetric: Swift.Bool {
+    get
+  }
+  public var usesMetric: Swift.Bool {
+    get
+  }
+}
+public class PKCS7 {
+  public init(data: Foundation.Data) throws
+  public var digestAlgorithm: Swift.String? {
+    get
+  }
+  public var digestAlgorithmName: Swift.String? {
+    get
+  }
+  public var certificate: MapmyIndiaAPIKit.X509Certificate? {
+    get
+  }
+  public var certificates: [MapmyIndiaAPIKit.X509Certificate] {
+    get
+  }
+  public var data: Foundation.Data? {
+    get
+  }
+  @objc deinit
+}
+@objc(MapmyIndiaAtlasGeocodeManager) open class MapmyIndiaAtlasGeocodeManager : ObjectiveC.NSObject {
+  public typealias CompletionHandler = (MapmyIndiaAPIKit.MapmyIndiaAtlasGeocodeAPIResponse?, Foundation.NSError?) -> Swift.Void
+  @objc(sharedManager) public static let shared: MapmyIndiaAPIKit.MapmyIndiaAtlasGeocodeManager
+  @objc public init(restKey: Swift.String?, clientId: Swift.String?, clientSecret: Swift.String?, grantType: Swift.String?)
+  @objc convenience public init(restKey: Swift.String?)
+  @discardableResult
+  @objc(getGeocodeResultsWithOptions:completionHandler:) open func getGeocodeResults(_ options: MapmyIndiaAPIKit.MapmyIndiaAtlasGeocodeOptions, completionHandler: @escaping MapmyIndiaAPIKit.MapmyIndiaAtlasGeocodeManager.CompletionHandler) -> Foundation.URLSessionDataTask
+  @objc open func urlForGeocoding(_ options: MapmyIndiaAPIKit.MapmyIndiaAtlasGeocodeOptions) -> Foundation.URL
+  @objc override dynamic public init()
+  @objc deinit
+}
+public let MapmyIndiaGeocoderErrorDomain: Swift.String
+public let defaultSDKKey: Swift.String?
+public let defaultRestKey: Swift.String?
+public let defaultAtlasClientId: Swift.String?
+public let defaultAtlasClientSecret: Swift.String?
+public let defaultAtlasGrantType: Swift.String?
+extension UIDevice {
+  public static let modelName: Swift.String
+}
+public class Constants {
+  public static var atlasOAuth: MapmyIndiaAPIKit.AtlasOAuth?
+  @objc deinit
+}
+public typealias DistanceAvoidsType = MapmyIndiaAPIKit.MMIDistanceAvoidsType
+@objc(MapmyIndiaPlaceDetailManager) open class MapmyIndiaPlaceDetailManager : ObjectiveC.NSObject {
+  public typealias CompletionHandler = ([MapmyIndiaAPIKit.MapmyIndiaGeocodedPlacemark]?, Swift.String?, Foundation.NSError?) -> Swift.Void
+  @objc(sharedManager) public static let shared: MapmyIndiaAPIKit.MapmyIndiaPlaceDetailManager
+  @objc public init(restKey: Swift.String?, host: Swift.String?)
+  @objc convenience public init(restKey: Swift.String?)
+  @discardableResult
+  @objc(getPlaceDetailWithOptions:completionHandler:) open func getPlaceDetail(_ options: MapmyIndiaAPIKit.MapmyIndiaPlaceDetailGeocodeOptions, completionHandler: @escaping MapmyIndiaAPIKit.MapmyIndiaPlaceDetailManager.CompletionHandler) -> Foundation.URLSessionDataTask
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc(MapmyIndiaAtlasGeocodePlacemark) open class MapmyIndiaAtlasGeocodePlacemark : MapmyIndiaAPIKit.MapmyIndiaAddressTokens {
+  required public init(from decoder: Swift.Decoder) throws
+  override public func encode(to encoder: Swift.Encoder) throws
+  @objc override dynamic open var hash: Swift.Int {
+    @objc get
+  }
+  @objc open var formattedAddress: Swift.String?
+  @objc open var eLoc: Swift.String?
+  @objc open var latitude: Foundation.NSNumber?
+  @objc open var longitude: Foundation.NSNumber?
+  @objc open var geocodeLevel: Swift.String?
+  @objc deinit
+}
+@objc(MapmyIndiaAtlasGeocodeAPIResponse) open class MapmyIndiaAtlasGeocodeAPIResponse : ObjectiveC.NSObject, Swift.Codable {
+  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  @objc override dynamic open var hash: Swift.Int {
+    @objc get
+  }
+  @objc open var placemarks: [MapmyIndiaAPIKit.MapmyIndiaAtlasGeocodePlacemark]?
+  @objc override dynamic public init()
+  @objc deinit
+}
+public class ASN1Object : Swift.CustomStringConvertible {
+  public var rawValue: Foundation.Data?
+  public var value: Any?
+  public var identifier: MapmyIndiaAPIKit.ASN1Identifier?
+  public func sub(_ index: Swift.Int) -> MapmyIndiaAPIKit.ASN1Object?
+  public func subCount() -> Swift.Int
+  public func findOid(_ oid: Swift.String) -> MapmyIndiaAPIKit.ASN1Object?
+  public var description: Swift.String {
+    get
+  }
+  @objc deinit
+}
+@objc(MapmyIndiaGeocodeManager) open class MapmyIndiaGeocodeManager : ObjectiveC.NSObject {
+  public typealias CompletionHandler = ([MapmyIndiaAPIKit.MapmyIndiaGeocodedPlacemark]?, Swift.String?, Foundation.NSError?) -> Swift.Void
+  @objc(sharedManager) public static let shared: MapmyIndiaAPIKit.MapmyIndiaGeocodeManager
+  @objc public init(restKey: Swift.String?, host: Swift.String?)
+  @objc convenience public init(restKey: Swift.String?)
+  @discardableResult
+  @objc(geocodeWithOptions:completionHandler:) open func geocode(_ options: MapmyIndiaAPIKit.MapmyIndiaForwardGeocodeOptions, completionHandler: @escaping MapmyIndiaAPIKit.MapmyIndiaGeocodeManager.CompletionHandler) -> Foundation.URLSessionDataTask
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc(MapmyIndiaTripResult) open class MapmyIndiaTripResult : ObjectiveC.NSObject, Swift.Codable {
+  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  @objc override dynamic open var hash: Swift.Int {
+    @objc get
+  }
+  @objc open var status: Foundation.NSNumber?
+  @objc open var alternatives: [MapmyIndiaAPIKit.MapmyIndiaTrip]?
+  @objc open var trips: [MapmyIndiaAPIKit.MapmyIndiaTrip]?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc(MapmyIndiaTrip) open class MapmyIndiaTrip : MapmyIndiaAPIKit.MapmyIndiaRouteTrip {
+  required public init(from decoder: Swift.Decoder) throws
+  @objc deinit
+}
+@objc(MapmyIndiaRouteTrip) open class MapmyIndiaRouteTrip : ObjectiveC.NSObject, Swift.Codable {
+  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  @objc override dynamic open var hash: Swift.Int {
+    @objc get
+  }
+  @objc open var advices: [MapmyIndiaAPIKit.MapmyIndiaTripAdvice]?
+  @objc open var duration: Foundation.NSNumber?
+  @objc open var length: Foundation.NSNumber?
+  @objc open var status: Foundation.NSNumber?
+  @objc open var pts: Swift.String?
+  @objc open var durationFormatted: Swift.String? {
+    @objc get
+  }
+  @objc open var coordinates: [CoreLocation.CLLocationCoordinate2D]? {
+    @objc get
+  }
+  @objc open var locations: [CoreLocation.CLLocation]? {
+    @objc get
+  }
+  @objc open var coordinateCount: Swift.UInt {
+    @objc get
+  }
+  @objc open func getCoordinates(_ coordinates: Swift.UnsafeMutablePointer<CoreLocation.CLLocationCoordinate2D>)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc(MapmyIndiaTripAdvice) open class MapmyIndiaTripAdvice : ObjectiveC.NSObject, Swift.Codable {
+  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  @objc override dynamic open var hash: Swift.Int {
+    @objc get
+  }
+  @objc open var exitNR: Foundation.NSNumber?
+  @objc open var iconId: Foundation.NSNumber?
+  @objc open var meters: Foundation.NSNumber?
+  @objc open var point: MapmyIndiaAPIKit.MapmyIndiaTripAdvicePoint?
+  @objc open var seconds: Foundation.NSNumber?
+  @objc open var text: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc(MapmyIndiaTripAdvicePoint) open class MapmyIndiaTripAdvicePoint : ObjectiveC.NSObject, Swift.Codable {
+  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  @objc override dynamic open var hash: Swift.Int {
+    @objc get
+  }
+  @objc open var latitude: Foundation.NSNumber?
+  @objc open var longitude: Foundation.NSNumber?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc(MapmyIndiaSuggestion) open class MapmyIndiaSuggestion : ObjectiveC.NSObject, Swift.Codable {
+  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  @objc override dynamic open var hash: Swift.Int {
+    @objc get
+  }
+  @objc open var type: Swift.String?
+  @objc open var typeX: Foundation.NSNumber?
+  @objc open var placeAddress: Swift.String?
+  @objc open var latitude: Foundation.NSNumber?
+  @objc open var longitude: Foundation.NSNumber?
+  @objc open var eLoc: Swift.String?
+  open var entryLatitude: Swift.Double?
+  open var entryLongitude: Swift.Double?
+  @objc open var placeName: Swift.String?
+  @objc open var orderIndex: Foundation.NSNumber?
+  @objc open var distance: Foundation.NSNumber?
+  @objc open var email: Swift.String?
+  @objc open var keywords: [Swift.String]?
+  @objc open var landlineNo: Swift.String?
+  @objc open var mobileNo: Swift.String?
+  @objc open var addressTokens: MapmyIndiaAPIKit.MapmyIndiaAddressTokens?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc(MapmyIndiaAtlasSuggestion) open class MapmyIndiaAtlasSuggestion : MapmyIndiaAPIKit.MapmyIndiaSuggestion {
+  required public init(from decoder: Swift.Decoder) throws
+  @objc deinit
+}
+@objc(MapmyIndiaAddressTokens) open class MapmyIndiaAddressTokens : ObjectiveC.NSObject, Swift.Codable {
+  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  @objc override dynamic open var hash: Swift.Int {
+    @objc get
+  }
+  @objc open var houseNumber: Swift.String?
+  @objc open var houseName: Swift.String?
+  @objc open var poi: Swift.String?
+  @objc open var street: Swift.String?
+  @objc open var subSubLocality: Swift.String?
+  @objc open var subLocality: Swift.String?
+  @objc open var locality: Swift.String?
+  @objc open var village: Swift.String?
+  @objc open var district: Swift.String?
+  @objc open var subDistrict: Swift.String?
+  @objc open var city: Swift.String?
+  @objc open var state: Swift.String?
+  @objc open var pincode: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc(MapmyIndiaDrivingDistanceMatrix) open class MapmyIndiaDrivingDistanceMatrix : ObjectiveC.NSObject, Swift.Codable {
+  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  @objc override dynamic open var hash: Swift.Int {
+    @objc get
+  }
+  @objc open var durationsAPI: [[Foundation.NSNumber]]?
+  @objc open var distancesAPI: [[Foundation.NSNumber]]?
+  @objc open var code: Swift.String?
+  @objc open var durations: [[Foundation.NSNumber]]? {
+    @objc get
+  }
+  @objc open var distances: [[Foundation.NSNumber]]? {
+    @objc get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc(MapmyIndiaDrivingDistanceMatrixResponse) open class MapmyIndiaDrivingDistanceMatrixResponse : ObjectiveC.NSObject, Swift.Codable {
+  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  @objc open var responseCode: Foundation.NSNumber?
+  @objc open var version: Swift.String?
+  @objc open var results: MapmyIndiaAPIKit.MapmyIndiaDrivingDistanceMatrixResults?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc(MapmyIndiaDrivingDistanceMatrixResults) open class MapmyIndiaDrivingDistanceMatrixResults : MapmyIndiaAPIKit.MapmyIndiaDrivingDistanceMatrix {
+  required public init(from decoder: Swift.Decoder) throws
+  @objc deinit
+}
+@objc(MapmyIndiaDrivingDistanceManager) open class MapmyIndiaDrivingDistanceManager : ObjectiveC.NSObject {
+  public typealias CompletionHandler = ([MapmyIndiaAPIKit.MapmyIndiaDrivingDistancePlacemark]?, Swift.String?, Foundation.NSError?) -> Swift.Void
+  @objc(sharedManager) public static let shared: MapmyIndiaAPIKit.MapmyIndiaDrivingDistanceManager
+  @objc public init(restKey: Swift.String?, host: Swift.String?)
+  @objc convenience public init(restKey: Swift.String?)
+  @discardableResult
+  @objc(getResultWithOptions:completionHandler:) open func getResult(_ options: MapmyIndiaAPIKit.MapmyIndiaDrivingDistanceOptions, completionHandler: @escaping MapmyIndiaAPIKit.MapmyIndiaDrivingDistanceManager.CompletionHandler) -> Foundation.URLSessionDataTask
+  @objc open func urlForGeocoding(_ options: MapmyIndiaAPIKit.MapmyIndiaDrivingDistanceOptions) -> Foundation.URL
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc(MMIAtlasManager) open class MMIAtlasManager : ObjectiveC.NSObject {
+  public typealias CompletionHandler = (Swift.Bool, Foundation.NSError?) -> Swift.Void
+  @objc(sharedManager) public static let shared: MapmyIndiaAPIKit.MMIAtlasManager
+  @objc public init(SDKKey: Swift.String?, clientId: Swift.String?, clientSecret: Swift.String?, grantType: Swift.String?)
+  @objc convenience public init(SDKKey: Swift.String?)
+  @objc(getResultForVectoKey:) open func getResultForVectoKey(completionHandler: @escaping MapmyIndiaAPIKit.MMIAtlasManager.CompletionHandler)
+  @objc(saveVectorMapPublicKey:) open func saveVectorMapPublicKey(_ vectorKeys: MapmyIndiaAPIKit.AtlasVectorKey?)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc(MapmyIndiaAutoSuggestManager) open class MapmyIndiaAutoSuggestManager : ObjectiveC.NSObject {
+  public typealias CompletionHandler = ([MapmyIndiaAPIKit.MapmyIndiaAtlasSuggestion]?, Foundation.NSError?) -> Swift.Void
+  @objc(sharedManager) public static let shared: MapmyIndiaAPIKit.MapmyIndiaAutoSuggestManager
+  @objc public init(restKey: Swift.String?, clientId: Swift.String?, clientSecret: Swift.String?, grantType: Swift.String?)
+  @objc convenience public init(restKey: Swift.String?)
+  @discardableResult
+  @objc(getAutoSuggestionsWithOptions:completionHandler:) open func getAutoSuggestions(_ options: MapmyIndiaAPIKit.MapmyIndiaAutoSearchAtlasOptions, completionHandler: @escaping MapmyIndiaAPIKit.MapmyIndiaAutoSuggestManager.CompletionHandler) -> Foundation.URLSessionDataTask
+  @objc override dynamic public init()
+  @objc deinit
+}
+public typealias DistanceRouteType = MapmyIndiaAPIKit.MMIDistanceRouteType
+@objc(MBAtlasVectorKey) open class AtlasVectorKey : ObjectiveC.NSObject, Swift.Codable {
+  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  @objc override dynamic open var hash: Swift.Int {
+    @objc get
+  }
+  @objc open var publicKey: Swift.String?
+  @objc open var expiresOn: Foundation.NSNumber?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc(MapmyIndiaNearByManager) open class MapmyIndiaNearByManager : ObjectiveC.NSObject {
+  public typealias CompletionHandler = ([MapmyIndiaAPIKit.MapmyIndiaAtlasSuggestion]?, Foundation.NSError?) -> Swift.Void
+  @objc(sharedManager) public static let shared: MapmyIndiaAPIKit.MapmyIndiaNearByManager
+  @objc public init(restKey: Swift.String?, clientId: Swift.String?, clientSecret: Swift.String?, grantType: Swift.String?)
+  @objc convenience public init(restKey: Swift.String?)
+  @discardableResult
+  @objc(getNearBySuggestionsWithOptions:completionHandler:) open func getNearBySuggestions(_ options: MapmyIndiaAPIKit.MapmyIndiaNearbyAtlasOptions, completionHandler: @escaping MapmyIndiaAPIKit.MapmyIndiaNearByManager.CompletionHandler) -> Foundation.URLSessionDataTask
+  @objc override dynamic public init()
+  @objc deinit
+}
+public class ASN1DERDecoder {
+  public static func decode(data: Foundation.Data) throws -> [MapmyIndiaAPIKit.ASN1Object]
+  @objc deinit
+}
+public class ASN1Identifier : Swift.CustomStringConvertible {
+  public enum Class : Swift.UInt8 {
+    case universal
+    case application
+    case contextSpecific
+    case `private`
+    public typealias RawValue = Swift.UInt8
+    public init?(rawValue: Swift.UInt8)
+    public var rawValue: Swift.UInt8 {
+      get
+    }
+  }
+  public enum TagNumber : Swift.UInt8 {
+    case endOfContent
+    case boolean
+    case integer
+    case bitString
+    case octetString
+    case null
+    case objectIdentifier
+    case objectDescriptor
+    case external
+    case read
+    case enumerated
+    case embeddedPdv
+    case utf8String
+    case relativeOid
+    case sequence
+    case set
+    case numericString
+    case printableString
+    case t61String
+    case videotexString
+    case ia5String
+    case utcTime
+    case generalizedTime
+    case graphicString
+    case visibleString
+    case generalString
+    case universalString
+    case characterString
+    case bmpString
+    public typealias RawValue = Swift.UInt8
+    public init?(rawValue: Swift.UInt8)
+    public var rawValue: Swift.UInt8 {
+      get
+    }
+  }
+  public func typeClass() -> MapmyIndiaAPIKit.ASN1Identifier.Class
+  public func isPrimitive() -> Swift.Bool
+  public func isConstructed() -> Swift.Bool
+  public func tagNumber() -> MapmyIndiaAPIKit.ASN1Identifier.TagNumber
+  public var description: Swift.String {
+    get
+  }
+  @objc deinit
+}
+@objc(MapmyIndiaSearchFilter) open class MapmyIndiaSearchFilter : ObjectiveC.NSObject {
+  @objc deinit
+}
+@objc(MapmyIndiaElocFilter) open class MapmyIndiaElocFilter : MapmyIndiaAPIKit.MapmyIndiaSearchFilter {
+  @objc convenience public init(placeId: Swift.String)
+  @objc deinit
+}
+@objc(MapmyIndiaBoundsFilter) open class MapmyIndiaBoundsFilter : MapmyIndiaAPIKit.MapmyIndiaSearchFilter {
+  @objc convenience public init(bounds: MapmyIndiaAPIKit.MapmyIndiaRectangularRegion)
+  @objc deinit
+}
+public class X509Certificate : Swift.CustomStringConvertible {
+  public init(data: Foundation.Data) throws
+  public var description: Swift.String {
+    get
+  }
+  public func checkValidity(_ date: Foundation.Date = Date()) -> Swift.Bool
+  public var version: Swift.Int? {
+    get
+  }
+  public var serialNumber: Foundation.Data? {
+    get
+  }
+  public var issuerDistinguishedName: Swift.String? {
+    get
+  }
+  public var issuerOIDs: [Swift.String] {
+    get
+  }
+  public func issuer(oid: Swift.String) -> Swift.String?
+  public var subjectDistinguishedName: Swift.String? {
+    get
+  }
+  public var subjectOIDs: [Swift.String] {
+    get
+  }
+  public func subject(oid: Swift.String) -> Swift.String?
+  public var notBefore: Foundation.Date? {
+    get
+  }
+  public var notAfter: Foundation.Date? {
+    get
+  }
+  public var signature: Foundation.Data? {
+    get
+  }
+  public var sigAlgName: Swift.String? {
+    get
+  }
+  public var sigAlgOID: Swift.String? {
+    get
+  }
+  public var sigAlgParams: Foundation.Data? {
+    get
+  }
+  public var keyUsage: [Swift.Bool] {
+    get
+  }
+  public var extendedKeyUsage: [Swift.String] {
+    get
+  }
+  public var subjectAlternativeNames: [Swift.String] {
+    get
+  }
+  public var issuerAlternativeNames: [Swift.String] {
+    get
+  }
+  public var publicKey: MapmyIndiaAPIKit.PublicKey? {
+    get
+  }
+  public var criticalExtensionOIDs: [Swift.String] {
+    get
+  }
+  public var nonCriticalExtensionOIDs: [Swift.String] {
+    get
+  }
+  public func extensionObject(oid: Swift.String) -> MapmyIndiaAPIKit.X509Extension?
+  @objc deinit
+}
+public class PublicKey {
+  public var algOid: Swift.String? {
+    get
+  }
+  public var algName: Swift.String? {
+    get
+  }
+  public var algParams: Swift.String? {
+    get
+  }
+  public var key: Foundation.Data? {
+    get
+  }
+  @objc deinit
+}
+public class X509Extension {
+  public var oid: Swift.String? {
+    get
+  }
+  public var name: Swift.String? {
+    get
+  }
+  public var isCritical: Swift.Bool {
+    get
+  }
+  public var value: Any? {
+    get
+  }
+  @objc deinit
+}
+@objc(MapmyIndiaAtlasOptions) open class MapmyIndiaAtlasOptions : ObjectiveC.NSObject {
+  @objc public var maximumResultCount: Swift.UInt
+  @objc open var locale: Foundation.Locale?
+  @objc deinit
+}
+@objc(MapmyIndiaAutoSearchAtlasOptions) open class MapmyIndiaAutoSearchAtlasOptions : MapmyIndiaAPIKit.MapmyIndiaAtlasOptions {
+  @objc open var location: CoreLocation.CLLocation?
+  @objc open var zoom: Foundation.NSNumber?
+  @objc open var includeTokenizeAddress: Swift.Bool
+  @objc open var pod: MapmyIndiaAPIKit.MMIPodTypeIdentifier
+  @objc open var filter: MapmyIndiaAPIKit.MapmyIndiaSearchFilter?
+  @objc convenience public init(query: Swift.String, withRegion: MapmyIndiaAPIKit.MMIRegionTypeIdentifier = MapmyIndiaAccountManager.defaultRegion())
+  @objc deinit
+}
+@objc(MapmyIndiaNearbyAtlasOptions) open class MapmyIndiaNearbyAtlasOptions : MapmyIndiaAPIKit.MapmyIndiaAtlasOptions {
+  @objc open var refLocation: CoreLocation.CLLocation?
+  @objc open var page: Foundation.NSNumber?
+  @objc open var radius: Foundation.NSNumber?
+  @objc open var sort: Swift.String?
+  @objc open var bounds: MapmyIndiaAPIKit.MapmyIndiaRectangularRegion?
+  @objc convenience public init(query: Swift.String, location: CoreLocation.CLLocation, withRegion: MapmyIndiaAPIKit.MMIRegionTypeIdentifier = MapmyIndiaAccountManager.defaultRegion())
+  @objc deinit
+}
+@objc(MapmyIndiaAtlasGeocodeOptions) open class MapmyIndiaAtlasGeocodeOptions : MapmyIndiaAPIKit.MapmyIndiaAtlasOptions {
+  @objc convenience public init(query: Swift.String, withRegion: MapmyIndiaAPIKit.MMIRegionTypeIdentifier = MapmyIndiaAccountManager.defaultRegion())
+  @objc deinit
+}
+@objc(MapmyIndiaOAuthAtlasOptions) public class MapmyIndiaOAuthAtlasOptions : ObjectiveC.NSObject {
+  @objc open var grantType: Swift.String?
+  @objc open var clientId: Swift.String?
+  @objc open var clientSecret: Swift.String?
+  @objc convenience public init(grantType: Swift.String, clientId: Swift.String, clientSecret: Swift.String)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc(MapmyIndiaReverseGeocodeManager) open class MapmyIndiaReverseGeocodeManager : ObjectiveC.NSObject {
+  public typealias CompletionHandler = ([MapmyIndiaAPIKit.MapmyIndiaGeocodedPlacemark]?, Swift.String?, Foundation.NSError?) -> Swift.Void
+  @objc(sharedManager) public static let shared: MapmyIndiaAPIKit.MapmyIndiaReverseGeocodeManager
+  @objc public init(restKey: Swift.String?, host: Swift.String?)
+  @objc convenience public init(restKey: Swift.String?)
+  @discardableResult
+  @objc(reverseGeocodeWithOptions:completionHandler:) open func reverseGeocode(_ options: MapmyIndiaAPIKit.MapmyIndiaReverseGeocodeOptions, completionHandler: @escaping MapmyIndiaAPIKit.MapmyIndiaReverseGeocodeManager.CompletionHandler) -> Foundation.URLSessionDataTask
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension MapmyIndiaAPIKit.KeychainManagerAccessOptions : Swift.Equatable {}
+extension MapmyIndiaAPIKit.KeychainManagerAccessOptions : Swift.Hashable {}
+extension MapmyIndiaAPIKit.ASN1Identifier.Class : Swift.Hashable {}
+extension MapmyIndiaAPIKit.ASN1Identifier.Class : Swift.RawRepresentable {}
+extension MapmyIndiaAPIKit.ASN1Identifier.TagNumber : Swift.Hashable {}
+extension MapmyIndiaAPIKit.ASN1Identifier.TagNumber : Swift.RawRepresentable {}

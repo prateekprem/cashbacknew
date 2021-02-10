@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="120" id="ddn-4c-ysY" customClass="SFSearchBarTableCell" customModule="jarvis_storefront_ios" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ddn-4c-ysY" id="BCa-8z-ccz">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tyN-Ql-gCf">
+                        <rect key="frame" x="16" y="15" width="51.5" height="24"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CWG-Ac-Hfy">
+                        <rect key="frame" x="16" y="79" width="16" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="Xqg-TJ-ypE"/>
+                            <constraint firstAttribute="width" constant="16" id="elM-Ys-Ga3"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HaU-Wo-UaC">
+                        <rect key="frame" x="42" y="78" width="40" height="18"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <color key="textColor" red="0.49803921568627452" green="0.51372549019607838" blue="0.52549019607843139" alpha="1" colorSpace="deviceRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZwC-P9-ClM">
+                        <rect key="frame" x="16" y="109" width="382" height="1"/>
+                        <color key="backgroundColor" red="0.49803921568627452" green="0.51372549019607838" blue="0.52549019607843139" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="2e1-Lh-hgC"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c6O-6u-GTZ">
+                        <rect key="frame" x="0.0" y="65" width="414" height="50"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="jF8-sn-sre"/>
+                        </constraints>
+                        <connections>
+                            <action selector="searchClicked:" destination="ddn-4c-ysY" eventType="touchUpInside" id="I9B-FM-6Wh"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ZwC-P9-ClM" firstAttribute="leading" secondItem="BCa-8z-ccz" secondAttribute="leading" constant="16" id="BRE-O7-4TD"/>
+                    <constraint firstItem="HaU-Wo-UaC" firstAttribute="top" secondItem="tyN-Ql-gCf" secondAttribute="bottom" constant="39" id="Cwu-y5-zAz"/>
+                    <constraint firstItem="HaU-Wo-UaC" firstAttribute="centerY" secondItem="CWG-Ac-Hfy" secondAttribute="centerY" id="KCG-7S-bab"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="tyN-Ql-gCf" secondAttribute="trailing" constant="15" id="Lq7-sZ-HAw"/>
+                    <constraint firstItem="c6O-6u-GTZ" firstAttribute="leading" secondItem="BCa-8z-ccz" secondAttribute="leading" id="R1G-aq-ZDv"/>
+                    <constraint firstItem="ZwC-P9-ClM" firstAttribute="top" secondItem="CWG-Ac-Hfy" secondAttribute="bottom" constant="14" id="R6z-VW-p5H"/>
+                    <constraint firstItem="tyN-Ql-gCf" firstAttribute="top" secondItem="BCa-8z-ccz" secondAttribute="top" constant="15" id="UdG-Dc-gYs"/>
+                    <constraint firstAttribute="bottom" secondItem="c6O-6u-GTZ" secondAttribute="bottom" constant="5" id="XJq-fm-1CI"/>
+                    <constraint firstItem="CWG-Ac-Hfy" firstAttribute="leading" secondItem="BCa-8z-ccz" secondAttribute="leading" constant="16" id="cN9-vv-V4n"/>
+                    <constraint firstItem="tyN-Ql-gCf" firstAttribute="leading" secondItem="BCa-8z-ccz" secondAttribute="leading" constant="16" id="dBo-bv-e8R"/>
+                    <constraint firstAttribute="trailing" secondItem="c6O-6u-GTZ" secondAttribute="trailing" id="dHp-OI-kea"/>
+                    <constraint firstAttribute="bottom" secondItem="ZwC-P9-ClM" secondAttribute="bottom" constant="10" id="exy-Xq-2mI"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="HaU-Wo-UaC" secondAttribute="trailing" constant="15" id="gQp-g6-IPT"/>
+                    <constraint firstItem="HaU-Wo-UaC" firstAttribute="leading" secondItem="CWG-Ac-Hfy" secondAttribute="trailing" constant="10" id="vVy-V7-kxW"/>
+                    <constraint firstAttribute="trailing" secondItem="ZwC-P9-ClM" secondAttribute="trailing" constant="16" id="wh3-f6-g71"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iconImageView" destination="CWG-Ac-Hfy" id="oy8-PA-92B"/>
+                <outlet property="subtitleLabel" destination="HaU-Wo-UaC" id="VgS-jg-qqS"/>
+                <outlet property="titleLabel" destination="tyN-Ql-gCf" id="Nen-Mr-2Fk"/>
+            </connections>
+            <point key="canvasLocation" x="250.72463768115944" y="103.79464285714285"/>
+        </tableViewCell>
+    </objects>
+</document>

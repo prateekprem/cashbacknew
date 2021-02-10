@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FSDealsCollCell" id="ZIi-IT-o7b" customClass="FSDealsCollCell" customModule="jarvis_storefront_ios" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="145" height="190"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="145" height="190"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ud1-Ik-V7O">
+                        <rect key="frame" x="0.0" y="0.0" width="145" height="190"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CVB-z5-2nF">
+                                <rect key="frame" x="0.0" y="0.0" width="145" height="145"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="145" id="2yh-CO-LFe"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <real key="value" value="0.29999999999999999"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cafe Coffee Day" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xoR-Ar-dEM">
+                                <rect key="frame" x="0.0" y="160" width="140" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="kaQ-Dt-zhf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dm8-Cl-E2h">
+                                <rect key="frame" x="10" y="115" width="40" height="40"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DefaultLogo" translatesAutoresizingMaskIntoConstraints="NO" id="gHN-mZ-CfX">
+                                        <rect key="frame" x="5" y="5" width="30" height="30"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="gHN-mZ-CfX" secondAttribute="bottom" constant="5" id="9eY-1c-GZ5"/>
+                                    <constraint firstItem="gHN-mZ-CfX" firstAttribute="centerY" secondItem="Dm8-Cl-E2h" secondAttribute="centerY" id="9vg-Sp-G0b"/>
+                                    <constraint firstAttribute="height" constant="40" id="Nqp-Qm-hJo"/>
+                                    <constraint firstAttribute="width" constant="40" id="Ttj-co-jMl"/>
+                                    <constraint firstItem="gHN-mZ-CfX" firstAttribute="leading" secondItem="Dm8-Cl-E2h" secondAttribute="leading" constant="5" id="ZQF-K9-dHc"/>
+                                    <constraint firstItem="gHN-mZ-CfX" firstAttribute="top" secondItem="Dm8-Cl-E2h" secondAttribute="top" constant="5" id="npp-z7-NZ4"/>
+                                    <constraint firstAttribute="trailing" secondItem="gHN-mZ-CfX" secondAttribute="trailing" constant="5" id="szv-cp-e7v"/>
+                                    <constraint firstItem="gHN-mZ-CfX" firstAttribute="centerX" secondItem="Dm8-Cl-E2h" secondAttribute="centerX" id="w9m-PM-rLm"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <real key="value" value="0.29999999999999999"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Dm8-Cl-E2h" firstAttribute="centerY" secondItem="CVB-z5-2nF" secondAttribute="bottom" constant="-10" id="LGy-tq-n71"/>
+                            <constraint firstItem="xoR-Ar-dEM" firstAttribute="leading" secondItem="ud1-Ik-V7O" secondAttribute="leading" id="QnA-iJ-MXa"/>
+                            <constraint firstItem="Dm8-Cl-E2h" firstAttribute="leading" secondItem="ud1-Ik-V7O" secondAttribute="leading" constant="10" id="Sya-qC-H2f"/>
+                            <constraint firstItem="CVB-z5-2nF" firstAttribute="leading" secondItem="ud1-Ik-V7O" secondAttribute="leading" id="UCe-FC-1ht"/>
+                            <constraint firstItem="CVB-z5-2nF" firstAttribute="top" secondItem="ud1-Ik-V7O" secondAttribute="top" id="ZoE-4N-tAJ"/>
+                            <constraint firstItem="xoR-Ar-dEM" firstAttribute="top" secondItem="CVB-z5-2nF" secondAttribute="bottom" constant="15" id="av4-Bz-SWl"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="xoR-Ar-dEM" secondAttribute="bottom" constant="5" id="fOu-Oz-Zi5"/>
+                            <constraint firstAttribute="trailing" secondItem="CVB-z5-2nF" secondAttribute="trailing" id="n4v-dl-nto"/>
+                            <constraint firstAttribute="trailing" secondItem="xoR-Ar-dEM" secondAttribute="trailing" constant="5" id="rN5-D9-M20"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ud1-Ik-V7O" secondAttribute="trailing" id="3NU-pK-HH7"/>
+                <constraint firstItem="ud1-Ik-V7O" firstAttribute="leading" secondItem="ZIi-IT-o7b" secondAttribute="leading" id="ONL-py-Cno"/>
+                <constraint firstAttribute="bottom" secondItem="ud1-Ik-V7O" secondAttribute="bottom" id="Pmk-nk-wpf"/>
+                <constraint firstItem="ud1-Ik-V7O" firstAttribute="top" secondItem="ZIi-IT-o7b" secondAttribute="top" id="uiA-6O-hFq"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Be6-ja-pLu"/>
+            <size key="customSize" width="247" height="280"/>
+            <connections>
+                <outlet property="brandImage" destination="gHN-mZ-CfX" id="4k3-a2-vKt"/>
+                <outlet property="brandView" destination="Dm8-Cl-E2h" id="JM5-5F-cef"/>
+                <outlet property="dealImage" destination="CVB-z5-2nF" id="rw9-Ba-eyy"/>
+                <outlet property="dealName" destination="xoR-Ar-dEM" id="OZf-H1-CKh"/>
+            </connections>
+            <point key="canvasLocation" x="96.799999999999997" y="235.68215892053973"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="DefaultLogo" width="65" height="65"/>
+    </resources>
+</document>

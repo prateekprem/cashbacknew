@@ -1,0 +1,223 @@
+"jr_ac_sessionTimedOut" = "Session Timed Out";
+"jr_ac_sessionExpiredMessage" = "Your current session has expired. Don't worry, just login again to continue using Paytm.";
+"jr_ac_termsNConditions" = "Terms and Conditions";
+"jr_ac_noInternetMsg" = "We can not detect any internet connectivity. Please check your internet connection and try again.";
+"jr_ac_no_one_will_ever_call_back" = "No one from Paytm will ever call you and ask you to change your password. Never share your card number, CVV, PIN, OTP or Password with anyone, even if caller claims to be a Paytm employee. Using these details anyone can take away all your money from your Paytm account.";
+"jr_ac_still_wish_to_reset_password" = "If you still wish to reset your password, dial the number below from your registered mobile number and press 1.";
+"jr_ac_loginToADiffActBtnTitle" = "Login to a different account";
+"jr_ac_tryReconnecting" = "Something went wrong, please try reconnecting";
+"jr_ac_facingTechnicalIssue" = "We are facing some technical issues. We will have it resolved shortly so please try again after some time. If possible, do send a screenshot to error@paytm.com.";
+"jr_ac_please_enter_new_password" = "Please enter new password";
+"jr_ac_enter_confirm_password" = "Please enter confirm password";
+
+"jr_ac_ok" = "Ok";
+"jr_ac_cancel" = "Cancel";
+"jr_ac_pleasePercent" = "Please %@";
+"jr_ac_noIntConnectionDetailMsg" = "Sorry,no internet connectivity detected.\n Please reconnect and try again";
+"jr_ac_errors" = "Error";
+"jr_ac_somethingWentWrongWithExclaimation" = "Something went wrong!";
+"jr_ac_dataDisplayError" = "Data display error";
+"jr_ac_important" = "Important";
+"jr_ac_logOut" = "LogOut";
+
+"jr_ac_noInternetTitle" = "No Internet Connection";
+"jr_ac_unableToDetectInternetConnectivity" = "We can not detect any internet connectivity. Please check your internet connection and try again.";
+"jr_ac_retry" = "Retry";
+"jr_Passb_ErrorRequesst" = "We could not get the requested details. Please try again.";
+
+
+// used in cashback-----
+"jr_pay_participate" = "Participate";
+"jr_pay_offerExpired" = "Offer Expired";
+"jr_pay_offerExpiredOn" = "Offer Expired on %@";
+"jr_pay_activateOffer" = "Activate Offer";
+"jr_pay_participated" = "Participated";
+"jr_pay_activatedOffer" = "Activated";
+"jr_pay_offerterms" = "Offer Terms & Conditions";
+"jr_pay_congratulations" = "Congratulations!";
+"jr_pay_transLeft" = "%d left";
+"jr_pay_offerValid" = "Offer valid till %@";
+"jr_pay_days" = "%d days";
+"jr_pay_day" = "%d day";
+"jr_pay_hr" = "%d hr";
+"jr_pay_hrs" = "%d hrs";
+"jr_pay_min" = "%d minute";
+"jr_pay_mins" = "%d minutes";
+"jr_pay_sec" = "%d sec";
+"jr_pay_secs" = "%d secs";
+"jr_pay_fetchingcashback" = "Fetching your cashback offer details";
+"jr_pay_noNewOffer" = "There are no cashback offers for you";
+"jr_pay_noMyOffer" = "You have no active cashback offer";
+"jr_pay_timeleft" = "%@ left to expire";
+
+"jr_mp_how_redeem" = "How to Redeem";
+"jr_accPay_pmntRcvd" = "Payment Received";
+"jr_accPay_VwAll" = "View All";
+"jr_rc_Done" = "Done";
+"jr_rc_activityLoader" = "Please wait while we are fetching details";
+"jr_o2o_movie_cancel_tickets" = "Cancel Ticket(s)";
+"jr_kyc_contactus" = "Contact us";
+"jr_kyc_please_enter_valid_mobile_number" = "Please enter valid mobile number";
+"jr_kyc_enter_mobile_number" = "Please enter mobile number";
+
+"Details" = "Details";
+
+//MARK: ============================ Cashback  ============================
+"jr_co_vc_copied" = "Voucher code copied";
+"jr_co_vc_cancel" = "Cancel";
+"jr_co_vc_merchant" = "Business";
+"jr_co_vc_customer" = "Personal";
+"jr_co_vc_options_to_select" = "Select account";
+"jr_co_default_msg" = "We are unable to process your request right now.";
+"jr_co_default_msg_title" = "Please try again later";
+"jr_co_my_offers" = "My Offers";
+"jr_co_new_offers" = "New Offers";
+"jr_co_cashback_earned" = "Cashback Earned";
+"jr_co_cashback_pending" = "Cashback Pending";
+"jr_co_cashback_landing_title" = "SELECT CATEGORY TO SEE OFFERS";
+"jr_co_no_offer_category" = "You have no new offers in this category";
+"jr_co_Offer_detail" = "Offer Details";
+"jr_co_View_More" = "View More";
+"jr_co_no_transaction_stg_1" = "You have not done any transaction against this offer";
+"jr_co_no_transaction_stg_2" = "You have not done any transaction against this stage";
+"jr_co_quit_offer_btn" = "Yes, I want to opt out";
+"jr_co_quit_offer_title" = "Are you sure you want to quit this offer";
+"jr_co_userOptOut" = "Opt out of offer";
+"jr_co_userOptedOut" = "Opted out of offer";
+"jr_co_quit_game_message" = "You will not be able to earn a higher reward if you opt out at this stage.";
+"jr_cashback_myvoucher_subtitle" = "Get Paytm Cashback";
+"jr_cashback_myvoucher_title" = "My Vouchers";
+"jr_co_invalid_voucher_msg_title" = "Invalid voucher code";
+"jr_co_scratch_now_text" = "Scratch Now";
+"jr_co_animation_congrats0_text" = "Congratulations, You Won";
+"jr_co_animation_congrats1_text" = "Congratulations, You have a";
+"jr_co_scratch_card_text" = "Scratch Card";
+"jr_co_surprise_offer_text" = "Surprise Offer";
+
+//----Cashback------New
+"jr_CB_ttlYourVoucherAndDeal" = "Your Vouchers &\nDeals";
+"jr_CB_ttlTotalCashbackWon" = "Total Cashback You Won";
+"jr_CB_ttlTotalPointWon" = "You have won Paytm First Points";
+"jr_CB_ttlAllScratchCard" = "All Scratch Cards";
+"jr_CB_ttlUnlockCards" = "Unlock these cards";
+
+"jr_CB_emptyTextVouchers" = "You don't have any active Vouchers at the moment";
+"jr_CB_emptyTextDeals" = "You don't have any active deals at the moment";
+"jr_CB_emptyTextCashbacks" = "You've not earned any cashback yet";
+"jr_CB_emptyTextPoints" = "You've not earned any points yet";
+"jr_CB_emptyTextScratchCards" = "You don't have any active scratch cards at the moment";
+"jr_CB_emptyTextCategories" = "Sorry! We don't have any offers in this category for you";
+
+
+"jr_CB_ShareCashback" = "I have won Rs.%@ cashback for using Paytm! Check how much you have won %@ #PaytmKaro";
+"jr_CB_SharePoint" = "I have won %@ points for using Paytm! Check how much you have won %@ #PaytmKaro";
+"jr_CB_SharePointPostTrans" = "I just won %@ %@ for this amazing offer on Paytm: %@ - %@. Checkout the best offers for you here: %@. #PaytmKaro";
+"jr_CB_GridPointsDeeplink" = "View Points Balance and Redeem  >";
+
+"jr_CB_MerchantVoucherEmptyText" = "You have not received any Voucher.\nOnce you do, they will start appearing here.";
+"jr_CB_MerchantOfferEmptyText" = "You do not have any active cashback offers";
+
+"jr_CB_MerchantViewPointTitle" = "View Points Earned";
+"jr_CB_MerchantViewPointSubtitle" = "Hurry up ! See your Rewards";
+
+"jr_CB_StickerBtnTitle" = "View All Stickers";
+
+//MARK: ============================ Paytm Coins  ============================
+"jr_pp_balance" = "Available Points";
+"jr_pp_earn_points" = "Earn Points";
+"jr_pp_redeem_points" = "Redeem Points";
+"jr_pp_know_more" = "Know More";
+"jr_pp_paytm_points" = "PAYTM FIRST POINTS";
+"jr_pp_need_help" = "Need Help?";
+"jr_pp_redeem_coins_limit_msg" = "You need at least %@ points to redeem. To earn more points, pay at any store, send money to your friends, add money in your wallet, do a money transfer or recharge mobile.";
+"jr_pp_okay_got_it" = "Ok Got It!";
+"jr_pp_kdefaultErrorMsg" = "Oops! Some thing went wrong. Please try again later.";
+"jr_pp_kfetchBalanceError" = "Oops! Some thing went wrong, We are not able to fetch your paytm first points balance currently. Please try again later.";
+"jr_pp_kclosingbalance" = "Closing Balance: %@";
+"jr_pc_coins_received" = "Points Received";
+"jr_pc_coins_redeemed" = "Points Redeemed";
+"jr_pc_coins_refunded" = "Points Refunded";
+"jr_pp_order_id" = "Order ID: %@";
+"jr_pc_issued_by" = "Issued by One97 Communications";
+"jr_pc_paytm_coins" = "Paytm First Points";
+"jr_pc_in_your" = "IN YOUR";
+"jr_pc_for" = "FOR";
+"jr_pc_expiry_date" = "Expiry Date: %@";
+"jr_pc_from" = "FROM";
+"jr_pc_paytm" = "Paytm";
+"jr_pc_gift_vocher" = "Gift Voucher";
+"jr_pc_today" = "Today";
+"jr_pc_yesterday" = "Yesterday";
+"jr_pp_redeem_limit_flow_error" = "This feature is not yet available. Please wait for our next app update.";
+
+"jr_pc_rewards_available" = "Rewards available";
+"jr_pc_points" = "POINTS";
+"jr_pc_paytm_gift_vocher" = "Paytm Gift Voucher";
+"jr_pc_view_details" = "View Details";
+"jr_pc_str" = "Swipe to Redeem";
+"jr_pc_view_passbook" = "View Passbook";
+"jr_pc_add_money_msg" = "₹%@ has been added to your Paytm Gift Voucher Balance";
+"jr_pc_you_need" = "You need";
+"jr_pc_not_enough_coins" = "more to avail this rewards";
+"jr_gv_payFromLoyaltyPoints" = "Paytm First Points";
+"jr_gv_payLoyaltyPoints" = "Paytm First Points";
+"jr_pc_gv_description"   = "1. Paytm Gift Voucher can be used to Recharge, pay bills, shop online or pay at any store <br> 2.  Paytm Gift Voucher once purchased, cannot be refunded, transferred to a bank account or any Paytm user.";
+
+
+//------new---
+"jr_CB_YourSticker" = "Your Stickers";
+"jr_CB_YourStickerViewAll" = "Start your collection.\nView All";
+"jr_CB_VoucherNDealTitle" = "Vouchers & Deals";
+"jr_CB_VoucherNDealSubTitle" = "Hotel, Bus, Zomato, Swiggy, movie tickets & more ";
+"jr_CB_UptoString" = "Upto";
+"jr_CB_StickerString" = "Sticker";
+"jr_CB_ViewExpiredOffers" = "View Expired Offers";
+"jr_CB_Offers" = "Offers";
+"jr_CB_MyVoucher" = "My Voucher";
+"jr_CB_Details" = "Details";
+"jr_CB_PaymentDetails" = "Payment Details";
+"jr_CB_TermsConditions" = "Terms & Conditions";
+"jr_CB_ShowMore" = "Show More";
+"jr_CB_ShowLess" = "Show Less";
+"jr_CB_OfferNotFound" = "Offer not found!";
+"jr_CB_CheckOtherOffers" = "Please check out other offers from Cashback Offers section";
+"jr_CB_OfferActivated" = "Offer Activated!";
+"jr_CB_BetterLuck" = "Better Luck Next Time!";
+"jr_CB_SomethingWrong" = "Something went wrong";
+"jr_CB_PleaseTryAgain" = "Please try again";
+"jr_CB_ValidTill" = "Valid till";
+"jr_CB_ValidFrom" = "Valid From ";
+"jr_CB_To" = "to ";
+"jr_CB_Filters" = "Filters";
+"jr_CB_Deal_Voucher_Filters" = "Filter Vouchers & Deals";
+"jr_CB_Active" = "Active";
+"jr_CB_Expire" = "Expired";
+
+
+"jr_CB_ViewVouchers" = "View Vouchers";
+"jr_CB_Vouchers" = "Vouchers";
+"jr_CB_Deals" = "Deals";
+"jr_CB_TotalCashbackWon" = "Total Cashback Won";
+"jr_CB_PaytmFirstPoints" = "Paytm First Points";
+"jr_CB_PINString" = "PIN : ";
+"jr_CB_EarnedFor" = "Earned For";
+"jr_CB_FirstPaymntRecv" = "1st Payment Received";
+"jr_CB_ScratchAndGetCashback" = "Scratch Card and Get Cashback";
+"jr_CB_UnlockTheseCards" = "Unlock these cards";
+
+"jr_CB_CashbackListWonTtl" = "Cashback Won";
+"jr_CB_PointsListTitle" = "Paytm First Points";
+"jr_CB_PointsListSortTitle" = "Points Won";
+"jr_CB_RedeemNow" = "Redeem Now";
+"jr_CB_Pending" = "Pending";
+
+"jr_CB_MoreDetails" = "More Details";
+"jr_CB_VoucherDetailsDescPreText" = "To avail this voucher, use the following voucher code";
+"jr_cb_referral_title" = "";
+"jr_CB_VoucherWonText" = "Voucher won ";
+"jr_CB_StickerStartCollectionText" = "Check Your Collection";
+"jr_CB_VoucherWonForText" = "Voucher won For ";
+"jr_CB_HowtoRedeem"  =  "How to Redeem";
+"jr_CB_YouWon" = "You Won";
+"jr_CB_CopyAndAvail" = "Tap to copy Code & avail Offer";
+

@@ -1,0 +1,819 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		30408D0F24610FC300F7366E /* PBNavEngineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30408D0C24610FC300F7366E /* PBNavEngineVC.swift */; };
+		30D33E7D2435CBCB0029C342 /* CBFlipResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 30D33E7C2435CBCB0029C342 /* CBFlipResponse.json */; };
+		3B12141522AFCBC600A95C23 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3B12141322AFCBC600A95C23 /* Localizable.strings */; };
+		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
+		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
+		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		77A4217524D1517000729365 /* CBReferralInfo.json in Sources */ = {isa = PBXBuildFile; fileRef = 77A4217424D1517000729365 /* CBReferralInfo.json */; };
+		7A08D0D123D82E970051D92C /* CBLanding.json in Resources */ = {isa = PBXBuildFile; fileRef = 7A08D0D023D82E970051D92C /* CBLanding.json */; };
+		7A327C9F24519340009B9E3B /* JRCashbackRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A327C9E24519340009B9E3B /* JRCashbackRouter.swift */; };
+		7A41AFDE24E58D0F0059D841 /* backUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A41AFDD24E58D0F0059D841 /* backUp.storyboard */; };
+		7A5DA21924AC7A6900816A2B /* JRSFViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5DA21824AC7A6900816A2B /* JRSFViewModel.swift */; };
+		7A8FB3FC240FFCF9003C170A /* CBScratchCardBYID_bunch.json in Resources */ = {isa = PBXBuildFile; fileRef = 7A8FB3FB240FFCF9003C170A /* CBScratchCardBYID_bunch.json */; };
+		7A98F64623D086BC001E77FA /* CBLoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A98F63823D086BC001E77FA /* CBLoginManager.swift */; };
+		7A98F64823D086BC001E77FA /* CBHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A98F63B23D086BC001E77FA /* CBHomeViewController.swift */; };
+		7A98F64923D086BC001E77FA /* PostTransactionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A98F63C23D086BC001E77FA /* PostTransactionVC.swift */; };
+		7A98F64A23D086BC001E77FA /* CBHomeViewTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A98F63E23D086BC001E77FA /* CBHomeViewTCell.swift */; };
+		7A98F64C23D086BC001E77FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A98F64123D086BC001E77FA /* AppDelegate.swift */; };
+		7A98F64D23D086BC001E77FA /* JRWServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A98F64323D086BC001E77FA /* JRWServices.swift */; };
+		7A98F64E23D086BC001E77FA /* CBRemoteConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A98F64423D086BC001E77FA /* CBRemoteConfig.swift */; };
+		7A98F65A23D089AC001E77FA /* CBUpdateScratchCard.json in Resources */ = {isa = PBXBuildFile; fileRef = 7A98F65623D089AB001E77FA /* CBUpdateScratchCard.json */; };
+		7A98F65B23D089AC001E77FA /* CBScratchCardBYID.json in Resources */ = {isa = PBXBuildFile; fileRef = 7A98F65723D089AB001E77FA /* CBScratchCardBYID.json */; };
+		7A98F65D23D089AC001E77FA /* CBPostTransMock.json in Resources */ = {isa = PBXBuildFile; fileRef = 7A98F65923D089AB001E77FA /* CBPostTransMock.json */; };
+		7AD0F0D823BDCEC60070DD26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AD0F0D623BDCEC60070DD26 /* Main.storyboard */; };
+		906C5ECAE1DDC70C6F6F84F8 /* Pods_jarvis_cashback_ios_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2785455BA0E3B526F30E94EE /* Pods_jarvis_cashback_ios_Example.framework */; };
+		9E2640B46511C74119A18378 /* Pods_jarvis_cashback_ios_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E57105161D33FC08346E83C /* Pods_jarvis_cashback_ios_Tests.framework */; };
+		B78663F923E3094100E6706D /* CBLandingRewards.json in Resources */ = {isa = PBXBuildFile; fileRef = B78663F823E3094100E6706D /* CBLandingRewards.json */; };
+		B78663FB23E3098000E6706D /* CBLandingRewardScratchCard.json in Resources */ = {isa = PBXBuildFile; fileRef = B78663FA23E3098000E6706D /* CBLandingRewardScratchCard.json */; };
+		B7B1018F23E4582D009D96E8 /* CBLandingVoucher.json in Resources */ = {isa = PBXBuildFile; fileRef = B7B1018E23E4582D009D96E8 /* CBLandingVoucher.json */; };
+		D3D6C093229E4F7B005A89BD /* jarvis-cashback-ios.podspec in Resources */ = {isa = PBXBuildFile; fileRef = D3D6C092229E4F7B005A89BD /* jarvis-cashback-ios.podspec */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		607FACE61AFB9204008FA782 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 607FACCF1AFB9204008FA782;
+			remoteInfo = "jarvis-cashback-ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0AB496F46C3268C640F4551D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		18337142C05C0504688AEAA7 /* Pods-jarvis-cashback-ios_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jarvis-cashback-ios_Tests.debug.xcconfig"; path = "Target Support Files/Pods-jarvis-cashback-ios_Tests/Pods-jarvis-cashback-ios_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		1B45C6E25CEC932239C9C146 /* Pods-jarvis-cashback-ios_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jarvis-cashback-ios_Example.debug.xcconfig"; path = "Target Support Files/Pods-jarvis-cashback-ios_Example/Pods-jarvis-cashback-ios_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		2785455BA0E3B526F30E94EE /* Pods_jarvis_cashback_ios_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_jarvis_cashback_ios_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		30408D0C24610FC300F7366E /* PBNavEngineVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PBNavEngineVC.swift; sourceTree = "<group>"; };
+		30D33E7C2435CBCB0029C342 /* CBFlipResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CBFlipResponse.json; sourceTree = "<group>"; };
+		3B12141422AFCBC600A95C23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		45E1751D258470867549F8EB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		46F96E41F84244EE3300F1C2 /* Pods-jarvis-cashback-ios_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jarvis-cashback-ios_Example.release.xcconfig"; path = "Target Support Files/Pods-jarvis-cashback-ios_Example/Pods-jarvis-cashback-ios_Example.release.xcconfig"; sourceTree = "<group>"; };
+		607FACD01AFB9204008FA782 /* jarvis-cashback-ios_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "jarvis-cashback-ios_Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		607FACE51AFB9204008FA782 /* jarvis-cashback-ios_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "jarvis-cashback-ios_Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		77A4217424D1517000729365 /* CBReferralInfo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CBReferralInfo.json; sourceTree = "<group>"; };
+		7A08D0D023D82E970051D92C /* CBLanding.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CBLanding.json; sourceTree = "<group>"; };
+		7A327C9E24519340009B9E3B /* JRCashbackRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JRCashbackRouter.swift; sourceTree = "<group>"; };
+		7A41AFDD24E58D0F0059D841 /* backUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = backUp.storyboard; sourceTree = "<group>"; };
+		7A5DA21824AC7A6900816A2B /* JRSFViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JRSFViewModel.swift; sourceTree = "<group>"; };
+		7A8FB3FB240FFCF9003C170A /* CBScratchCardBYID_bunch.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CBScratchCardBYID_bunch.json; sourceTree = "<group>"; };
+		7A98F63823D086BC001E77FA /* CBLoginManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBLoginManager.swift; sourceTree = "<group>"; };
+		7A98F63B23D086BC001E77FA /* CBHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBHomeViewController.swift; sourceTree = "<group>"; };
+		7A98F63C23D086BC001E77FA /* PostTransactionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTransactionVC.swift; sourceTree = "<group>"; };
+		7A98F63E23D086BC001E77FA /* CBHomeViewTCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBHomeViewTCell.swift; sourceTree = "<group>"; };
+		7A98F64123D086BC001E77FA /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7A98F64323D086BC001E77FA /* JRWServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JRWServices.swift; sourceTree = "<group>"; };
+		7A98F64423D086BC001E77FA /* CBRemoteConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBRemoteConfig.swift; sourceTree = "<group>"; };
+		7A98F65623D089AB001E77FA /* CBUpdateScratchCard.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CBUpdateScratchCard.json; sourceTree = "<group>"; };
+		7A98F65723D089AB001E77FA /* CBScratchCardBYID.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CBScratchCardBYID.json; sourceTree = "<group>"; };
+		7A98F65923D089AB001E77FA /* CBPostTransMock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CBPostTransMock.json; sourceTree = "<group>"; };
+		7AD0F0D723BDCEC60070DD26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Classes/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8E57105161D33FC08346E83C /* Pods_jarvis_cashback_ios_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_jarvis_cashback_ios_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B78663F823E3094100E6706D /* CBLandingRewards.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CBLandingRewards.json; sourceTree = "<group>"; };
+		B78663FA23E3098000E6706D /* CBLandingRewardScratchCard.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CBLandingRewardScratchCard.json; sourceTree = "<group>"; };
+		B7B1018E23E4582D009D96E8 /* CBLandingVoucher.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CBLandingVoucher.json; sourceTree = "<group>"; };
+		C5782914BA4A636F3DC358C8 /* Pods-jarvis-cashback-ios_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jarvis-cashback-ios_Tests.release.xcconfig"; path = "Target Support Files/Pods-jarvis-cashback-ios_Tests/Pods-jarvis-cashback-ios_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		D3D6C092229E4F7B005A89BD /* jarvis-cashback-ios.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "jarvis-cashback-ios.podspec"; path = "../jarvis-cashback-ios.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		607FACCD1AFB9204008FA782 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				906C5ECAE1DDC70C6F6F84F8 /* Pods_jarvis_cashback_ios_Example.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		607FACE21AFB9204008FA782 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E2640B46511C74119A18378 /* Pods_jarvis_cashback_ios_Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		607FACC71AFB9204008FA782 = {
+			isa = PBXGroup;
+			children = (
+				607FACF51AFB993E008FA782 /* Podspec Metadata */,
+				607FACD21AFB9204008FA782 /* Example for jarvis-cashback-ios */,
+				607FACE81AFB9204008FA782 /* Tests */,
+				607FACD11AFB9204008FA782 /* Products */,
+				9B6F900447A67847ECEB6C29 /* Pods */,
+				8A17069B32168EB571EC3707 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		607FACD11AFB9204008FA782 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				607FACD01AFB9204008FA782 /* jarvis-cashback-ios_Example.app */,
+				607FACE51AFB9204008FA782 /* jarvis-cashback-ios_Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		607FACD21AFB9204008FA782 /* Example for jarvis-cashback-ios */ = {
+			isa = PBXGroup;
+			children = (
+				7A98F65523D089AB001E77FA /* Mock */,
+				7A98F63323D086BC001E77FA /* Classes */,
+				7AD0F0D923BDCED50070DD26 /* GUI */,
+				607FACD31AFB9204008FA782 /* Supporting Files */,
+			);
+			name = "Example for jarvis-cashback-ios";
+			path = "jarvis-cashback-ios";
+			sourceTree = "<group>";
+		};
+		607FACD31AFB9204008FA782 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				607FACD41AFB9204008FA782 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		607FACE81AFB9204008FA782 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				607FACEB1AFB9204008FA782 /* Tests.swift */,
+				607FACE91AFB9204008FA782 /* Supporting Files */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		607FACE91AFB9204008FA782 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				607FACEA1AFB9204008FA782 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				D3D6C092229E4F7B005A89BD /* jarvis-cashback-ios.podspec */,
+				45E1751D258470867549F8EB /* README.md */,
+				0AB496F46C3268C640F4551D /* LICENSE */,
+			);
+			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		7A41AFDC24E58CFD0059D841 /* Backup */ = {
+			isa = PBXGroup;
+			children = (
+				7A41AFDD24E58D0F0059D841 /* backUp.storyboard */,
+			);
+			path = Backup;
+			sourceTree = "<group>";
+		};
+		7A98F63323D086BC001E77FA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7A41AFDC24E58CFD0059D841 /* Backup */,
+				7A98F63623D086BC001E77FA /* Modules */,
+				7A98F63F23D086BC001E77FA /* Global */,
+				7A98F64223D086BC001E77FA /* Utility */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		7A98F63623D086BC001E77FA /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				7A98F63723D086BC001E77FA /* M */,
+				7A98F63923D086BC001E77FA /* C */,
+				7A98F63D23D086BC001E77FA /* V */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		7A98F63723D086BC001E77FA /* M */ = {
+			isa = PBXGroup;
+			children = (
+				7A98F63823D086BC001E77FA /* CBLoginManager.swift */,
+				7A5DA21824AC7A6900816A2B /* JRSFViewModel.swift */,
+			);
+			path = M;
+			sourceTree = "<group>";
+		};
+		7A98F63923D086BC001E77FA /* C */ = {
+			isa = PBXGroup;
+			children = (
+				7A98F63B23D086BC001E77FA /* CBHomeViewController.swift */,
+				7A98F63C23D086BC001E77FA /* PostTransactionVC.swift */,
+				30408D0C24610FC300F7366E /* PBNavEngineVC.swift */,
+			);
+			path = C;
+			sourceTree = "<group>";
+		};
+		7A98F63D23D086BC001E77FA /* V */ = {
+			isa = PBXGroup;
+			children = (
+				7A98F63E23D086BC001E77FA /* CBHomeViewTCell.swift */,
+			);
+			path = V;
+			sourceTree = "<group>";
+		};
+		7A98F63F23D086BC001E77FA /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				7A98F64123D086BC001E77FA /* AppDelegate.swift */,
+				7A327C9E24519340009B9E3B /* JRCashbackRouter.swift */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		7A98F64223D086BC001E77FA /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				7A98F64323D086BC001E77FA /* JRWServices.swift */,
+				7A98F64423D086BC001E77FA /* CBRemoteConfig.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		7A98F65523D089AB001E77FA /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				B78663FA23E3098000E6706D /* CBLandingRewardScratchCard.json */,
+				B7B1018E23E4582D009D96E8 /* CBLandingVoucher.json */,
+				B78663F823E3094100E6706D /* CBLandingRewards.json */,
+				7A08D0D023D82E970051D92C /* CBLanding.json */,
+				7A98F65623D089AB001E77FA /* CBUpdateScratchCard.json */,
+				7A8FB3FB240FFCF9003C170A /* CBScratchCardBYID_bunch.json */,
+				7A98F65723D089AB001E77FA /* CBScratchCardBYID.json */,
+				7A98F65923D089AB001E77FA /* CBPostTransMock.json */,
+				30D33E7C2435CBCB0029C342 /* CBFlipResponse.json */,
+				77A4217424D1517000729365 /* CBReferralInfo.json */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		7AD0F0D923BDCED50070DD26 /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				3B12141322AFCBC600A95C23 /* Localizable.strings */,
+				607FACDC1AFB9204008FA782 /* Images.xcassets */,
+				7AD0F0D623BDCEC60070DD26 /* Main.storyboard */,
+				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
+			);
+			name = GUI;
+			sourceTree = "<group>";
+		};
+		8A17069B32168EB571EC3707 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2785455BA0E3B526F30E94EE /* Pods_jarvis_cashback_ios_Example.framework */,
+				8E57105161D33FC08346E83C /* Pods_jarvis_cashback_ios_Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9B6F900447A67847ECEB6C29 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1B45C6E25CEC932239C9C146 /* Pods-jarvis-cashback-ios_Example.debug.xcconfig */,
+				46F96E41F84244EE3300F1C2 /* Pods-jarvis-cashback-ios_Example.release.xcconfig */,
+				18337142C05C0504688AEAA7 /* Pods-jarvis-cashback-ios_Tests.debug.xcconfig */,
+				C5782914BA4A636F3DC358C8 /* Pods-jarvis-cashback-ios_Tests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		607FACCF1AFB9204008FA782 /* jarvis-cashback-ios_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "jarvis-cashback-ios_Example" */;
+			buildPhases = (
+				23DD6CAFE05088FD72B50576 /* [CP] Check Pods Manifest.lock */,
+				3BD9038922A4EF0300B9C126 /* ShellScript */,
+				607FACCC1AFB9204008FA782 /* Sources */,
+				607FACCD1AFB9204008FA782 /* Frameworks */,
+				607FACCE1AFB9204008FA782 /* Resources */,
+				B22F44A1ECEBC087676B2AD9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "jarvis-cashback-ios_Example";
+			productName = "jarvis-cashback-ios";
+			productReference = 607FACD01AFB9204008FA782 /* jarvis-cashback-ios_Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+		607FACE41AFB9204008FA782 /* jarvis-cashback-ios_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "jarvis-cashback-ios_Tests" */;
+			buildPhases = (
+				2409C817912F89125D230A4B /* [CP] Check Pods Manifest.lock */,
+				607FACE11AFB9204008FA782 /* Sources */,
+				607FACE21AFB9204008FA782 /* Frameworks */,
+				607FACE31AFB9204008FA782 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				607FACE71AFB9204008FA782 /* PBXTargetDependency */,
+			);
+			name = "jarvis-cashback-ios_Tests";
+			productName = Tests;
+			productReference = 607FACE51AFB9204008FA782 /* jarvis-cashback-ios_Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		607FACC81AFB9204008FA782 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = CocoaPods;
+				TargetAttributes = {
+					607FACCF1AFB9204008FA782 = {
+						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 6VUJ8XHY45;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+					};
+					607FACE41AFB9204008FA782 = {
+						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 885LR8YVNT;
+						LastSwiftMigration = 0900;
+						TestTargetID = 607FACCF1AFB9204008FA782;
+					};
+				};
+			};
+			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "jarvis-cashback-ios" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = 607FACC71AFB9204008FA782;
+			productRefGroup = 607FACD11AFB9204008FA782 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				607FACCF1AFB9204008FA782 /* jarvis-cashback-ios_Example */,
+				607FACE41AFB9204008FA782 /* jarvis-cashback-ios_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		607FACCE1AFB9204008FA782 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B78663FB23E3098000E6706D /* CBLandingRewardScratchCard.json in Resources */,
+				3B12141522AFCBC600A95C23 /* Localizable.strings in Resources */,
+				7AD0F0D823BDCEC60070DD26 /* Main.storyboard in Resources */,
+				30D33E7D2435CBCB0029C342 /* CBFlipResponse.json in Resources */,
+				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				7A98F65D23D089AC001E77FA /* CBPostTransMock.json in Resources */,
+				B78663F923E3094100E6706D /* CBLandingRewards.json in Resources */,
+				7A98F65A23D089AC001E77FA /* CBUpdateScratchCard.json in Resources */,
+				7A41AFDE24E58D0F0059D841 /* backUp.storyboard in Resources */,
+				7A98F65B23D089AC001E77FA /* CBScratchCardBYID.json in Resources */,
+				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				7A8FB3FC240FFCF9003C170A /* CBScratchCardBYID_bunch.json in Resources */,
+				B7B1018F23E4582D009D96E8 /* CBLandingVoucher.json in Resources */,
+				7A08D0D123D82E970051D92C /* CBLanding.json in Resources */,
+				D3D6C093229E4F7B005A89BD /* jarvis-cashback-ios.podspec in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		607FACE31AFB9204008FA782 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		23DD6CAFE05088FD72B50576 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-jarvis-cashback-ios_Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2409C817912F89125D230A4B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-jarvis-cashback-ios_Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3BD9038922A4EF0300B9C126 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\n";
+		};
+		B22F44A1ECEBC087676B2AD9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-jarvis-cashback-ios_Example/Pods-jarvis-cashback-ios_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PaytmAnalytics/PaytmAnalytics.framework",
+				"${PODS_ROOT}/PaytmSignal-iOS/PaytmAnalytics.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImageWebPCoder/SDWebImageWebPCoder.framework",
+				"${BUILT_PRODUCTS_DIR}/jarvis-auth-ios/jarvis_auth_ios.framework",
+				"${BUILT_PRODUCTS_DIR}/jarvis-cashback-ios/jarvis_cashback_ios.framework",
+				"${BUILT_PRODUCTS_DIR}/jarvis-common-ios/jarvis_common_ios.framework",
+				"${BUILT_PRODUCTS_DIR}/jarvis-locale-ios/jarvis_locale_ios.framework",
+				"${BUILT_PRODUCTS_DIR}/jarvis-network-ios/jarvis_network_ios.framework",
+				"${BUILT_PRODUCTS_DIR}/jarvis-storefront-ios/jarvis_storefront_ios.framework",
+				"${BUILT_PRODUCTS_DIR}/jarvis-utility-ios/jarvis_utility_ios.framework",
+				"${BUILT_PRODUCTS_DIR}/libwebp/libwebp.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PaytmAnalytics.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImageWebPCoder.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/jarvis_auth_ios.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/jarvis_cashback_ios.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/jarvis_common_ios.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/jarvis_locale_ios.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/jarvis_network_ios.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/jarvis_storefront_ios.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/jarvis_utility_ios.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libwebp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-jarvis-cashback-ios_Example/Pods-jarvis-cashback-ios_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		607FACCC1AFB9204008FA782 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A98F64E23D086BC001E77FA /* CBRemoteConfig.swift in Sources */,
+				30408D0F24610FC300F7366E /* PBNavEngineVC.swift in Sources */,
+				7A327C9F24519340009B9E3B /* JRCashbackRouter.swift in Sources */,
+				7A5DA21924AC7A6900816A2B /* JRSFViewModel.swift in Sources */,
+				7A98F64A23D086BC001E77FA /* CBHomeViewTCell.swift in Sources */,
+				7A98F64D23D086BC001E77FA /* JRWServices.swift in Sources */,
+				7A98F64823D086BC001E77FA /* CBHomeViewController.swift in Sources */,
+				7A98F64C23D086BC001E77FA /* AppDelegate.swift in Sources */,
+				7A98F64623D086BC001E77FA /* CBLoginManager.swift in Sources */,
+				77A4217524D1517000729365 /* CBReferralInfo.json in Sources */,
+				7A98F64923D086BC001E77FA /* PostTransactionVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		607FACE11AFB9204008FA782 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		607FACE71AFB9204008FA782 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 607FACCF1AFB9204008FA782 /* jarvis-cashback-ios_Example */;
+			targetProxy = 607FACE61AFB9204008FA782 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3B12141322AFCBC600A95C23 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B12141422AFCBC600A95C23 /* Base */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		607FACDE1AFB9204008FA782 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				607FACDF1AFB9204008FA782 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		7AD0F0D623BDCEC60070DD26 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7AD0F0D723BDCEC60070DD26 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		607FACED1AFB9204008FA782 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		607FACEE1AFB9204008FA782 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		607FACF01AFB9204008FA782 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B45C6E25CEC932239C9C146 /* Pods-jarvis-cashback-ios_Example.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6VUJ8XHY45;
+				INFOPLIST_FILE = "jarvis-cashback-ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 8.12.4;
+				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.paytm.cashbackio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+				USER_HEADER_SEARCH_PATHS = "$(inherited) $(SRCROOT)/libwebp/src";
+			};
+			name = Debug;
+		};
+		607FACF11AFB9204008FA782 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46F96E41F84244EE3300F1C2 /* Pods-jarvis-cashback-ios_Example.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6VUJ8XHY45;
+				INFOPLIST_FILE = "jarvis-cashback-ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 8.12.4;
+				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.paytm.cashbackio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+				USER_HEADER_SEARCH_PATHS = "$(inherited) $(SRCROOT)/libwebp/src";
+			};
+			name = Release;
+		};
+		607FACF31AFB9204008FA782 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18337142C05C0504688AEAA7 /* Pods-jarvis-cashback-ios_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 885LR8YVNT;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/jarvis-cashback-ios_Example.app/jarvis-cashback-ios_Example";
+			};
+			name = Debug;
+		};
+		607FACF41AFB9204008FA782 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5782914BA4A636F3DC358C8 /* Pods-jarvis-cashback-ios_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 885LR8YVNT;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/jarvis-cashback-ios_Example.app/jarvis-cashback-ios_Example";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "jarvis-cashback-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				607FACED1AFB9204008FA782 /* Debug */,
+				607FACEE1AFB9204008FA782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "jarvis-cashback-ios_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				607FACF01AFB9204008FA782 /* Debug */,
+				607FACF11AFB9204008FA782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "jarvis-cashback-ios_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				607FACF31AFB9204008FA782 /* Debug */,
+				607FACF41AFB9204008FA782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 607FACC81AFB9204008FA782 /* Project object */;
+}

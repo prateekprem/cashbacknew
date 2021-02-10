@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="3Ck-Bx-TbI" customClass="SFScrollTabs" customModule="jarvis_storefront_ios" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="bmu-E2-vkQ">
+                    <rect key="frame" x="5" y="5" width="365" height="55"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="CKh-4r-wsu">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="3Ck-Bx-TbI" id="QxQ-Mr-2FQ"/>
+                        <outlet property="delegate" destination="3Ck-Bx-TbI" id="HTH-TS-pe2"/>
+                    </connections>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c8W-l3-q7C">
+                    <rect key="frame" x="0.0" y="60" width="375" height="1"/>
+                    <color key="backgroundColor" red="0.96871989965438843" green="0.97637933492660522" blue="0.98039346933364868" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="eIV-Tu-JB5"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="bmu-E2-vkQ" firstAttribute="leading" secondItem="8Qv-oC-QDh" secondAttribute="leading" constant="5" id="06c-9n-456"/>
+                <constraint firstItem="8Qv-oC-QDh" firstAttribute="trailing" secondItem="bmu-E2-vkQ" secondAttribute="trailing" constant="5" id="501-iT-ebk"/>
+                <constraint firstItem="c8W-l3-q7C" firstAttribute="leading" secondItem="3Ck-Bx-TbI" secondAttribute="leading" id="P1k-A4-fQj"/>
+                <constraint firstItem="bmu-E2-vkQ" firstAttribute="top" secondItem="8Qv-oC-QDh" secondAttribute="top" constant="5" id="R9C-R0-zMB"/>
+                <constraint firstItem="8Qv-oC-QDh" firstAttribute="bottom" secondItem="bmu-E2-vkQ" secondAttribute="bottom" constant="5" id="ZC3-TW-dFu"/>
+                <constraint firstAttribute="trailing" secondItem="c8W-l3-q7C" secondAttribute="trailing" id="h2B-JZ-l3d"/>
+                <constraint firstItem="c8W-l3-q7C" firstAttribute="top" secondItem="bmu-E2-vkQ" secondAttribute="bottom" id="sIt-Jv-ncr"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="8Qv-oC-QDh"/>
+            <connections>
+                <outlet property="collectV" destination="bmu-E2-vkQ" id="eZp-eY-fGc"/>
+            </connections>
+            <point key="canvasLocation" x="445.60000000000002" y="-1615.1424287856073"/>
+        </view>
+    </objects>
+</document>

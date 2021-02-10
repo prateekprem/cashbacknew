@@ -1,0 +1,168 @@
+{
+    "status": 1,
+    "errors": [],
+    "data": {
+        "id": 1263206295,
+        "info": {
+            "transactions": [
+                {
+                    "txn_id": "20200324111212800110168539621031681",
+                    "txn_source": "PGP",
+                    "order_id": "202003241602530024",
+                    "stage": 0,
+                    "status": "SUCCESS",
+                    "created_at": "2020-03-24T10:32:58.000Z",
+                    "txn_amount": "6",
+                    "progress_screen_construct": "1st Payment",
+                    "stage_object": {
+                        "stage_status": "COMPLETED",
+                        "stage_txn_count": 1,
+                        "stage_success_txn_count": 1,
+                        "surprise_stage": false,
+                        "stage_progress_construct": "You won a scratch card and ₹1 goldback",
+                        "gratification_objects": [
+                            {
+                                "scratchCardData": {
+                                    "id": 1456920066,
+                                    "scratched": false,
+                                    "randomBucketName": "B1_0_0",
+                                    "displayType": "SCRATCH_CARD",
+                                    "randomBucketMap": null
+                                },
+                                "redemption_type": "cashback",
+                                "frontend_redemption_type": "VK",
+                                "cashback_text": "You will get scratch card",
+                                "redemption_status": "REDEEM_REQUESTED",
+                                "redemption_text": "Play Cricket Game now",
+                                "earned_text": "You won a scratch card",
+                                "bonus_amount": 0,
+                                "deal_data": null,
+                                "crosspromo_data": null,
+                                "redemption_type_icon": "https://assetscdn1.paytm.com/images/promo-engine/prod/cricket/B+Kumar.png",
+                                "winnning_title": "Congratulations!",
+                                "progress_text": "You Won"
+                            },
+                            {
+                                "scratchCardData": null,
+                                "redemption_type": "goldback",
+                                "frontend_redemption_type": "goldback",
+                                "cashback_text": "You will get goldback worth ₹1",
+                                "redemption_status": "REDEEM_REQUESTED",
+                                "redemption_text": "Goldback will be credited within 48 hours to your Paytm Gold account. If any transaction is cancelled, you need to do another transaction to be eligible for goldback.",
+                                "earned_text": "You won ₹1 goldback",
+                                "bonus_amount": 1,
+                                "deal_data": null,
+                                "crosspromo_data": null,
+                                "redemption_type_icon": "https://paytm.s3-ap-southeast-1.amazonaws.com/promo_seller_panel_uploads/production/Goldcoin.png",
+                                "winnning_title": "Congratulations!",
+                                "progress_text": "You Won"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "txn_id": "",
+                    "txn_source": "",
+                    "order_id": "",
+                    "stage": 1,
+                    "status": "",
+                    "created_at": "",
+                    "progress_screen_construct": "2nd Payment"
+                },
+                {
+                    "txn_id": "",
+                    "txn_source": "",
+                    "order_id": "",
+                    "stage": 1,
+                    "status": "",
+                    "created_at": "",
+                    "progress_screen_construct": "3rd Payment",
+                    "stage_object": {
+                        "stage_status": "INCOMPLETE",
+                        "stage_txn_count": 2,
+                        "stage_success_txn_count": 0,
+                        "surprise_stage": false,
+                        "stage_progress_construct": "money transfer%s 2 times to get scratch card and goldback worth ₹1",
+                        "gratification_objects": [
+                            {
+                                "scratchCardData": null,
+                                "redemption_type": "random_bonus",
+                                "frontend_redemption_type": "surprise bonus",
+                                "cashback_text": "You will get scratch card",
+                                "redemption_status": null,
+                                "redemption_text": "",
+                                "earned_text": "",
+                                "bonus_amount": 0,
+                                "deal_data": null,
+                                "crosspromo_data": null,
+                                "redemption_type_icon": "https://paytm.s3-ap-southeast-1.amazonaws.com/promo_seller_panel_uploads/production/Cashback.png",
+                                "winnning_title": "",
+                                "progress_text": "You have made a progress"
+                            },
+                            {
+                                "scratchCardData": null,
+                                "redemption_type": "goldback",
+                                "frontend_redemption_type": "goldback",
+                                "cashback_text": "You will get goldback worth ₹1",
+                                "redemption_status": null,
+                                "redemption_text": "",
+                                "earned_text": "",
+                                "bonus_amount": 0,
+                                "deal_data": null,
+                                "crosspromo_data": null,
+                                "redemption_type_icon": "https://paytm.s3-ap-southeast-1.amazonaws.com/promo_seller_panel_uploads/production/Goldcoin.png",
+                                "winnning_title": "",
+                                "progress_text": "You have made a progress"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "offer_expiry_reason": "",
+            "game_expiry_reason": "Your offer expired as you did not complete 2 out of 3 transactions.",
+            "campaign": {
+                "id": 65063,
+                "event": "ACCEPT_OFFER",
+                "deeplink_url": "paytmmp://cash_wallet?featuretype=money_transfer",
+                "offer_text_override": "Money Transfer - Upto ₹2 cashback Collectibe testing",
+                "background_image_url": "https://s3-ap-southeast-1.amazonaws.com/assets.paytm.com/promotion/Rituraj/Backgrounds/3.png",
+                "new_offers_image_url": "https://s3-ap-southeast-1.amazonaws.com/assets.paytm.com/promotion/Rituraj/PNG+images/UPI+Offer.png",
+                "offer_keyword": "money transfer%s",
+                "progress_screen_cta": "Transfer Now",
+                "important_terms": "<p><span style=\"color: #FFA500;\">★</span><span style=\"color: #000000;\">Offer can be availed 200 times during the campaign validity</span></p>\n\n<p><span style=\"color: #FFA500;\">★</span><span style=\"color: #000000;\">undefined '6' ''</span></p>\n\n<p> </p>\n",
+                "surprise_text": "<p>",
+                "tnc": "https://paytmmall.com/papi/v2/promocard/supercash/campaign/tnc/65063",
+                "campaign": "COLLECTIBE_TEST",
+                "valid_upto": "2020-03-26T07:25:00.000Z",
+                "isDeeplink": true,
+                "short_description": "Transfer money 3 times using Paytm of ₹6 within 20 minutes",
+                "show_game_progress": true,
+                "offer_image_url": "https://s3-ap-southeast-1.amazonaws.com/assets.paytm.com/promotion/Rituraj/PNG+images/UPI+Offer.png",
+                "offer_type_id": 8,
+                "background_overlay": false,
+                "auto_activate": true,
+                "unlock_text": null,
+                "first_transaction_cta": "Make your first money transfer",
+                "surprise_text_title": "Offer Details",
+                "campaign_detail_deeplink": null
+            }
+        },
+        "updated_at": "2020-03-24T10:33:00.000Z",
+        "success_txn_count": 1,
+        "total_txn_count": 3,
+        "status": "INPROGRESS",
+        "offer_expiry": "2020-03-24T10:52:59.000Z",
+        "game_expiry": "2020-03-24T10:52:59.000Z",
+        "opt_out_time": "",
+        "offer_status_info": "",
+        "current_stage": 1,
+        "txn_linked": {
+            "id": "20200324111212800110168539621031681",
+            "stage": 0
+        },
+        "Claim_CTA": null,
+        "unlock_text": "Next reward unlocks after you money transfer%s 2 more times",
+        "offer_end_time": "",
+        "server_timestamp": "2020-03-24T10:33:04.583Z"
+    }
+}

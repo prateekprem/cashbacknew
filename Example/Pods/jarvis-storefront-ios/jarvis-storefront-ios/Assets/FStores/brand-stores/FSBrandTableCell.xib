@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FSBrandTableCell" rowHeight="178" id="gSN-bh-aau" customClass="FSBrandTableCell" customModule="jarvis_storefront_ios" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="365" height="190"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gSN-bh-aau" id="jFS-RU-5UD">
+                <rect key="frame" x="0.0" y="0.0" width="365" height="189.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Offers on Top Brands" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6p7-cv-SNV">
+                        <rect key="frame" x="15" y="30" width="169" height="21"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="V9s-52-Nwy">
+                        <rect key="frame" x="0.0" y="67" width="365" height="112.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="1" id="ewD-SF-Et2">
+                            <size key="itemSize" width="114" height="118"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells/>
+                        <connections>
+                            <outlet property="dataSource" destination="gSN-bh-aau" id="3du-6e-bG6"/>
+                            <outlet property="delegate" destination="gSN-bh-aau" id="EzK-7l-NGG"/>
+                        </connections>
+                    </collectionView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gA5-2d-71z">
+                        <rect key="frame" x="331" y="28.5" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="UP8-J6-oj6"/>
+                            <constraint firstAttribute="height" constant="24" id="gUY-sA-Hti"/>
+                        </constraints>
+                        <state key="normal" image="Group 52"/>
+                        <connections>
+                            <action selector="viewAllIconClicked:" destination="gSN-bh-aau" eventType="touchUpInside" id="B2x-hT-jt2"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jsU-wD-nFI">
+                        <rect key="frame" x="281" y="27" width="45" height="27"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="View All">
+                            <color key="titleColor" red="0.0" green="0.72156862749999995" blue="0.96078431369999995" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="viewAllButtonClicked:" destination="gSN-bh-aau" eventType="touchUpInside" id="Rn0-kI-KzR"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="6p7-cv-SNV" firstAttribute="leading" secondItem="jFS-RU-5UD" secondAttribute="leading" constant="15" id="4Mc-8w-0Me"/>
+                    <constraint firstItem="gA5-2d-71z" firstAttribute="centerY" secondItem="6p7-cv-SNV" secondAttribute="centerY" id="8oD-Lz-cMo"/>
+                    <constraint firstItem="gA5-2d-71z" firstAttribute="leading" secondItem="jsU-wD-nFI" secondAttribute="trailing" constant="5" id="FiO-0v-g5u"/>
+                    <constraint firstAttribute="trailing" secondItem="gA5-2d-71z" secondAttribute="trailing" constant="10" id="Snf-Mf-uAy"/>
+                    <constraint firstItem="6p7-cv-SNV" firstAttribute="top" secondItem="jFS-RU-5UD" secondAttribute="top" constant="30" id="VSx-RV-UB8"/>
+                    <constraint firstItem="V9s-52-Nwy" firstAttribute="top" secondItem="6p7-cv-SNV" secondAttribute="bottom" constant="16" id="WSh-Jw-pRT"/>
+                    <constraint firstItem="jsU-wD-nFI" firstAttribute="centerY" secondItem="gA5-2d-71z" secondAttribute="centerY" id="dCv-8m-DtX"/>
+                    <constraint firstAttribute="trailing" secondItem="V9s-52-Nwy" secondAttribute="trailing" id="sj3-kO-rWj"/>
+                    <constraint firstItem="V9s-52-Nwy" firstAttribute="leading" secondItem="jFS-RU-5UD" secondAttribute="leading" id="wnD-MH-YXW"/>
+                    <constraint firstAttribute="bottom" secondItem="V9s-52-Nwy" secondAttribute="bottom" constant="10" id="x2v-yd-2NO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="collectV" destination="V9s-52-Nwy" id="HBL-Xw-XiC"/>
+                <outlet property="titleLabel" destination="6p7-cv-SNV" id="Ut5-uy-hxb"/>
+            </connections>
+            <point key="canvasLocation" x="130.40000000000001" y="8.0959520239880067"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Group 52" width="48" height="48"/>
+    </resources>
+</document>

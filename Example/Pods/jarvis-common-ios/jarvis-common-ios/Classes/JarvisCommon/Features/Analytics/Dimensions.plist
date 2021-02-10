@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>dimension1</key>
+	<string>Visitor Id</string>
+	<key>dimension10</key>
+	<string>Android ID - First app launch</string>
+	<key>dimension11</key>
+	<string>Paytm CD11  11 Session</string>
+	<key>dimension12</key>
+	<string>Paytm CD12</string>
+	<key>dimension13</key>
+	<string>Paytm CD13</string>
+	<key>dimension14</key>
+	<string>Paytm CD14</string>
+	<key>dimension15</key>
+	<string>Paytm CD15</string>
+	<key>dimension16</key>
+	<string>Date_From</string>
+	<key>dimension17</key>
+	<string>Date_To</string>
+	<key>dimension18</key>
+	<string>NO_ROOMS</string>
+	<key>dimension19</key>
+	<string>TOT_GUESTS</string>
+	<key>dimension2</key>
+	<string>Payment Method</string>
+	<key>dimension20</key>
+	<string>Channel ID</string>
+	<key>dimension21</key>
+	<string>Origin City</string>
+	<key>dimension22</key>
+	<string>Destination City</string>
+	<key>dimension23</key>
+	<string>Position</string>
+	<key>dimension24</key>
+	<string>Product List Name (Custom)</string>
+	<key>dimension25</key>
+	<string>Product List Position(Custom)</string>
+	<key>dimension26</key>
+	<string>List - Search Type</string>
+	<key>dimension27</key>
+	<string>List - Search Category</string>
+	<key>dimension28</key>
+	<string>List - Search Term</string>
+	<key>dimension29</key>
+	<string>List - Search Result Type</string>
+	<key>dimension3</key>
+	<string>Shipping &amp; Billing City</string>
+	<key>dimension30</key>
+	<string>Promotion Destination URL</string>
+	<key>dimension31</key>
+	<string>Parent ID(Custom)</string>
+	<key>dimension32</key>
+	<string>Promo Code</string>
+	<key>dimension33</key>
+	<string>Comment</string>
+	<key>dimension34</key>
+	<string>User ID(Hit)</string>
+	<key>dimension35</key>
+	<string>City Name</string>
+	<key>dimension36</key>
+	<string>Movie Cinema Listing Type</string>
+	<key>dimension37</key>
+	<string>Show Timing Bucket</string>
+	<key>dimension38</key>
+	<string>Product List ID(Custom)</string>
+	<key>dimension39</key>
+	<string>Site ID(Product)</string>
+	<key>dimension4</key>
+	<string>Product Discount</string>
+	<key>dimension40</key>
+	<string>Container Instance ID</string>
+	<key>dimension41</key>
+	<string>Seller ID</string>
+	<key>dimension42</key>
+	<string>Site ID(Hit)</string>
+	<key>dimension43</key>
+	<string>Category ID Tree</string>
+	<key>dimension44</key>
+	<string>Journey Type</string>
+	<key>dimension45</key>
+	<string>Old - New Quantity</string>
+	<key>dimension46</key>
+	<string>Search Type</string>
+	<key>dimension47</key>
+	<string>Search Category</string>
+	<key>dimension48</key>
+	<string>Search Result Type</string>
+	<key>dimension49</key>
+	<string>Search Term</string>
+	<key>dimension5</key>
+	<string>Delivery Days</string>
+	<key>dimension50</key>
+	<string>Event Label 2</string>
+	<key>dimension51</key>
+	<string>AB Experiment (User)</string>
+	<key>dimension52</key>
+	<string>AB Experiment (Hit)</string>
+	<key>dimension53</key>
+	<string>AB Experiment (Product)</string>
+	<key>dimension54</key>
+	<string>AB Experiment (Session)</string>
+	<key>dimension55</key>
+	<string>Test User ID</string>
+	<key>dimension56</key>
+	<string>Acquisition SMC</string>
+	<key>dimension57</key>
+	<string>Service Type</string>
+	<key>dimension58</key>
+	<string>Current Language</string>
+	<key>dimension59</key>
+	<string>Prediction Flag</string>
+	<key>dimension6</key>
+	<string>Paytm CD6</string>
+	<key>dimension60</key>
+	<string>Internal Promotion Container Instance ID(Hit)</string>
+	<key>dimension61</key>
+	<string>Internal Promotion Container Instance ID(Product</string>
+	<key>dimension62</key>
+	<string>Internal Promotion Container ID (Hit)</string>
+	<key>dimension63</key>
+	<string>Internal Promotion Container ID (Product)</string>
+	<key>dimension64</key>
+	<string>Internal Promotion Creative ID (Product)</string>
+	<key>dimension65</key>
+	<string>Internal Promotion Positon(Product)</string>
+	<key>dimension66</key>
+	<string>Layout Type (Hit)</string>
+	<key>dimension67</key>
+	<string>Layout Type (Product)</string>
+	<key>dimension68</key>
+	<string>Network Info</string>
+	<key>dimension69</key>
+	<string>Root Status</string>
+	<key>dimension7</key>
+	<string>User ID</string>
+	<key>dimension70</key>
+	<string>Widget Position (Product)</string>
+	<key>dimension71</key>
+	<string>Widget Position (Hit)</string>
+	<key>dimension72</key>
+	<string>GTM Container ID - Version</string>
+	<key>dimension73</key>
+	<string>Install Link Click Time</string>
+	<key>dimension74</key>
+	<string>App Install Start Time</string>
+	<key>dimension75</key>
+	<string>Install Referral</string>
+	<key>dimension76</key>
+	<string>Product Discovery Source</string>
+	<key>dimension77</key>
+	<string>IOS Device Name</string>
+	<key>dimension78</key>
+	<string>Hit Type</string>
+	<key>dimension79</key>
+	<string>Context (Product)</string>
+	<key>dimension8</key>
+	<string>Vertical Name</string>
+	<key>dimension80</key>
+	<string>Grid Filters Available (product)</string>
+	<key>dimension81</key>
+	<string>Event Label 3</string>
+	<key>dimension82</key>
+	<string>Event Label 4</string>
+	<key>dimension83</key>
+	<string>Event Label 5</string>
+	<key>dimension84</key>
+	<string>Feature Landing Source</string>
+	<key>dimension85</key>
+	<string>paytmTripId</string>
+	<key>dimension86</key>
+	<string>amenities</string>
+	<key>dimension87</key>
+	<string>rating.average_rating	</string>
+	<key>dimension88</key>
+	<string>rating count	</string>
+	<key>dimension89</key>
+	<string>duration</string>
+	<key>dimension9</key>
+	<string>Product Detail Category</string>
+	<key>dimension90</key>
+	<string>isNonAc</string>
+	<key>dimension91</key>
+	<string>isNonSleeper</string>
+	<key>dimension92</key>
+	<string>providerId</string>
+	<key>dimension93</key>
+	<string>availableSeats</string>
+	<key>dimension94</key>
+	<string>fare</string>
+	<key>dimension95</key>
+	<string>route_time_id</string>
+	<key>dimension96</key>
+	<string>sourceId</string>
+	<key>dimension97</key>
+	<string>destinationId</string>
+	<key>dimension98</key>
+	<string>seatType</string>
+	<key>dimension99</key>
+	<string>source</string>
+	<key>dimension100</key>
+	<string>destination</string>
+	<key>dimension101</key>
+	<string>operator_tags</string>
+	<key>dimension102</key>
+	<string>KYC Status</string>
+	<key>dimension103</key>
+	<string>Login Status</string>
+	<key>dimension104</key>
+	<string>UPI Status</string>
+	<key>dimension105</key>
+	<string>Transaction Status</string>
+	<key>dimension106</key>
+	<string>Registration Status</string>
+	<key>dimension107</key>
+	<string>Channel</string>
+	<key>dimension108</key>
+	<string>mid</string>
+	<key>dimension109</key>
+	<string>pid</string>
+	<key>dimension110</key>
+	<string>category_type</string>
+	<key>dimension111</key>
+	<string>merchantName</string>
+	<key>dimension112</key>
+	<string>formTitle</string>
+	<key>dimension113</key>
+	<string>Product</string>
+	<key>dimension114</key>
+	<string>List - Search Autosuggest Position</string>
+	<key>dimension115</key>
+	<string>List - Search Product Classification</string>
+	<key>dimension116</key>
+	<string>List - Search Page Number</string>
+	<key>dimension117</key>
+	<string>List - Search Original Query</string>
+	<key>dimension118</key>
+	<string>List - Search Tab</string>
+	<key>dimension119</key>
+	<string>Event Label 6</string>
+	<key>dimension120</key>
+	<string>Event Label 7</string>
+	<key>dimension121</key>
+	<string>Event Label 8</string>
+	<key>dimension122</key>
+	<string>Event Label 9</string>
+	<key>dimension123</key>
+	<string>Event Label 10</string>
+	<key>dimension124</key>
+	<string>List - Search Autosuggest Shown</string>
+	<key>dimension125</key>
+	<string>List - Search Spell Corrected Query</string>
+	<key>dimension126</key>
+	<string>List - Search Spell Check Executed</string>
+	<key>dimension127</key>
+	<string>List - Search Autosuggest Original Query</string>
+	<key>dimension128</key>
+	<string>List - TO BE DEFINED</string>
+	<key>dimension129</key>
+	<string>List - Base PDP Category</string>
+	<key>dimension130</key>
+	<string>List - Base PDP Brand</string>
+	<key>dimension131</key>
+	<string>List - Base PDP Product ID Name</string>
+	<key>dimension132</key>
+	<string>List - Grid To PDP Price Change</string>
+	<key>dimension133</key>
+	<string>List - Internal Promotion Info 1</string>
+	<key>dimension134</key>
+	<string>List - Internal Promotion Info 2</string>
+</dict>
+</plist>

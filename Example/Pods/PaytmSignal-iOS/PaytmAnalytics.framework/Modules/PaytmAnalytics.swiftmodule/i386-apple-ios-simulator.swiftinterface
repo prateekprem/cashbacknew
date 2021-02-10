@@ -1,0 +1,209 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)
+// swift-module-flags: -target i386-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PaytmAnalytics
+import AdSupport
+import CommonCrypto
+import CoreData
+import Foundation
+@_exported import PaytmAnalytics
+import Swift
+import UIKit
+import os
+import zlib
+public struct CompressionLevel : Swift.RawRepresentable {
+  public let rawValue: Swift.Int32
+  public static let noCompression: PaytmAnalytics.CompressionLevel
+  public static let bestSpeed: PaytmAnalytics.CompressionLevel
+  public static let bestCompression: PaytmAnalytics.CompressionLevel
+  public static let defaultCompression: PaytmAnalytics.CompressionLevel
+  public init(rawValue: Swift.Int32)
+  public init(_ rawValue: Swift.Int32)
+  public typealias RawValue = Swift.Int32
+}
+public struct GzipError : Swift.Error {
+  public enum Kind : Swift.Equatable {
+    case stream
+    case data
+    case memory
+    case buffer
+    case version
+    case unknown(code: Swift.Int)
+    public static func == (a: PaytmAnalytics.GzipError.Kind, b: PaytmAnalytics.GzipError.Kind) -> Swift.Bool
+  }
+  public let kind: PaytmAnalytics.GzipError.Kind
+  public let message: Swift.String
+  public var localizedDescription: Swift.String {
+    get
+  }
+}
+extension Data {
+  public var isGzipped: Swift.Bool {
+    get
+  }
+  public func gzipped(level: PaytmAnalytics.CompressionLevel = .defaultCompression) throws -> Foundation.Data
+  public func gunzipped() throws -> Foundation.Data
+}
+public protocol PAAnalyticProtocol {
+  var userID: Swift.String? { get }
+}
+@objc public class PAAnalyticManager : ObjectiveC.NSObject {
+  public static var shared: PaytmAnalytics.PAAnalyticManager
+  public var analyticDelegate: PaytmAnalytics.PAAnalyticProtocol?
+  @objc override dynamic public init()
+  @objc deinit
+}
+public enum DispatchStrategy {
+  case manual
+  case intervalBased(interval: Foundation.TimeInterval)
+  case background
+}
+public enum PABuildType {
+  case debug
+  case adhoc
+  case release
+  public static func == (a: PaytmAnalytics.PABuildType, b: PaytmAnalytics.PABuildType) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
+@objc final public class PANCEvent : ObjectiveC.NSObject, Foundation.NSCoding {
+  @objc override dynamic public init()
+  final public var location: PaytmAnalytics.PANCLocation?
+  final public var type: Swift.String?
+  final public var networktype: Swift.String?
+  final public var networkCarrier: Swift.String?
+  final public var networkSpeed: Swift.String?
+  final public var playstore: Swift.String?
+  final public var batteryPercentage: Swift.Int?
+  final public var storageFreePercentage: Swift.Int?
+  final public var networkStrength: Swift.String?
+  final public var verticalName: Swift.String?
+  final public var screenName: Swift.String?
+  final public var flowName: Swift.String?
+  final public var timestamp: Swift.String?
+  final public var uri: Swift.String?
+  final public var requestSize: Swift.Int?
+  final public var responseCode: Swift.Int?
+  final public var responseTime: Swift.Int?
+  final public var responseSize: Swift.Int?
+  final public var responseType: Swift.String?
+  final public var userFacing: Swift.String?
+  final public var errorCode: Swift.Int?
+  final public var errorMsg: Swift.String?
+  final public var mid: Swift.String?
+  final public var transactionId: Swift.String?
+  final public var metricTotalTime: Swift.Double?
+  final public var metricRequestTime: Swift.Double?
+  final public var metricResponseTime: Swift.Double?
+  final public var metricConnectionTime: Swift.Double?
+  final public var metricDomainlookupTime: Swift.Double?
+  final public var metricSecureConnectionTime: Swift.Double?
+  final public var appVersion: Swift.String?
+  final public var appVersionCode: Swift.String?
+  final public var correlationID: Swift.String?
+  final public var customMessage: Swift.String?
+  final public var qrData: PaytmAnalytics.PANCQRData?
+  final public var clientIP: Swift.String?
+  final public var ramFreeSize: Swift.Int?
+  final public var ramFreePercentage: Swift.Int?
+  final public var storageFreeSize: Swift.Int?
+  final public var PID: Swift.String?
+  final public var categoryId: Swift.String?
+  @objc public init?(coder aDecoder: Foundation.NSCoder)
+  final public func dictionaryRepresentation() -> [Swift.String : Any]
+  @objc final public func encode(with aCoder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc final public class PANCLocation : ObjectiveC.NSObject, Foundation.NSCoding {
+  @objc override dynamic public init()
+  final public var lat: Swift.Double?
+  final public var lon: Swift.Double?
+  @objc public init?(coder aDecoder: Foundation.NSCoder)
+  @objc final public func encode(with aCoder: Foundation.NSCoder)
+  final public func dictionaryRepresentation() -> [Swift.String : Any]
+  @objc deinit
+}
+@objc public class PANCLog : ObjectiveC.NSObject, Foundation.NSCoding {
+  @objc override dynamic public init()
+  public var origin: Swift.String?
+  public var userID: Swift.String?
+  public var clientid: Swift.String?
+  public var deviceId: Swift.String?
+  public var osType: Swift.String?
+  public var osVersion: Swift.String?
+  public var deviceManufacturer: Swift.String?
+  public var deviceName: Swift.String?
+  public var events: [PaytmAnalytics.PANCEvent]?
+  public func dictionaryRepresentation() -> [Swift.String : Any]
+  @objc public func encode(with aCoder: Foundation.NSCoder)
+  @objc required public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc final public class PANCQRData : ObjectiveC.NSObject, Foundation.NSCoding {
+  @objc override dynamic public init()
+  final public var eventName: Swift.String?
+  final public var isMultiQREnabled: Swift.Bool?
+  final public var scanDuration: Swift.Int?
+  final public var firstQrDetectedTime: Swift.Int?
+  final public var scannedCount: Swift.Int?
+  final public var isSuccess: Swift.Bool?
+  final public var qrPayload: Swift.String?
+  final public var scanSessionId: Swift.String?
+  final public var failReason: Swift.String?
+  final public var isWinner: Swift.Bool?
+  final public var qrVersion: Swift.Int?
+  final public var correctionLevel: Swift.String?
+  final public func dictionaryRepresentation() -> [Swift.String : Any]
+  @objc final public func encode(with aCoder: Foundation.NSCoder)
+  @objc required public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc final public class PANCUser : ObjectiveC.NSObject, Foundation.NSCoding {
+  @objc override dynamic public init()
+  final public var id: Swift.String?
+  final public var mobile: Swift.String?
+  final public func dictionaryRepresentation() -> [Swift.String : Any]
+  @objc final public func encode(with aCoder: Foundation.NSCoder)
+  @objc public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc final public class PASignalLog : ObjectiveC.NSObject, Foundation.NSCoding {
+  final public var deviceId: Swift.String?
+  final public var dataTime: Swift.String? {
+    get
+    set
+  }
+  final public var eventType: Swift.String?
+  final public var customerId: Swift.String?
+  final public var clientId: Swift.String?
+  final public var appVersion: Swift.String?
+  final public var appLanguage: Swift.String?
+  final public var deviceIp: Swift.String?
+  final public var deviceCarrier: Swift.String?
+  final public var deviceConnType: Swift.String?
+  final public var deviceGeoLatitude: Swift.String?
+  final public var deviceGeoLongitude: Swift.String?
+  final public var payload: [Swift.String : Any]?
+  @available(*, deprecated, message: "The default initializer is deprecated and will be removed in the next release, please use init?(eventType:timestamp:payload:deviceID:customerID:) instead")
+  @objc override dynamic public init()
+  required public init?(eventType: Swift.String, timestamp: Foundation.Date = Date(), payload: [Swift.String : Any], deviceID: Swift.String? = nil, customerID: Swift.String? = nil)
+  @objc final public func encode(with aCoder: Foundation.NSCoder)
+  @objc public init?(coder aDecoder: Foundation.NSCoder)
+  @objc override final public var description: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+public class PASignalManager {
+  public static let shared: PaytmAnalytics.PASignalManager
+  public func initializeSignalSession(clientId: Swift.String, secretKey: Swift.String, signalEndpointDomain: Swift.String, loggingEnabled: Swift.Bool = false, dispatchStrategy: PaytmAnalytics.DispatchStrategy = .intervalBased(interval: 10.0), maxBatchSizeToUpload: Swift.Int = 10, maxBatchSizeToCapture: Swift.Int = 2000, buildType: PaytmAnalytics.PABuildType = .release)
+  public func initializeNetworkSession(appId: Swift.String, origin: Swift.String, clientId: Swift.String, secretKey: Swift.String, requestUrl: Swift.String, loggingEnabled: Swift.Bool = false, dispatchStrategy: PaytmAnalytics.DispatchStrategy = .manual, maxBatchSizeToUpload: Swift.Int = 50, maxBatchSizeToCapture: Swift.Int = 2000, buildType: PaytmAnalytics.PABuildType = .release)
+  public func push(withPASignalLog signalLog: PaytmAnalytics.PASignalLog)
+  public func sendCriticalEvents(_ signalLogs: [PaytmAnalytics.PASignalLog], completion: ((Swift.Bool, [PaytmAnalytics.PASignalLog]?) -> Swift.Void)?)
+  public func push(withPANCEvent networkEvent: PaytmAnalytics.PANCEvent)
+  public func flushNetworkEventData()
+  @objc deinit
+}
+extension PaytmAnalytics.PABuildType : Swift.Equatable {}
+extension PaytmAnalytics.PABuildType : Swift.Hashable {}

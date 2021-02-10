@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JRCBGameProgressView" customModule="jarvis_cashback_ios" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="g2b-lo-vfW" id="0eN-hq-FcF"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="ShF-tA-EpG"/>
+                <outlet property="itemLeftLabel" destination="N3c-Eq-6de" id="AQf-ze-3Od"/>
+                <outlet property="itemLeftLeading" destination="5Y7-GG-WMz" id="646-ac-Ojv"/>
+                <outlet property="itemLeftWidth" destination="eTe-hS-nLO" id="vag-eB-q2Q"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="25"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="g2b-lo-vfW">
+                    <rect key="frame" x="0.0" y="0.0" width="281" height="25"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="bEE-Br-KF1">
+                        <size key="itemSize" width="50" height="24"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="VOA-d9-BBP"/>
+                        <outlet property="delegate" destination="-1" id="THR-nR-Jhz"/>
+                    </connections>
+                </collectionView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="left" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="60" translatesAutoresizingMaskIntoConstraints="NO" id="N3c-Eq-6de">
+                    <rect key="frame" x="281" y="0.0" width="19" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="48" id="eTe-hS-nLO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.0" green="0.67450980392156867" blue="0.92941176470588238" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="N3c-Eq-6de" firstAttribute="leading" secondItem="g2b-lo-vfW" secondAttribute="trailing" id="5Y7-GG-WMz"/>
+                <constraint firstItem="g2b-lo-vfW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="6cy-h7-Ie2"/>
+                <constraint firstItem="N3c-Eq-6de" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="Aa5-0a-pdw"/>
+                <constraint firstAttribute="bottom" secondItem="N3c-Eq-6de" secondAttribute="bottom" id="DLb-W0-ggM"/>
+                <constraint firstItem="g2b-lo-vfW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="HpY-Cq-SYy"/>
+                <constraint firstItem="N3c-Eq-6de" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="VcL-Ee-K4P"/>
+                <constraint firstItem="g2b-lo-vfW" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="s2e-WV-b07"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="79" y="-133"/>
+        </view>
+    </objects>
+</document>

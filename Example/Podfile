@@ -1,0 +1,22 @@
+source 'git@bitbucket.org:paytmteam/jarvis-common-ios-specs.git'
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, '11.0'
+
+use_frameworks!
+
+target 'jarvis-cashback-ios_Example' do
+  pod 'jarvis-cashback-ios', :path => '../'
+  
+  pod 'lottie-ios', '2.5.0'
+  pod 'jarvis-auth-ios'
+  pod 'jarvis-common-ios'
+  pod 'jarvis-network-ios'
+  pod 'jarvis-locale-ios'
+  pod 'jarvis-utility-ios'
+  pod 'PaytmAnalytics'
+  pod 'jarvis-storefront-ios'
+  target 'jarvis-cashback-ios_Tests' do
+    inherit! :search_paths
+  end
+end

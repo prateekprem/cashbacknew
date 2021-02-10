@@ -1,0 +1,15 @@
+ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
+CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/PaytmAnalytics" "${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage" "${PODS_CONFIGURATION_BUILD_DIR}/SDWebImageWebPCoder" "${PODS_CONFIGURATION_BUILD_DIR}/jarvis-auth-ios" "${PODS_CONFIGURATION_BUILD_DIR}/jarvis-cashback-ios" "${PODS_CONFIGURATION_BUILD_DIR}/jarvis-common-ios" "${PODS_CONFIGURATION_BUILD_DIR}/jarvis-locale-ios" "${PODS_CONFIGURATION_BUILD_DIR}/jarvis-network-ios" "${PODS_CONFIGURATION_BUILD_DIR}/jarvis-storefront-ios" "${PODS_CONFIGURATION_BUILD_DIR}/jarvis-utility-ios" "${PODS_CONFIGURATION_BUILD_DIR}/libwebp" "${PODS_CONFIGURATION_BUILD_DIR}/lottie-ios" "${PODS_ROOT}/PaytmSignal-iOS" "$(PODS_ROOT)/jarvis-utility-ios/ExternalFrameworks"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1 $(inherited) SD_WEBP=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/PaytmAnalytics/PaytmAnalytics.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage/SDWebImage.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/SDWebImageWebPCoder/SDWebImageWebPCoder.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/jarvis-auth-ios/jarvis_auth_ios.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/jarvis-cashback-ios/jarvis_cashback_ios.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/jarvis-common-ios/jarvis_common_ios.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/jarvis-locale-ios/jarvis_locale_ios.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/jarvis-network-ios/jarvis_network_ios.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/jarvis-storefront-ios/jarvis_storefront_ios.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/jarvis-utility-ios/jarvis_utility_ios.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/libwebp/libwebp.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/lottie-ios/Lottie.framework/Headers"
+LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks' "$(PODS_ROOT)/jarvis-utility-ios/ExternalFrameworks"
+OTHER_LDFLAGS = $(inherited) -l"sqlite3" -l"z" -framework "CoreData" -framework "CoreTelephony" -framework "ImageIO" -framework "Lottie" -framework "PaytmAnalytics" -framework "SDWebImage" -framework "SDWebImageWebPCoder" -framework "SystemConfiguration" -framework "UIKit" -framework "jarvis_auth_ios" -framework "jarvis_cashback_ios" -framework "jarvis_common_ios" -framework "jarvis_locale_ios" -framework "jarvis_network_ios" -framework "jarvis_storefront_ios" -framework "jarvis_utility_ios" -framework "libwebp"
+OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods
+PODS_XCFRAMEWORKS_BUILD_DIR = $(PODS_CONFIGURATION_BUILD_DIR)/XCFrameworkIntermediates
+USER_HEADER_SEARCH_PATHS = $(inherited) $(SRCROOT)/libwebp/src
+USE_RECURSIVE_SCRIPT_INPUTS_IN_SCRIPT_PHASES = YES

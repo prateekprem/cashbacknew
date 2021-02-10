@@ -1,0 +1,316 @@
+{
+    "status": 1,
+    "errors": [
+        
+    ],
+    "data": {
+        "data": [
+            {
+                "type": "UNSCRATCHED_CARD",
+                "message": "Valid till 01 Feb 2020 11:56:18",
+                "backgroundImage": "D.png",
+                "unscratchedCardData": {
+                    "id": 3500034083,
+                    "status": "UNSCRATCHED",
+                    "redemptionMetaData": {
+                        "redemptionType": "GV_CASHBACK",
+                        "amount": 60,
+                        "redemptionIconUrl": "https://paytm.s3-ap-southeast-1.amazonaws.com/promo_seller_panel_uploads/production/Cashback.png",
+                        "voucherDeeplink": null,
+                        "voucherName": null,
+                        "redemptionDelay": null
+                    },
+                    "sourceMetaData": {
+                        "type": "Supercash",
+                        "offerId": 296411,
+                        "stage": 3,
+                        "offerName": "Mobile Recharge - Upto ₹280 cashback",
+                        "offerDescription": "Do 5 mobile recharges of ₹500 or more within this week",
+                        "offerIconUrl": "https://s3-ap-southeast-1.amazonaws.com/assets.paytm.com/promotion/Rituraj/PNG+images/Mobile+Prepaid+Recharge+Offer.png",
+                        "deeplink": "paytmmp://cash_wallet?featuretype=vip&screen=offerdetails&gameid=296411&stage=3"
+                    },
+                    "redemptionType": "GV_CASHBACK",
+                    "subRedemptionType": null,
+                    "assured": false,
+                    "noneRedemption": false,
+                    "expiryText": "Valid till 01 Feb 2020 11:56:18",
+                    "redemptionText": null,
+                    "winningTitle": "Congratulations!",
+                    "winningText": "You won",
+                    "earnedText": null,
+                    "frontendRedemptionType": "Cashback",
+                    "initializationText": "Scratch Card will be activated shortly",
+                    "unlockText": null,
+                    "statusText": ""
+                }
+            },
+            {
+                "type": "ACTIVE_OFFER",
+                "message": "Activate offer and do 3 mobile recharges to unlock",
+                "backgroundImage": "C.png",
+                "activeOfferData": {
+                    "id": 149332,
+                    "info": {
+                        "transactions": [
+                            {
+                                "txn_id": "97323423033812925168999933223921",
+                                "txn_source": "WALLET",
+                                "order_id": "SM_FEAFFBA43D7F1F52",
+                                "stage": 1,
+                                "status": "SUCCESS",
+                                "created_at": "2019-12-28T18:25:58.000Z",
+                                "txn_amount": "900",
+                                "progress_screen_construct": "1st mobile recharge"
+                            },
+                            {
+                                "txn_id": "",
+                                "txn_source": "",
+                                "order_id": "",
+                                "stage": 1,
+                                "status": "",
+                                "created_at": "",
+                                "progress_screen_construct": "2nd mobile recharge"
+                            },
+                            {
+                                "txn_id": "",
+                                "txn_source": "",
+                                "order_id": "",
+                                "stage": 1,
+                                "status": "",
+                                "created_at": "",
+                                "progress_screen_construct": "3rd mobile recharge"
+                            },
+                            {
+                                "txn_id": "",
+                                "txn_source": "",
+                                "order_id": "",
+                                "stage": 1,
+                                "status": "",
+                                "created_at": "",
+                                "progress_screen_construct": "4th mobile recharge",
+                                "stage_object": {
+                                    "stage_status": "INCOMPLETE",
+                                    "stage_txn_count": 4,
+                                    "stage_success_txn_count": 1,
+                                    "surprise_stage": false,
+                                    "stage_progress_construct": "Claim upto ₹30 cashback now or Activate offer and do 3 more mobile recharges to win upto ₹10000 cashback",
+                                    "gratification_objects": [
+                                        {
+                                            "scratchCardData": null,
+                                            "redemption_type": "cashback",
+                                            "frontend_redemption_type": "cashback",
+                                            "redemption_status": null,
+                                            "redemption_text": "",
+                                            "earned_text": "",
+                                            "bonus_amount": 0,
+                                            "deal_data": null,
+                                            "crosspromo_data": null,
+                                            "redemption_type_icon": "https://paytm.s3-ap-southeast-1.amazonaws.com/promo_seller_panel_uploads/production/Cashback.png",
+                                            "winnning_title": "",
+                                            "progress_text": "You have made a progress"
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "offer_expiry_reason": "",
+                        "game_expiry_reason": "Your offer expired as you did not complete 3 out of 4 transactions.",
+                        "campaign": {
+                            "id": 29769,
+                            "event": "REJECT_OFFER",
+                            "deeplink_url": "paytmmp://mobile_prepaid?url=https://catalog.paytm.com/v1/mobile/mobile-prepaid/17",
+                            "offer_text_override": "Mobile Recharge - upto ₹10000",
+                            "background_image_url": "background image",
+                            "new_offers_image_url": "https://assetscdn.paytm.com/images/catalog/wallet/ic_mobile.png",
+                            "offer_keyword": "mobile recharge%s",
+                            "progress_screen_cta": "Recharge Now",
+                            "important_terms": "<p><span style=\"color: #FFA500;\">★</span><span style=\"color: #000000;\">Offer can be availed 1000 times during the campaign validity<p><span style=\"color: #FFA500;\">★</span><span style=\"color: #000000;\">Minimum amount of each transaction should be 600 <p>",
+                            "surprise_text": "<p><span style=\"color: #FFA500;\">★</span><span style=\"color: #000000;\">1st mobile recharge, Get ₹30 cashback<p><span style=\"color: #FFA500;\">★</span><span style=\"color: #000000;\">4th mobile recharge, Get upto ₹10000 cashback<p>",
+                            "tnc": "https://paytmmall.com/papi/v2/promocard/supercash/campaign/tnc/29769",
+                            "campaign": "APARNA_NM_PERCENT1",
+                            "isDeeplink": true,
+                            "short_description": "Do 4 mobile recharges of ₹600 or more within 2 hours",
+                            "offer_image_url": "https://assetscdn.paytm.com/images/catalog/wallet/ic_mobile.png",
+                            "offer_type_id": 0,
+                            "background_overlay": false,
+                            "auto_activate": false,
+                            "unlock_text": null,
+                            "first_transaction_cta": "Do your first recharge",
+                            "surprise_text_title": "Offer Details"
+                        }
+                    },
+                    "updated_at": "2020-01-27T12:34:33.000Z",
+                    "success_txn_count": 1,
+                    "total_txn_count": 4,
+                    "status": "INITIALIZED",
+                    "offer_expiry": "2020-05-31T17:34:14.000Z",
+                    "game_expiry": "2020-05-31T13:34:14.000Z",
+                    "opt_out_time": "",
+                    "offer_status_info": "",
+                    "current_stage": 1,
+                    "txn_linked": null,
+                    "Claim_CTA": "Claim upto ₹30 cashback now",
+                    "unlock_text": "Activate offer and do 3 mobile recharges to unlock",
+                    "offer_end_time": "",
+                    "server_timestamp": "2020-01-29T11:11:53.864Z"
+                }
+            },
+            {
+                "type": "ACTIVE_OFFER",
+                "message": "Activate offer and do 1 Chaayos payment to unlock",
+                "backgroundImage": "D.png",
+                "activeOfferData": {
+                    "id": 26743,
+                    "info": {
+                        "transactions": [
+                            {
+                                "txn_id": "97323423033812925168999933223921",
+                                "txn_source": "WALLET",
+                                "order_id": "SM_FEAFFBA43D7F1F52",
+                                "stage": 1,
+                                "status": "SUCCESS",
+                                "created_at": "2019-12-28T18:25:58.000Z",
+                                "txn_amount": "900",
+                                "progress_screen_construct": "1st payment on MerchantTest"
+                            },
+                            {
+                                "txn_id": "",
+                                "txn_source": "",
+                                "order_id": "",
+                                "stage": 1,
+                                "status": "",
+                                "created_at": "",
+                                "progress_screen_construct": "2nd Chaayos payment",
+                                "stage_object": {
+                                    "stage_status": "INCOMPLETE",
+                                    "stage_txn_count": 2,
+                                    "stage_success_txn_count": 1,
+                                    "surprise_stage": false,
+                                    "stage_progress_construct": "Claim ₹50 cashback now or Activate offer and do 1 more Chaayos payment to win ₹400 cashback",
+                                    "gratification_objects": [
+                                        {
+                                            "scratchCardData": null,
+                                            "redemption_type": "cashback",
+                                            "frontend_redemption_type": "cashback",
+                                            "redemption_status": null,
+                                            "redemption_text": "",
+                                            "earned_text": "",
+                                            "bonus_amount": 0,
+                                            "deal_data": null,
+                                            "crosspromo_data": null,
+                                            "redemption_type_icon": "https://paytm.s3-ap-southeast-1.amazonaws.com/promo_seller_panel_uploads/production/Cashback.png",
+                                            "winnning_title": "",
+                                            "progress_text": "You have made a progress"
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "offer_expiry_reason": "",
+                        "game_expiry_reason": "Your offer expired as you did not complete -17 out of 3 transactions.",
+                        "campaign": {
+                            "id": 27743,
+                            "event": "REJECT_OFFER",
+                            "deeplink_url": "",
+                            "offer_text_override": "3 Pe 75 Chaayos Offer",
+                            "background_image_url": "https://s3-ap-southeast-1.amazonaws.com/paytm/promo_seller_panel_uploads/production/chaayosBG.jpg",
+                            "new_offers_image_url": "https://s3-ap-southeast-1.amazonaws.com/paytm/promo_seller_panel_uploads/production/chaayosLogo.png",
+                            "offer_keyword": "Chaayos payment%s",
+                            "progress_screen_cta": "Pay Now",
+                            "important_terms": "*Minimum order value is ₹300.<br>*Only is applicable 2 times per user",
+                            "surprise_text": "<p>eqweqw</p>\n",
+                            "tnc": "https://paytmmall.com/papi/v2/promocard/supercash/campaign/tnc/27743",
+                            "campaign": "sangam_testing",
+                            "isDeeplink": false,
+                            "short_description": "testing for multi stage supercash back",
+                            "offer_image_url": "https://s3-ap-southeast-1.amazonaws.com/paytm/promo_seller_panel_uploads/production/chaayosLogo.png",
+                            "offer_type_id": 0,
+                            "background_overlay": false,
+                            "auto_activate": false,
+                            "unlock_text": null,
+                            "first_transaction_cta": null,
+                            "surprise_text_title": "Offer Details"
+                        }
+                    },
+                    "updated_at": "2020-01-27T12:34:33.000Z",
+                    "success_txn_count": 20,
+                    "total_txn_count": 3,
+                    "status": "INITIALIZED",
+                    "offer_expiry": "2020-11-26T16:14:29.000Z",
+                    "game_expiry": "2020-11-27T02:14:29.000Z",
+                    "opt_out_time": "",
+                    "offer_status_info": "",
+                    "current_stage": 1,
+                    "txn_linked": null,
+                    "Claim_CTA": "Claim ₹50 cashback now",
+                    "unlock_text": "Activate offer and do 1 Chaayos payment to unlock",
+                    "offer_end_time": "",
+                    "server_timestamp": "2020-01-29T11:11:53.866Z"
+                }
+            },
+            {
+                "type": "NEW_OFFER",
+                "message": "Do 1 money transfer to unlock",
+                "backgroundImage": "B.png",
+                "newOfferData": {
+                    "id": 35066,
+                    "event": "ACCEPT_OFFER",
+                    "deeplink_url": "paytmmp://utility?url=https://catalog.paytm.com/v1/mobile/getproductlist/75505",
+                    "offer_text_override": "Add Money - Upto ₹1 cashback",
+                    "background_image_url": "BG URL",
+                    "new_offers_image_url": "https://s3-ap-southeast-1.amazonaws.com/assets.paytm.com/promotion/Rituraj/PNG+images/Broadband+Payment+Offer.png",
+                    "offer_keyword": "money transfer%s",
+                    "progress_screen_cta": "Add Money",
+                    "important_terms": "<p><span style=\"color: #FFA500;\">★</span><span style=\"color: #000000;\">Offer can be availed 10000 times during the campaign validity<p><span style=\"color: #FFA500;\">★</span><span style=\"color: #000000;\">Minimum amount of each transaction should be ₹100 <p>",
+                    "surprise_text": "<p><span style=\"color: #FFA500;\">★</span><span style=\"color: #000000;\">10th money transfer, Get upto ₹1 cashback<p>",
+                    "tnc": "https://paytmmall.com/papi/v2/promocard/supercash/campaign/tnc/35066",
+                    "campaign": "PRIORITY_CAMPAIGN3",
+                    "isDeeplink": true,
+                    "short_description": "Add ₹100 or more 10 times in Paytm Wallet within 2 hours",
+                    "offer_image_url": "https://s3-ap-southeast-1.amazonaws.com/assets.paytm.com/promotion/Rituraj/PNG+images/Broadband+Payment+Offer.png",
+                    "offer_type_id": 0,
+                    "background_overlay": false,
+                    "auto_activate": false,
+                    "unlock_text": "Do 1 money transfer to unlock",
+                    "first_transaction_cta": "Add Money",
+                    "surprise_text_title": "Offer Details"
+                }
+            },
+            {
+                "type": "NEW_OFFER",
+                "message": "Do 6 hotel bookings to unlock",
+                "backgroundImage": "D.png",
+                "newOfferData": {
+                    "id": 35063,
+                    "event": "REJECT_OFFER",
+                    "deeplink_url": "paytmmp://hotel-booking",
+                    "offer_text_override": "Hotel Booking - Upto ₹1 cashback",
+                    "background_image_url": "BG URL",
+                    "new_offers_image_url": "https://paytm.s3-ap-southeast-1.amazonaws.com/promo_seller_panel_uploads/production/hotel.png",
+                    "offer_keyword": "hotel booking%s",
+                    "progress_screen_cta": "Book Now",
+                    "important_terms": "<p><span style=\"color: #FFA500;\">★</span><span style=\"color: #000000;\">Offer can be availed 10000 times during the campaign validity<p><span style=\"color: #FFA500;\">★</span><span style=\"color: #000000;\">Minimum amount of each transaction should be ₹100 <p>",
+                    "surprise_text": "<p><span style=\"color: #FFA500;\">★</span><span style=\"color: #000000;\">6th hotel booking, Get upto ₹1 cashback<p>",
+                    "tnc": "https://paytmmall.com/papi/v2/promocard/supercash/campaign/tnc/35063",
+                    "campaign": "PRIORITY_CAMPAIGN1",
+                    "isDeeplink": true,
+                    "short_description": "Book 6 hotels of ₹100 or more within 2 hours",
+                    "offer_image_url": "https://paytm.s3-ap-southeast-1.amazonaws.com/promo_seller_panel_uploads/production/hotel.png",
+                    "offer_type_id": 0,
+                    "background_overlay": false,
+                    "auto_activate": false,
+                    "unlock_text": "Do 6 hotel bookings to unlock",
+                    "first_transaction_cta": "Make your first booking",
+                    "surprise_text_title": "Offer Details"
+                }
+            }
+        ],
+        "beforeTime": null,
+        "excludedIds": [
+            0
+        ],
+        "remainingTypes": [
+            
+        ]
+    }
+}

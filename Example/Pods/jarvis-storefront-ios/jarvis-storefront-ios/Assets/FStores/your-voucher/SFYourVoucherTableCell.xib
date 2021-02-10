@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SFYourVoucherTableCell" rowHeight="375" id="RXj-oe-Mho" customClass="SFYourVoucherTableCell" customModule="jarvis_storefront_ios" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RXj-oe-Mho" id="zMP-Tg-jIf">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="374.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 8" translatesAutoresizingMaskIntoConstraints="NO" id="0Gq-PT-aVk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="374.5"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VB9-XR-Ziv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="374.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pay with your Voucher" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Q4-rd-2te">
+                                <rect key="frame" x="93.5" y="35" width="188.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show this voucher at the Payment Counter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T3z-da-ztD">
+                                <rect key="frame" x="50" y="57" width="275.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="xZB-dH-yMJ">
+                                <rect key="frame" x="0.0" y="99" width="375" height="204"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="204" id="t67-RV-GVL"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="15" minimumInteritemSpacing="20" id="eTn-PR-wxt">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="20" minY="0.0" maxX="10" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <connections>
+                                    <outlet property="dataSource" destination="RXj-oe-Mho" id="i0U-xm-K5K"/>
+                                    <outlet property="delegate" destination="RXj-oe-Mho" id="2Lz-j8-NPf"/>
+                                </connections>
+                            </collectionView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="qGf-X3-5C8">
+                                <rect key="frame" x="168" y="325" width="39" height="37"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xZB-dH-yMJ" firstAttribute="top" secondItem="T3z-da-ztD" secondAttribute="bottom" constant="25" id="Bpk-A9-mKU"/>
+                            <constraint firstItem="T3z-da-ztD" firstAttribute="top" secondItem="4Q4-rd-2te" secondAttribute="bottom" constant="1" id="Ihd-fN-mJe"/>
+                            <constraint firstItem="xZB-dH-yMJ" firstAttribute="leading" secondItem="VB9-XR-Ziv" secondAttribute="leading" id="Ogw-jX-Qrk"/>
+                            <constraint firstItem="T3z-da-ztD" firstAttribute="centerX" secondItem="VB9-XR-Ziv" secondAttribute="centerX" id="Urg-Ne-Oos"/>
+                            <constraint firstAttribute="trailing" secondItem="xZB-dH-yMJ" secondAttribute="trailing" id="bN1-C2-ECy"/>
+                            <constraint firstItem="4Q4-rd-2te" firstAttribute="centerX" secondItem="VB9-XR-Ziv" secondAttribute="centerX" id="btS-aE-glr"/>
+                            <constraint firstItem="qGf-X3-5C8" firstAttribute="top" secondItem="xZB-dH-yMJ" secondAttribute="bottom" constant="22" id="f6k-80-INJ"/>
+                            <constraint firstItem="qGf-X3-5C8" firstAttribute="centerX" secondItem="VB9-XR-Ziv" secondAttribute="centerX" id="lTw-4d-uSw"/>
+                            <constraint firstItem="4Q4-rd-2te" firstAttribute="top" secondItem="VB9-XR-Ziv" secondAttribute="top" constant="35" id="pBE-Ji-f8Q"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="VB9-XR-Ziv" firstAttribute="leading" secondItem="zMP-Tg-jIf" secondAttribute="leading" id="DPI-Dc-uVQ"/>
+                    <constraint firstItem="0Gq-PT-aVk" firstAttribute="bottom" secondItem="VB9-XR-Ziv" secondAttribute="bottom" id="EfY-cW-b3t"/>
+                    <constraint firstItem="0Gq-PT-aVk" firstAttribute="leading" secondItem="VB9-XR-Ziv" secondAttribute="leading" id="JBt-Pm-3kB"/>
+                    <constraint firstItem="VB9-XR-Ziv" firstAttribute="top" secondItem="zMP-Tg-jIf" secondAttribute="top" id="Qws-AO-X7r"/>
+                    <constraint firstItem="0Gq-PT-aVk" firstAttribute="trailing" secondItem="VB9-XR-Ziv" secondAttribute="trailing" id="a9y-A0-B7a"/>
+                    <constraint firstItem="0Gq-PT-aVk" firstAttribute="top" secondItem="VB9-XR-Ziv" secondAttribute="top" id="ac7-dU-Qzp"/>
+                    <constraint firstAttribute="trailing" secondItem="VB9-XR-Ziv" secondAttribute="trailing" id="gKL-42-xhI"/>
+                    <constraint firstAttribute="bottom" secondItem="VB9-XR-Ziv" secondAttribute="bottom" id="xS4-bA-d7j"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="0nw-oX-L4T"/>
+            <connections>
+                <outlet property="backGroundView" destination="VB9-XR-Ziv" id="BCO-yW-sOJ"/>
+                <outlet property="collectV" destination="xZB-dH-yMJ" id="2rp-FT-CbI"/>
+                <outlet property="descpLable" destination="T3z-da-ztD" id="u2b-CV-kjb"/>
+                <outlet property="pageControl" destination="qGf-X3-5C8" id="bHs-Kb-9YU"/>
+                <outlet property="title" destination="4Q4-rd-2te" id="Yvb-b8-6Oe"/>
+            </connections>
+            <point key="canvasLocation" x="111.2" y="302.6986506746627"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Rectangle 8" width="750" height="731"/>
+    </resources>
+</document>

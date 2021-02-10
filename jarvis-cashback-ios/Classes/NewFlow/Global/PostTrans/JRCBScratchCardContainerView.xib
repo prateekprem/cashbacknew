@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="qAY-LU-f8H" customClass="JRCBScratchCardContainerView" customModule="jarvis_cashback_ios" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="263" height="386"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <color key="backgroundColor" red="0.82912009129999997" green="0.88151105799999996" blue="0.90995107559999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="H6P-3h-bsx"/>
+            <point key="canvasLocation" x="-518.1159420289855" y="8.7053571428571423"/>
+        </view>
+        <view contentMode="scaleToFill" id="YGy-wr-GhT" customClass="JRCBScratchCardView" customModule="jarvis_cashback_ios" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="263" height="336"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="ic_cbLogo" translatesAutoresizingMaskIntoConstraints="NO" id="otC-5F-Jpa">
+                    <rect key="frame" x="71" y="0.0" width="121" height="49"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="121" id="AKX-hX-Wu3"/>
+                        <constraint firstAttribute="height" constant="49" id="Dxb-sX-5PC"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2OH-bs-LSS">
+                    <rect key="frame" x="228" y="35" width="25" height="25"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="0So-5c-1qF"/>
+                        <constraint firstAttribute="width" constant="25" id="icw-GY-de2"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="ic_cross"/>
+                    <connections>
+                        <action selector="btnCloseClicked:" destination="YGy-wr-GhT" eventType="touchUpInside" id="Tlb-cc-X1q"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="2OH-bs-LSS" secondAttribute="trailing" constant="10" id="N4t-XH-C3e"/>
+                <constraint firstAttribute="top" secondItem="2OH-bs-LSS" secondAttribute="top" constant="-35" id="dek-Ia-nlA"/>
+                <constraint firstItem="otC-5F-Jpa" firstAttribute="top" secondItem="YGy-wr-GhT" secondAttribute="top" id="gSA-sG-e9s"/>
+                <constraint firstItem="otC-5F-Jpa" firstAttribute="centerX" secondItem="YGy-wr-GhT" secondAttribute="centerX" id="m9s-9R-LCz"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="BOx-XX-ZgJ"/>
+            <connections>
+                <outlet property="btnClose" destination="2OH-bs-LSS" id="Re2-58-Jas"/>
+            </connections>
+            <point key="canvasLocation" x="-518.1159420289855" y="298.66071428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_cbLogo" width="142" height="57"/>
+        <image name="ic_cross" width="20" height="20"/>
+    </resources>
+</document>

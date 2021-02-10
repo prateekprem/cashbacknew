@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SFHVideoContainerCell" rowHeight="282" id="pri-7a-nc0" customClass="SFHVideoContainerCell" customModule="jarvis_storefront_ios">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="282"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="pri-7a-nc0" id="uHA-3y-sjd">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="281.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceHorizontal="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Mc2-u2-bFt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="282.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="282" id="ymS-2s-V2p"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Fkp-Wn-jd4">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <connections>
+                            <outlet property="dataSource" destination="pri-7a-nc0" id="RZ3-nK-6Mb"/>
+                            <outlet property="delegate" destination="pri-7a-nc0" id="Off-ie-aiQ"/>
+                        </connections>
+                    </collectionView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Mc2-u2-bFt" firstAttribute="top" secondItem="uHA-3y-sjd" secondAttribute="top" id="21c-Jh-ggE"/>
+                    <constraint firstAttribute="trailing" secondItem="Mc2-u2-bFt" secondAttribute="trailing" id="FM1-MI-lui"/>
+                    <constraint firstAttribute="bottom" secondItem="Mc2-u2-bFt" secondAttribute="bottom" id="cQ2-jj-p3I"/>
+                    <constraint firstItem="Mc2-u2-bFt" firstAttribute="leading" secondItem="uHA-3y-sjd" secondAttribute="leading" id="pFk-Ca-o86"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="Agj-sk-PYw"/>
+            <connections>
+                <outlet property="collectV" destination="Mc2-u2-bFt" id="kjY-5b-ngu"/>
+            </connections>
+            <point key="canvasLocation" x="136.80000000000001" y="110.64467766116942"/>
+        </tableViewCell>
+    </objects>
+</document>

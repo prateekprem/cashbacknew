@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="588" id="A7U-Oo-NLz" customClass="SFTabbed2SaleTableCell" customModule="jarvis_storefront_ios" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="588"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="A7U-Oo-NLz" id="kMB-vI-Lzn">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="587.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AMF-QJ-EVO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="72"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="tAG-ZP-Jt9">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="71"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="jEl-qX-wZs">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <connections>
+                                    <outlet property="dataSource" destination="A7U-Oo-NLz" id="4cv-uv-njw"/>
+                                    <outlet property="delegate" destination="A7U-Oo-NLz" id="vto-vR-131"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96078431369999995" green="0.97254901959999995" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="tAG-ZP-Jt9" secondAttribute="bottom" constant="1" id="19J-26-D2J"/>
+                            <constraint firstItem="tAG-ZP-Jt9" firstAttribute="leading" secondItem="AMF-QJ-EVO" secondAttribute="leading" id="4Cp-nC-Wh0"/>
+                            <constraint firstAttribute="height" constant="72" id="B7d-B9-z6O"/>
+                            <constraint firstItem="tAG-ZP-Jt9" firstAttribute="top" secondItem="AMF-QJ-EVO" secondAttribute="top" id="oTP-r7-Hby"/>
+                            <constraint firstAttribute="trailing" secondItem="tAG-ZP-Jt9" secondAttribute="trailing" id="yeg-hT-48q"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="AMF-QJ-EVO" secondAttribute="trailing" id="Sqp-0L-ub2"/>
+                    <constraint firstItem="AMF-QJ-EVO" firstAttribute="leading" secondItem="kMB-vI-Lzn" secondAttribute="leading" id="cMp-Bp-2SX"/>
+                    <constraint firstItem="AMF-QJ-EVO" firstAttribute="top" secondItem="kMB-vI-Lzn" secondAttribute="top" id="zRK-BK-ivg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="collectionContainerHeightConstraint" destination="B7d-B9-z6O" id="ZPz-oq-e9g"/>
+                <outlet property="tabbed2SaleCollectionView" destination="tAG-ZP-Jt9" id="kvK-hL-cu8"/>
+            </connections>
+            <point key="canvasLocation" x="96.799999999999997" y="277.06146926536735"/>
+        </tableViewCell>
+    </objects>
+</document>

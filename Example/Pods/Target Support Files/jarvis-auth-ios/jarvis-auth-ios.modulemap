@@ -1,0 +1,6 @@
+framework module jarvis_auth_ios {
+  umbrella header "jarvis-auth-ios-umbrella.h"
+
+  export *
+  module * { export * }
+}

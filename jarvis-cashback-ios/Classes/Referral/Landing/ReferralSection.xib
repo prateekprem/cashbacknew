@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="YBt-WP-8V4" customClass="ReferralSection" customModule="jarvis_cashback_ios" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="More referral offers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LQ3-CN-poz">
+                    <rect key="frame" x="16" y="26" width="382" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="Ar0-5a-Cys"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="LQ3-CN-poz" firstAttribute="top" secondItem="YBt-WP-8V4" secondAttribute="top" constant="26" id="3ri-5I-SFN"/>
+                <constraint firstItem="3Uw-X0-9fR" firstAttribute="bottom" secondItem="LQ3-CN-poz" secondAttribute="bottom" constant="10" id="e3R-uC-167"/>
+                <constraint firstAttribute="trailing" secondItem="LQ3-CN-poz" secondAttribute="trailing" constant="16" id="oQP-tH-nko"/>
+                <constraint firstItem="LQ3-CN-poz" firstAttribute="leading" secondItem="YBt-WP-8V4" secondAttribute="leading" constant="16" id="sjQ-AJ-fK6"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="3Uw-X0-9fR"/>
+            <point key="canvasLocation" x="138" y="-186"/>
+        </view>
+    </objects>
+</document>

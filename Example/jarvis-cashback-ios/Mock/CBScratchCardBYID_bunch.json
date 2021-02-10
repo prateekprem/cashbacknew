@@ -1,0 +1,184 @@
+{
+    "status": 1,
+    "code": 200,
+    "data": {
+        "scratchCardList": [
+            {
+                    "id": 1456920066,
+                    "status": "UNSCRATCHED",
+                    "redemptionMetaData": {
+                        "amount": 0,
+                        "flip": true,
+                        "redemptionType": "Cashback",
+                        "redemptionIconUrl": "http://icon/icn1a2",
+                        "redeemedTime": null,
+                        "redemptionDelay": [
+                            
+                            { "delayUnit": "HOURS", "delay": 48 }
+                        ],
+                        "groupId": 1,
+                        "collectibleId": 3,
+                        "collectibleName": "SACHIN",
+                        "deeplink": "paytmmp://mini-app?aId=c16ff022b4bd1378ca02214ec26e41250ed5b542&data=eyJzcGFyYW1zIjp7InNob3dUaXRsZUJhciI6ZmFsc2V9fQ=="
+                    },
+                    "sourceMetaData":
+                    
+                    { "type": "Supercash", "deeplink": "paytmmp://cash_wallet?featuretype=vip&screen=offerdetails&gameid=1231835564&stage=0", "offerId": "1231835564", "stage": 0, "offerName": "Money Transfer - Upto ₹2 cashback Collectibe testing", "offerIconUrl": "https://s3-ap-southeast-1.amazonaws.com/assets.paytm.com/promotion/Rituraj/PNG+images/UPI+Offer.png", "offerDescription": "Transfer money 3 times using Paytm of ₹6 within 20 minutes", "actionIdentifier": 0 }
+                    ,
+                    "redemptionType": "Cashback",
+                    "subRedemptionType": null,
+                    "assured": false,
+                    "noneRedemption": false,
+                    "expiryText": "Valid till 07 Mar 2020 14:33:33",
+                    "redemptionText": "SACHIN will be credited within 48 hours",
+                    "winningTitle": "Congratulations!",
+                    "winningText": "You won",
+                    "earnedText": "SACHIN",
+                    "frontendRedemptionType": "SACHIN",
+                    "initializationText": null,
+                    "unlockText": null,
+                    "extraInfo": null,
+                    "statusText": "",
+                    "iconUrl": "https://paytm.s3-ap-southeast-1.amazonaws.com/promo_seller_panel_uploads/production/scratchcardicon2.png",
+                    "backgroundImage": "https://assetscdn1.paytm.com/images/promo-engine/prod/sc_theme2.png",
+                    "displayType": "scratch_card"
+            },
+            {
+                "id": 10772461023,
+                "status": "UNSCRATCHED",
+                "redemptionMetaData": {
+                    "amount": 0,
+                    "redemptionType": "CASHBACK",
+                    "redemptionIconUrl": "https://paytm.s3-ap-southeast-1.amazonaws.com/promo_seller_panel_uploads/production/Cashback.png",
+                    "redeemedTime": null,
+                    "redemptionDelay": null,
+                    "flip": true
+                },
+                "sourceMetaData": {
+                    "type": "Supercash",
+                    "deeplink": "paytmmp://cash_wallet?featuretype=vip&screen=offerdetails&gameid=1228196320&stage=0",
+                    "offerId": "1228196320",
+                    "stage": 0,
+                    "offerName": "pay - Upto ₹252 cashback",
+                    "offerIconUrl": "https://s3-ap-southeast-1.amazonaws.com/assets.paytm.com/promotion/Rituraj/PNG+images/Scan+and+Pay.png",
+                    "offerDescription": "Make 2 payments of ₹2 within 20 minutes",
+                    "actionIdentifier": 0
+                },
+                "redemptionType": "CASHBACK",
+                "subRedemptionType": null,
+                "assured": false,
+                "noneRedemption": false,
+                "expiryText": "Valid till 07 Mar 2020 09:58:14",
+                "redemptionText": null,
+                "winningTitle": "Congratulations!",
+                "winningText": "You won",
+                "earnedText": null,
+                "frontendRedemptionType": "Cashback",
+                "initializationText": "Scratch Card will be activated shortly",
+                "unlockText": null,
+                "extraInfo": null,
+                "statusText": "",
+                "iconUrl": "https://paytm.s3-ap-southeast-1.amazonaws.com/promo_seller_panel_uploads/production/scratchcardicon5.png",
+                "backgroundImage": "https://assetscdn1.paytm.com/images/promo-engine/prod/sc_theme5.png",
+                "displayType": "scratch_card"
+            },
+            {
+                "id": 44147036602,
+                "status": "UNSCRATCHED",
+                "redemptionMetaData": {
+                    "amount": 250,
+                    "redemptionType": "DEAL",
+                    "redemptionIconUrl": "https://assetscdn1.paytm.com/images/catalog/product/D/DE/DEAHERE-IS-YOURPAYT4AA44A3F2/0.jpg",
+                    "redeemedTime": null,
+                    "redemptionDelay": [
+                        {
+                            "delayUnit": "HOURS",
+                            "delay": 24
+                        }
+                    ],
+                    "voucherName": "VLCC voucher",
+                    "voucherCode": null,
+                    "validFrom": null,
+                    "validUpto": null,
+                    "voucherDeeplink": "paytmmp://cash_wallet?featuretype=vip&screen=voucherdetails&gameid=1228196320&txnnumber=0",
+                    "secret": null
+                },
+                "sourceMetaData": {
+                    "type": "Supercash",
+                    "deeplink": "paytmmp://cash_wallet?featuretype=vip&screen=offerdetails&gameid=1228196320&stage=0",
+                    "offerId": "1228196320",
+                    "stage": 0,
+                    "offerName": "pay - Upto ₹252 cashback",
+                    "offerIconUrl": "https://s3-ap-southeast-1.amazonaws.com/assets.paytm.com/promotion/Rituraj/PNG+images/Scan+and+Pay.png",
+                    "offerDescription": "Make 2 payments of ₹2 within 20 minutes",
+                    "actionIdentifier": 2
+                },
+                "redemptionType": "DEAL",
+                "subRedemptionType": null,
+                "assured": false,
+                "noneRedemption": false,
+                "expiryText": "Valid till 07 Mar 2020 09:58:14",
+                "redemptionText": null,
+                "winningTitle": "Congratulations!",
+                "winningText": "You won",
+                "earnedText": null,
+                "frontendRedemptionType": "VLCC voucher",
+                "initializationText": "Scratch Card will be activated shortly",
+                "unlockText": null,
+                "extraInfo": null,
+                "statusText": "",
+                "iconUrl": "https://paytm.s3-ap-southeast-1.amazonaws.com/promo_seller_panel_uploads/production/scratchcardicon5.png",
+                "backgroundImage": "https://assetscdn1.paytm.com/images/promo-engine/prod/sc_theme5.png",
+                "displayType": "scratch_card"
+            },
+            {
+                "id": 44147036603,
+                "status": "UNSCRATCHED",
+                "redemptionMetaData": {
+                    "amount": 1,
+                    "redemptionType": "CROSS_PROMO",
+                    "redemptionIconUrl": "https://paytm.s3.amazonaws.com/promo_seller_panel_uploads/production/xxxhdpiRecharge.png",
+                    "redeemedTime": null,
+                    "redemptionDelay": [
+                        {
+                            "delayUnit": "HOURS",
+                            "delay": 24
+                        }
+                    ],
+                    "voucherName": "recharge voucher",
+                    "voucherCode": null,
+                    "validFrom": null,
+                    "validUpto": null,
+                    "voucherDeeplink": "paytmmp://cash_wallet?featuretype=vip&screen=voucherdetails&gameid=1228196320&txnnumber=0"
+                },
+                "sourceMetaData": {
+                    "type": "Supercash",
+                    "deeplink": "paytmmp://cash_wallet?featuretype=vip&screen=offerdetails&gameid=1228196320&stage=0",
+                    "offerId": "1228196320",
+                    "stage": 0,
+                    "offerName": "pay - Upto ₹252 cashback",
+                    "offerIconUrl": "https://s3-ap-southeast-1.amazonaws.com/assets.paytm.com/promotion/Rituraj/PNG+images/Scan+and+Pay.png",
+                    "offerDescription": "Make 2 payments of ₹2 within 20 minutes",
+                    "actionIdentifier": 3
+                },
+                "redemptionType": "CROSS_PROMO",
+                "subRedemptionType": null,
+                "assured": false,
+                "noneRedemption": false,
+                "expiryText": "Valid till 07 Mar 2020 09:58:14",
+                "redemptionText": null,
+                "winningTitle": "Congratulations!",
+                "winningText": "You won",
+                "earnedText": null,
+                "frontendRedemptionType": "recharge voucher",
+                "initializationText": "Scratch Card will be activated shortly",
+                "unlockText": null,
+                "extraInfo": null,
+                "statusText": "",
+                "iconUrl": "https://paytm.s3-ap-southeast-1.amazonaws.com/promo_seller_panel_uploads/production/scratchcardicon6.png",
+                "backgroundImage": "https://assetscdn1.paytm.com/images/promo-engine/prod/sc_theme6.png",
+                "displayType": "scratch_card"
+            }
+        ]
+    }
+}

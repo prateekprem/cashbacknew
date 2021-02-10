@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="JRTopNavigationTabsRadioCollectionViewCell" id="hOb-E0-0C0" customClass="JRTopNavigationTabsRadioCollectionViewCell" customModule="Mall" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="75" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="75" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="radioButton_Selected" translatesAutoresizingMaskIntoConstraints="NO" id="gSn-w1-5Dz">
+                        <rect key="frame" x="0.0" y="16" width="18" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="18" id="14y-4a-Mj1"/>
+                            <constraint firstAttribute="height" constant="18" id="DcL-HU-TBJ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vhm-vR-hTY">
+                        <rect key="frame" x="33" y="0.0" width="36" height="50"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                        <color key="textColor" red="0.28627450980000002" green="0.28627450980000002" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="gSn-w1-5Dz" firstAttribute="leading" secondItem="hOb-E0-0C0" secondAttribute="leading" id="6dE-Af-3K8"/>
+                <constraint firstAttribute="bottom" secondItem="Vhm-vR-hTY" secondAttribute="bottom" id="7lb-tT-uRd"/>
+                <constraint firstItem="gSn-w1-5Dz" firstAttribute="centerY" secondItem="hOb-E0-0C0" secondAttribute="centerY" id="Cmj-zu-dgA"/>
+                <constraint firstItem="Vhm-vR-hTY" firstAttribute="top" secondItem="hOb-E0-0C0" secondAttribute="top" id="Rh8-0s-W8J"/>
+                <constraint firstItem="Vhm-vR-hTY" firstAttribute="leading" secondItem="gSn-w1-5Dz" secondAttribute="trailing" constant="15" id="Rpv-jD-zOS"/>
+            </constraints>
+            <size key="customSize" width="75" height="50"/>
+            <connections>
+                <outlet property="radioImageView" destination="gSn-w1-5Dz" id="8hw-Q3-WmW"/>
+                <outlet property="titleLabel" destination="Vhm-vR-hTY" id="3ZY-t2-8gX"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="radioButton_Selected" width="18" height="18"/>
+    </resources>
+</document>

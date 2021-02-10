@@ -1,0 +1,11 @@
+framework module MapmyIndiaAPIKit {
+  umbrella header "MapmyIndiaAPIKit.h"
+
+  export *
+  module * { export * }
+}
+
+module MapmyIndiaAPIKit.Swift {
+    header "MapmyIndiaAPIKit-Swift.h"
+    requires objc
+}

@@ -1,0 +1,284 @@
+{
+    "page_id": 7861,
+    "page_name": "Cashback Landing",
+    "api_version": 2,
+    "sub_api": [
+        {
+            "name": "midgar",
+            "version": 2
+        }
+    ],
+    "context": {
+        "user": {
+            "user_id": 1000419023
+        },
+        "request_id": "3ae03880-419f-11ea-89a1-0f0f7538cc6b"
+    },
+    "meta_description": "Cashback landing",
+    "meta_keyword": "Cashback landing",
+    "meta_title": "Cashback landing",
+    "page": [
+        {
+            "id": 40993,
+            "layout": "HS",
+            "layout_details": {},
+            "attributes": {},
+            "views": [
+                {
+                    "type": "carousel-scratch-card",
+                    "id": 40993,
+                    "title": "Scratch Card and Get Cashback",
+                    "layout": {},
+                    "subtitle": "",
+                    "priority": 1,
+                    "image_url": "https://assetscdn1.paytm.com/images/catalog/view/40993/1580127813821.jpeg",
+                    "seourl": null,
+                    "landing_page_meta_flag": 0,
+                    "start_time": null,
+                    "end_time": null,
+                    "manage_by_engage": 0,
+                    "meta_layout": {
+                        "bg_color": ""
+                    },
+                    "has_more": false
+                }
+            ]
+        },
+        {
+            "id": 40991,
+            "layout": "HS",
+            "layout_details": {},
+            "attributes": {},
+            "views": [
+                {
+                    "type": "carousel-toi",
+                    "id": 40991,
+                    "title": "Top Cashback Offers on Popular Apps",
+                    "layout": {},
+                    "subtitle": "",
+                    "priority": 2,
+                    "image_url": "https://assetscdn1.paytm.com/images/catalog/view/40991/1580125302196.jpg",
+                    "seourl": null,
+                    "items": [
+                        {
+                            "id": 470117,
+                            "name": "",
+                            "title": "ZOMATO",
+                            "subtitle": "Get upto ₹700 Cashback",
+                            "image_url": "https://i.ibb.co/16w6MQX/zomato.png",
+                            "metadata": {
+                                "group_tag": "8olc_61929",
+                                "is_fallback": true,
+                            },
+                        },
+                        {
+                            "id": 470117,
+                            "name": "",
+                            "title": "UBER",
+                            "subtitle": "Get ₹75 after every ride",
+                            "image_url": "https://i.ibb.co/16w6MQX/zomato.png",
+                            "metadata": {
+                                "group_tag": "8olc_61929",
+                                "is_fallback": true,
+                            },
+                        },
+                        {
+                            "id": 470117,
+                            "name": "",
+                            "title": "UBER",
+                            "subtitle": "Get ₹75 after every ride",
+                            "image_url": "https://i.ibb.co/16w6MQX/zomato.png",
+                            "metadata": {
+                                "group_tag": "8olc_61929",
+                                "is_fallback": true,
+                            },
+                        },
+                        {
+                            "id": 470117,
+                            "name": "",
+                            "title": "ZOMATO",
+                            "subtitle": "Get upto ₹700 Cashback",
+                            "image_url": "https://i.ibb.co/16w6MQX/zomato.png",
+                            "metadata": {
+                                "group_tag": "8olc_61929",
+                                "is_fallback": true,
+                            },
+                        }
+                    ],
+                    "landing_page_meta_flag": 0,
+                    "start_time": null,
+                    "end_time": null,
+                    "manage_by_engage": 0,
+                    "meta_layout": {
+                        "bg_color": ""
+                    },
+                    "has_more": false
+                }
+            ]
+        },
+        {
+            "id": 40990,
+            "layout": "HS",
+            "layout_details": {},
+            "attributes": {},
+            "views": [
+                {
+                    "type": "list-small-ti",
+                    "id": 40990,
+                    "title": "",
+                    "layout": {},
+                    "subtitle": "",
+                    "priority": 3,
+                    "image_url": "https://assetscdn1.paytm.com/images/catalog/view/40990/1580125183112.jpg",
+                    "seourl": null,
+                    "items": [
+                        {
+                            "id": 183581,
+                            "priority": 0,
+                            "name": "Recharge & Bill payment Offers",
+                            "title": "Recharge & Bill Payments",
+                            "subtitle": "",
+                            "image_url": "https://i.ibb.co/GTSQRx1/Recharge-Offer.png",
+                            "alt_image_url": null,
+                            "url_info": "embed",
+                            "url_type": "embed",
+                            "url": "paytmmp://cash_wallet?featuretype=vip&screen=categoryNewOffers&offertag=Recharge%20and%20Bill%20payment%20Offers",
+                            "source": "catalog",
+                            "item_id": 0,
+                            "ga_category": "Mobile Prepaid",
+                            "start_time": null,
+                            "end_time": null,
+                            "metadata": {
+                                "region": false,
+                                "app_version": false
+                            },
+                            "seourl": "paytmmp://cash_wallet?featuretype=vip&screen=categoryNewOffers&offertag=Recharge%20and%20Bill%20payment%20Offers"
+                        },
+                        {
+                            "id": 183581,
+                            "priority": 0,
+                            "name": "Recharge & Bill payment Offers",
+                            "title": "Money Transfer & Bank Offers",
+                            "subtitle": "",
+                            "image_url": "https://i.ibb.co/Dp1bfz5/i-Money-Transfer.png",
+                            "alt_image_url": null,
+                            "url_info": "embed",
+                            "url_type": "embed",
+                            "url": "paytmmp://cash_wallet?featuretype=vip&screen=categoryNewOffers&offertag=Recharge%20and%20Bill%20payment%20Offers",
+                            "source": "catalog",
+                            "item_id": 0,
+                            "ga_category": "Mobile Prepaid",
+                            "start_time": null,
+                            "end_time": null,
+                            "metadata": {
+                                "region": false,
+                                "app_version": false
+                            },
+                            "seourl": "paytmmp://cash_wallet?featuretype=vip&screen=categoryNewOffers&offertag=Recharge%20and%20Bill%20payment%20Offers"
+                        },
+                        {
+                            "id": 183581,
+                            "priority": 0,
+                            "name": "Recharge & Bill payment Offers",
+                            "title": "Online Shopping Offers",
+                            "subtitle": "",
+                            "image_url": "https://i.ibb.co/FVcVJC1/mall.png",
+                            "alt_image_url": null,
+                            "url_info": "embed",
+                            "url_type": "embed",
+                            "url": "paytmmp://cash_wallet?featuretype=vip&screen=categoryNewOffers&offertag=Recharge%20and%20Bill%20payment%20Offers",
+                            "source": "catalog",
+                            "item_id": 0,
+                            "ga_category": "Mobile Prepaid",
+                            "start_time": null,
+                            "end_time": null,
+                            "metadata": {
+                                "region": false,
+                                "app_version": false
+                            },
+                            "seourl": "paytmmp://cash_wallet?featuretype=vip&screen=categoryNewOffers&offertag=Recharge%20and%20Bill%20payment%20Offers"
+                        },
+                        {
+                            "id": 183581,
+                            "priority": 0,
+                            "name": "Recharge & Bill payment Offers",
+                            "title": "Instore Cashback Offers",
+                            "subtitle": "",
+                            "image_url": "https://i.ibb.co/wS3d42K/store.png",
+                            "alt_image_url": null,
+                            "url_info": "embed",
+                            "url_type": "embed",
+                            "url": "paytmmp://cash_wallet?featuretype=vip&screen=categoryNewOffers&offertag=Recharge%20and%20Bill%20payment%20Offers",
+                            "source": "catalog",
+                            "item_id": 0,
+                            "ga_category": "Mobile Prepaid",
+                            "start_time": null,
+                            "end_time": null,
+                            "metadata": {
+                                "region": false,
+                                "app_version": false
+                            },
+                            "seourl": "paytmmp://cash_wallet?featuretype=vip&screen=categoryNewOffers&offertag=Recharge%20and%20Bill%20payment%20Offers"
+                        }
+                    ],
+                    "landing_page_meta_flag": 0,
+                    "start_time": null,
+                    "end_time": null,
+                    "manage_by_engage": 0,
+                    "meta_layout": {
+                        "bg_color": ""
+                    },
+                    "has_more": false
+                }
+            ]
+        },
+        {
+            "id": 40992,
+            "layout": "HS",
+            "layout_details": {},
+            "attributes": {},
+            "views": [
+                {
+                    "type": "h1-full-banner",
+                    "id": 40992,
+                    "title": "",
+                    "layout": {},
+                    "subtitle": "",
+                    "priority": 4,
+                    "image_url": "https://i.ibb.co/XkSTCKW/Screenshot-2020-02-04-at-4-12-15-PM.png",
+                    "seourl": null,
+                    "items": [],
+                    "landing_page_meta_flag": 0,
+                    "start_time": null,
+                    "end_time": null,
+                    "manage_by_engage": 0,
+                    "meta_layout": {
+                        "bg_color": ""
+                    },
+                    "has_more": false
+                }
+            ]
+        }
+    ],
+    "footer_image_url": "https://assetscdn1.paytm.com/images/catalog/category/5165/footer1.png",
+    "placeholder_image_url": "https://assetscdn1.paytm.com/images/catalog/category/5165/placeholder.png",
+    "ga_key": "/h/cashback-landing-clpid-7861",
+    "top_keywords": [],
+    "top_description": null,
+    "bottom_keywords": [],
+    "image_url": "https://assetscdn1.paytm.com/images/catalog/decorator/7861/1580124925358.jpg",
+    "alt_image_url": null,
+    "entity_type": "category",
+    "entity_associated_with": 66704,
+    "long_rich_desc": "Cashback landing",
+    "no_follow": false,
+    "no_index": false,
+    "redirect": true,
+    "redirect_url": "https://storefront-staging.paytm.com/cashback-landing-clpid-7861",
+    "canonical_url": "",
+    "contextParams": {
+        "category_id": ""
+    },
+    "ga_category": "Mall-Others",
+    "layout": {}
+}

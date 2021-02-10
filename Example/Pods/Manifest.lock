@@ -1,0 +1,95 @@
+PODS:
+  - jarvis-auth-ios (9.2.0.1):
+    - jarvis-network-ios
+    - jarvis-utility-ios
+  - jarvis-cashback-ios (9.0.0.0):
+    - jarvis-locale-ios
+    - jarvis-network-ios
+    - jarvis-storefront-ios
+    - jarvis-utility-ios
+    - lottie-ios (= 2.5.0)
+  - jarvis-common-ios (9.2.0.0):
+    - jarvis-auth-ios
+    - jarvis-network-ios
+    - jarvis-utility-ios
+    - lottie-ios (= 2.5.0)
+    - PaytmSignal-iOS (= 10.2.3)
+  - jarvis-locale-ios (0.2.2)
+  - jarvis-network-ios (8.16.2.0):
+    - jarvis-locale-ios
+  - jarvis-storefront-ios (9.1.0.3):
+    - jarvis-network-ios
+    - jarvis-utility-ios
+  - jarvis-utility-ios (9.1.0.0):
+    - jarvis-locale-ios
+    - jarvis-utility-ios/no-arc (= 9.1.0.0)
+    - SDWebImageWebPCoder (= 0.2.3)
+  - jarvis-utility-ios/no-arc (9.1.0.0):
+    - jarvis-locale-ios
+    - SDWebImageWebPCoder (= 0.2.3)
+  - libwebp (1.1.0):
+    - libwebp/demux (= 1.1.0)
+    - libwebp/mux (= 1.1.0)
+    - libwebp/webp (= 1.1.0)
+  - libwebp/demux (1.1.0):
+    - libwebp/webp
+  - libwebp/mux (1.1.0):
+    - libwebp/demux
+  - libwebp/webp (1.1.0)
+  - lottie-ios (2.5.0)
+  - PaytmAnalytics (9.2.3.3)
+  - PaytmSignal-iOS (10.2.3)
+  - SDWebImage/Core (5.10.4)
+  - SDWebImageWebPCoder (0.2.3):
+    - libwebp (~> 1.0)
+    - SDWebImage/Core (~> 5.0)
+
+DEPENDENCIES:
+  - jarvis-auth-ios
+  - jarvis-cashback-ios (from `../`)
+  - jarvis-common-ios
+  - jarvis-locale-ios
+  - jarvis-network-ios
+  - jarvis-storefront-ios
+  - jarvis-utility-ios
+  - lottie-ios (= 2.5.0)
+  - PaytmAnalytics
+
+SPEC REPOS:
+  "git@bitbucket.org:paytmteam/jarvis-common-ios-specs.git":
+    - jarvis-auth-ios
+    - jarvis-common-ios
+    - jarvis-locale-ios
+    - jarvis-network-ios
+    - jarvis-storefront-ios
+    - jarvis-utility-ios
+    - PaytmAnalytics
+  https://github.com/CocoaPods/Specs.git:
+    - libwebp
+    - lottie-ios
+    - PaytmSignal-iOS
+    - SDWebImage
+    - SDWebImageWebPCoder
+
+EXTERNAL SOURCES:
+  jarvis-cashback-ios:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  jarvis-auth-ios: c7dfe2c35232a37e0e86e5a97b1ff4d30e3cc2fa
+  jarvis-cashback-ios: 6d8457bd77eb04e28d965115261faf4898ee776e
+  jarvis-common-ios: 30a3a006aa9c7a23d0467130f22462e93817cc99
+  jarvis-locale-ios: 3a17ef78bdf0c5e6aa44b09375d0c45e4f7843d7
+  jarvis-network-ios: 51a41b62302fea7fb473c4bd91163365734e85c4
+  jarvis-storefront-ios: 2f6c922f81a226af678ecfe1d9bfa7bc99f2f792
+  jarvis-utility-ios: 1b7498b5ad02d1f521cff081f356e7e834a4a591
+  libwebp: 946cb3063cea9236285f7e9a8505d806d30e07f3
+  lottie-ios: d699fdee68d7b63e721d949388b015fef1aaa4ac
+  PaytmAnalytics: c9551d1781f7a57cee6fa1e029669b2f309227ca
+  PaytmSignal-iOS: eb9fcba48f03194e327ad54697de1a49fea75a32
+  SDWebImage: c666b97e1fa9c64b4909816a903322018f0a9c84
+  SDWebImageWebPCoder: 7568737603c50f6237850afedd7e9e28e5917e6b
+
+PODFILE CHECKSUM: 4a087208db903a4caff17f504a6a7b9af9d561c0
+
+COCOAPODS: 1.10.0

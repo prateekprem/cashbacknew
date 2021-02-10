@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ShareCell" id="gTV-IL-0wX" customClass="ShareCell" customModule="jarvis_chat_ios" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="56" height="56"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="56" height="56"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whatsapp" translatesAutoresizingMaskIntoConstraints="NO" id="pe0-Hi-WNB">
+                        <rect key="frame" x="0.0" y="0.0" width="56" height="56"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="pe0-Hi-WNB" secondAttribute="bottom" id="0AK-oq-LVz"/>
+                <constraint firstItem="pe0-Hi-WNB" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="6wa-19-Se1"/>
+                <constraint firstItem="pe0-Hi-WNB" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="FII-iN-xjD"/>
+                <constraint firstAttribute="trailing" secondItem="pe0-Hi-WNB" secondAttribute="trailing" id="bbk-uy-Ijb"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="105" height="62"/>
+            <connections>
+                <outlet property="imageView" destination="pe0-Hi-WNB" id="2FC-54-u1w"/>
+            </connections>
+            <point key="canvasLocation" x="176.81159420289856" y="156.69642857142856"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="whatsapp" width="60" height="60"/>
+    </resources>
+</document>

@@ -1,0 +1,6 @@
+framework module jarvis_storefront_ios {
+  umbrella header "jarvis-storefront-ios-umbrella.h"
+
+  export *
+  module * { export * }
+}

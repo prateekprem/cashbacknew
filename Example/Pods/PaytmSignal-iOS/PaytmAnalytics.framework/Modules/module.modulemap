@@ -1,0 +1,11 @@
+framework module PaytmAnalytics {
+  umbrella header "PaytmAnalytics-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module PaytmAnalytics.Swift {
+    header "PaytmAnalytics-Swift.h"
+    requires objc
+}
